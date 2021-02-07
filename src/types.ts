@@ -8,6 +8,7 @@ export type QuestionOption = {
 export type Question = {
   prompt: string;
   options: QuestionOption[];
+  index: number;
 }
 
 export type Modifier = {
