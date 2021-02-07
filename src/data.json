@@ -1,0 +1,4167 @@
+{
+  "questions": {
+    "ability_scores": [
+      {
+        "prompt": "As far as looks go, I am...",
+        "options": [
+          {
+            "label": "ugly, I am the worst looking member of my social circle.",
+            "value": 2,
+            "id": "q41",
+            "modifiers": [
+              { "stat": "charisma", "value": 2 }
+            ]
+          },
+          {
+            "label": "average, my appearance is normal overall.",
+            "value": 3,
+            "id": "q41",
+            "modifiers": [
+              { "stat": "charisma", "value": 3 }
+            ]
+          },
+          {
+            "label": "attractive, I am the best looking member of my social circle.",
+            "value": 4,
+            "id": "q41",
+            "modifiers": [
+              { "stat": "charisma", "value": 4 }
+            ]
+          },
+          {
+            "label": "extremely attractive, my appearance aids me in every situation in life.",
+            "value": 5,
+            "id": "q41",
+            "modifiers": [
+              { "stat": "charisma", "value": 5 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "When it comes to memory...",
+        "options": [
+          {
+            "label": "I have a really hard time remembering things.",
+            "value": 2,
+            "id": "q42",
+            "modifiers": [
+              { "stat": "intelligence", "value": 2 }
+            ]
+          },
+          {
+            "label": "I remember most things though subtle details sometimes elude me.",
+            "value": 3,
+            "id": "q42",
+            "modifiers": [
+              { "stat": "intelligence", "value": 3 }
+            ]
+          },
+          {
+            "label": "I remember just about everything I'm exposed to.",
+            "value": 4,
+            "id": "q42",
+            "modifiers": [
+              { "stat": "intelligence", "value": 4 }
+            ]
+          },
+          {
+            "label": "I have a photographic memory and I always remember every detail.",
+            "value": 5,
+            "id": "q42",
+            "modifiers": [
+              { "stat": "intelligence", "value": 5 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "The following statement most accurately describes me.",
+        "options": [
+          {
+            "label": "I have an extremely difficult time making new friends.",
+            "value": 2,
+            "id": "q43",
+            "modifiers": [
+              { "stat": "charisma", "value": 2 }
+            ]
+          },
+          {
+            "label": "I make friends fairly easily and engage in small talk with new acquaintances with ease.",
+            "value": 3,
+            "id": "q43",
+            "modifiers": [
+              { "stat": "charisma", "value": 3 }
+            ]
+          },
+          {
+            "label": "After meeting me, people go out of their way to keep in touch with me.",
+            "value": 5,
+            "id": "q43",
+            "modifiers": [
+              { "stat": "charisma", "value": 5 }
+            ]
+          },
+          {
+            "label": "I make new friends everywhere I go.",
+            "value": 4,
+            "id": "q43",
+            "modifiers": [
+              { "stat": "charisma", "value": 4 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "When it comes to willpower...",
+        "options": [
+          {
+            "label": "I have no vices and I've never been tempted by anything.",
+            "value": 5,
+            "id": "q44",
+            "modifiers": [
+              { "stat": "wisdom", "value": 5 }
+            ]
+          },
+          {
+            "label": "I have no vices, but I've been tempted by things from time to time.",
+            "value": 4,
+            "id": "q44",
+            "modifiers": [
+              { "stat": "wisdom", "value": 4 }
+            ]
+          },
+          {
+            "label": "I have some vices and I succumb to temptation only rarely.",
+            "value": 3,
+            "id": "q44",
+            "modifiers": [
+              { "stat": "wisdom", "value": 3 }
+            ]
+          },
+          {
+            "label": "I have a hard time avoiding temptation and give in too often.",
+            "value": 2,
+            "id": "q44",
+            "modifiers": [
+              { "stat": "wisdom", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "Rate your persuasiveness.",
+        "options": [
+          {
+            "label": "I can make people do almost anything I want them to do.",
+            "value": 5,
+            "id": "q45",
+            "modifiers": [
+              { "stat": "charisma", "value": 5 }
+            ]
+          },
+          {
+            "label": "I have an easy time convincing others to see things my way.",
+            "value": 4,
+            "id": "q45",
+            "modifiers": [
+              { "stat": "charisma", "value": 4 }
+            ]
+          },
+          {
+            "label": "I convince others to do things my way some of the time.",
+            "value": 3,
+            "id": "q45",
+            "modifiers": [
+              { "stat": "charisma", "value": 3 }
+            ]
+          },
+          {
+            "label": "I have a hard time convincing others to do what I want them to do.",
+            "value": 2,
+            "id": "q45",
+            "modifiers": [
+              { "stat": "charisma", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "The following statement most accurately describes my health.",
+        "options": [
+          {
+            "label": "I am sick most of the time.",
+            "value": 2,
+            "id": "q46",
+            "modifiers": [
+              { "stat": "constitution", "value": 2 }
+            ]
+          },
+          {
+            "label": "I seem to get sick as often as most people I know.",
+            "value": 3,
+            "id": "q46",
+            "modifiers": [
+              { "stat": "constitution", "value": 3 }
+            ]
+          },
+          {
+            "label": "I have never missed a day of work due to illness.",
+            "value": 4,
+            "id": "q46",
+            "modifiers": [
+              { "stat": "constitution", "value": 4 }
+            ]
+          },
+          {
+            "label": "I can't remember ever being sick.",
+            "value": 5,
+            "id": "q46",
+            "modifiers": [
+              { "stat": "constitution", "value": 5 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "When it comes to stamina...",
+        "options": [
+          {
+            "label": "I am able to exercise with no ill effects.",
+            "value": 3,
+            "id": "q47",
+            "modifiers": [
+              { "stat": "constitution", "value": 3 }
+            ]
+          },
+          {
+            "label": "I have a hard time running.",
+            "value": 2,
+            "id": "q47",
+            "modifiers": [
+              { "stat": "constitution", "value": 2 }
+            ]
+          },
+          {
+            "label": "I regularly exert myself physically, and enjoy doing so.",
+            "value": 4,
+            "id": "q47",
+            "modifiers": [
+              { "stat": "constitution", "value": 4 }
+            ]
+          },
+          {
+            "label": "I physically exert myself all day long on a regular basis.",
+            "value": 5,
+            "id": "q47",
+            "modifiers": [
+              { "stat": "constitution", "value": 5 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "When it comes to leadership...",
+        "options": [
+          {
+            "label": "I've never been in a leadership position.",
+            "value": 2,
+            "id": "q48",
+            "modifiers": [
+              { "stat": "charisma", "value": 2 }
+            ]
+          },
+          {
+            "label": "I perform adequately when I'm the leader.",
+            "value": 3,
+            "id": "q48",
+            "modifiers": [
+              { "stat": "charisma", "value": 3 }
+            ]
+          },
+          {
+            "label": "People look to me for direction instinctively.",
+            "value": 4,
+            "id": "q48",
+            "modifiers": [
+              { "stat": "charisma", "value": 4 }
+            ]
+          },
+          {
+            "label": "People go out of their way to put me in leadership positions.",
+            "value": 5,
+            "id": "q48",
+            "modifiers": [
+              { "stat": "charisma", "value": 5 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "Rate your learning ability:",
+        "options": [
+          {
+            "label": "I can learn new things very quickly.",
+            "value": 4,
+            "id": "q49",
+            "modifiers": [
+              { "stat": "intelligence", "value": 4 }
+            ]
+          },
+          {
+            "label": "I learn as fast as everyone else it seems.",
+            "value": 3,
+            "id": "q49",
+            "modifiers": [
+              { "stat": "intelligence", "value": 3 }
+            ]
+          },
+          {
+            "label": "I'm constantly learning new subjects at an astounding rate.",
+            "value": 5,
+            "id": "q49",
+            "modifiers": [
+              { "stat": "intelligence", "value": 5 }
+            ]
+          },
+          {
+            "label": "I have a hard time learning new things.",
+            "value": 2,
+            "id": "q49",
+            "modifiers": [
+              { "stat": "intelligence", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "When it comes to my problem-solving ability...",
+        "options": [
+          {
+            "label": "I am sometimes able to figure out a solution for a problem.",
+            "value": 2,
+            "id": "q50",
+            "modifiers": [
+              { "stat": "intelligence", "value": 2 }
+            ]
+          },
+          {
+            "label": "I think I'm pretty good at solving problems and organizing information.",
+            "value": 3,
+            "id": "q50",
+            "modifiers": [
+              { "stat": "intelligence", "value": 3 }
+            ]
+          },
+          {
+            "label": "I can easily find solutions to complex problems.",
+            "value": 4,
+            "id": "q50",
+            "modifiers": [
+              { "stat": "intelligence", "value": 4 }
+            ]
+          },
+          {
+            "label": "My critical thinking skills are absolutely flawless.",
+            "value": 5,
+            "id": "q50",
+            "modifiers": [
+              { "stat": "intelligence", "value": 5 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "How tough are you?",
+        "options": [
+          {
+            "label": "I can take punches that would drop normal people.",
+            "value": 4,
+            "id": "q51",
+            "modifiers": [
+              { "stat": "constitution", "value": 4 }
+            ]
+          },
+          {
+            "label": "I've taken massive blows and kept on fighting.",
+            "value": 5,
+            "id": "q51",
+            "modifiers": [
+              { "stat": "constitution", "value": 5 }
+            ]
+          },
+          {
+            "label": "I'm not fragile.",
+            "value": 3,
+            "id": "q51",
+            "modifiers": [
+              { "stat": "constitution", "value": 3 }
+            ]
+          },
+          {
+            "label": "When people jokingly hit me, they hurt me.",
+            "value": 2,
+            "id": "q51",
+            "modifiers": [
+              { "stat": "constitution", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "My body...",
+        "options": [
+          {
+            "label": "is in pretty good shape, given my age.",
+            "value": 3,
+            "id": "q52",
+            "modifiers": [
+              { "stat": "strength", "value": 3 }
+            ]
+          },
+          {
+            "label": "is on par with most professional athletes.",
+            "value": 5,
+            "id": "q52",
+            "modifiers": [
+              { "stat": "strength", "value": 5 }
+            ]
+          },
+          {
+            "label": "is in superb shape.",
+            "value": 4,
+            "id": "q52",
+            "modifiers": [
+              { "stat": "strength", "value": 4 }
+            ]
+          },
+          {
+            "label": "is out of shape, when compared to almost everyone else.",
+            "value": 2,
+            "id": "q52",
+            "modifiers": [
+              { "stat": "strength", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "When it comes to common sense...",
+        "options": [
+          {
+            "label": "People seem to know more than I do most of the time.",
+            "value": 2,
+            "id": "q53",
+            "modifiers": [
+              { "stat": "wisdom", "value": 2 }
+            ]
+          },
+          {
+            "label": "I rarely make the same mistake twice.",
+            "value": 3,
+            "id": "q53",
+            "modifiers": [
+              { "stat": "wisdom", "value": 3 }
+            ]
+          },
+          {
+            "label": "People always come to me for advice.",
+            "value": 4,
+            "id": "q53",
+            "modifiers": [
+              { "stat": "wisdom", "value": 4 }
+            ]
+          },
+          {
+            "label": "I am exceptionally shrewd and cunning.",
+            "value": 5,
+            "id": "q53",
+            "modifiers": [
+              { "stat": "wisdom", "value": 5 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "Rate your sensory perception ability.",
+        "options": [
+          {
+            "label": "I am aware of most things that occur around me.",
+            "value": 3,
+            "id": "q54",
+            "modifiers": [
+              { "stat": "wisdom", "value": 3 }
+            ]
+          },
+          {
+            "label": "I have the keenest senses of anyone I know.",
+            "value": 5,
+            "id": "q54",
+            "modifiers": [
+              { "stat": "wisdom", "value": 5 }
+            ]
+          },
+          {
+            "label": "I have extremely poor awareness of my surroundings.",
+            "value": 2,
+            "id": "q54",
+            "modifiers": [
+              { "stat": "wisdom", "value": 2 }
+            ]
+          },
+          {
+            "label": "I easily spot details that others miss.",
+            "value": 4,
+            "id": "q54",
+            "modifiers": [
+              { "stat": "wisdom", "value": 4 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "I can lift...",
+        "options": [
+          {
+            "label": "about as much as a person of my gender and age should be able to lift.",
+            "value": 3,
+            "id": "q55",
+            "modifiers": [
+              { "stat": "strength", "value": 3 }
+            ]
+          },
+          {
+            "label": "a lot less than I should be able to lift.  I am weak.",
+            "value": 2,
+            "id": "q55",
+            "modifiers": [
+              { "stat": "strength", "value": 2 }
+            ]
+          },
+          {
+            "label": "noticeably more than most people I know.  I am strong.",
+            "value": 4,
+            "id": "q55",
+            "modifiers": [
+              { "stat": "strength", "value": 4 }
+            ]
+          },
+          {
+            "label": "an astounding amount of weight.  I engage in extensive weight training.",
+            "value": 5,
+            "id": "q55",
+            "modifiers": [
+              { "stat": "strength", "value": 5 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "When it comes to sprinting...",
+        "options": [
+          {
+            "label": "I am slower than most people I know.",
+            "value": 2,
+            "id": "q56",
+            "modifiers": [
+              { "stat": "dexterity", "value": 2 }
+            ]
+          },
+          {
+            "label": "I am neither slow nor fast compared to the people I know.",
+            "value": 3,
+            "id": "q56",
+            "modifiers": [
+              { "stat": "dexterity", "value": 3 }
+            ]
+          },
+          {
+            "label": "I am faster than most people I know.",
+            "value": 4,
+            "id": "q56",
+            "modifiers": [
+              { "stat": "dexterity", "value": 4 }
+            ]
+          },
+          {
+            "label": "I am faster than everyone else.",
+            "value": 5,
+            "id": "q56",
+            "modifiers": [
+              { "stat": "dexterity", "value": 5 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "The following statement most accurately describes me.",
+        "options": [
+          {
+            "label": "My insight concerning life is almost supernatural.",
+            "value": 5,
+            "id": "q57",
+            "modifiers": [
+              { "stat": "wisdom", "value": 5 }
+            ]
+          },
+          {
+            "label": "My gut feelings are always right.",
+            "value": 4,
+            "id": "q57",
+            "modifiers": [
+              { "stat": "wisdom", "value": 4 }
+            ]
+          },
+          {
+            "label": "I have a hard time judging people's intentions.",
+            "value": 2,
+            "id": "q57",
+            "modifiers": [
+              { "stat": "wisdom", "value": 2 }
+            ]
+          },
+          {
+            "label": "Sometimes my gut feelings are right.",
+            "value": 3,
+            "id": "q57",
+            "modifiers": [
+              { "stat": "wisdom", "value": 3 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "When it comes to hand-eye coordination...",
+        "options": [
+          {
+            "label": "I'm horrible at video games.",
+            "value": 2,
+            "id": "q58",
+            "modifiers": [
+              { "stat": "dexterity", "value": 2 }
+            ]
+          },
+          {
+            "label": "I could be an Olympic marksman.",
+            "value": 5,
+            "id": "q58",
+            "modifiers": [
+              { "stat": "dexterity", "value": 5 }
+            ]
+          },
+          {
+            "label": "I'm about average.",
+            "value": 3,
+            "id": "q58",
+            "modifiers": [
+              { "stat": "dexterity", "value": 3 }
+            ]
+          },
+          {
+            "label": "I can juggle well.",
+            "value": 4,
+            "id": "q58",
+            "modifiers": [
+              { "stat": "dexterity", "value": 4 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "This statement accurately describes me:",
+        "options": [
+          {
+            "label": "I had the highest GPA in my class.",
+            "value": 5,
+            "id": "q59",
+            "modifiers": [
+              { "stat": "intelligence", "value": 5 }
+            ]
+          },
+          {
+            "label": "I was a good student.  I consistently made the A/B Honor Roll.",
+            "value": 4,
+            "id": "q59",
+            "modifiers": [
+              { "stat": "intelligence", "value": 4 }
+            ]
+          },
+          {
+            "label": "I was an average student.  I had decent grades.",
+            "value": 3,
+            "id": "q59",
+            "modifiers": [
+              { "stat": "intelligence", "value": 3 }
+            ]
+          },
+          {
+            "label": "I was a bad student.  I had a hard time keeping up.",
+            "value": 2,
+            "id": "q59",
+            "modifiers": [
+              { "stat": "intelligence", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "The following statement most accurately describes my tolerance for alcohol:",
+        "options": [
+          {
+            "label": "I can drink all night and I never get drunk.",
+            "value": 5,
+            "id": "q60",
+            "modifiers": [
+              { "stat": "constitution", "value": 5 }
+            ]
+          },
+          {
+            "label": "I have a hard time getting drunk when I drink.  I never have a hangover.",
+            "value": 4,
+            "id": "q60",
+            "modifiers": [
+              { "stat": "constitution", "value": 4 }
+            ]
+          },
+          {
+            "label": "I have a normal tolerance for alcohol.  Sometimes I have hangovers from drinking.",
+            "value": 3,
+            "id": "q60",
+            "modifiers": [
+              { "stat": "constitution", "value": 3 }
+            ]
+          },
+          {
+            "label": "I become drunk even when I consume small amounts of alcohol.  My hangovers are horrible.",
+            "value": 2,
+            "id": "q60",
+            "modifiers": [
+              { "stat": "constitution", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "The following statement describes the amount of physical labor I regularly perform:",
+        "options": [
+          {
+            "label": "I engage in difficult physical labor all during the week.",
+            "value": 5,
+            "id": "q61",
+            "modifiers": [
+              { "stat": "strength", "value": 5 }
+            ]
+          },
+          {
+            "label": "My job involves physical labor or I have an intensive work-out schedule.",
+            "value": 4,
+            "id": "q61",
+            "modifiers": [
+              { "stat": "strength", "value": 4 }
+            ]
+          },
+          {
+            "label": "My job does not involve much physical labor, but I get enough exercise.",
+            "value": 3,
+            "id": "q61",
+            "modifiers": [
+              { "stat": "strength", "value": 3 }
+            ]
+          },
+          {
+            "label": "Very little, I have a sedentary job and I do not work out.",
+            "value": 2,
+            "id": "q61",
+            "modifiers": [
+              { "stat": "strength", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "When it comes to reflexes...",
+        "options": [
+          {
+            "label": "My reflexes have saved my life on more than one occasion.",
+            "value": 5,
+            "id": "q62",
+            "modifiers": [
+              { "stat": "dexterity", "value": 5 }
+            ]
+          },
+          {
+            "label": "I am extremely quick.",
+            "value": 4,
+            "id": "q62",
+            "modifiers": [
+              { "stat": "dexterity", "value": 4 }
+            ]
+          },
+          {
+            "label": "I've never noticed whether I'm fast or slow.",
+            "value": 3,
+            "id": "q62",
+            "modifiers": [
+              { "stat": "dexterity", "value": 3 }
+            ]
+          },
+          {
+            "label": "I am extremely slow.",
+            "value": 2,
+            "id": "q62",
+            "modifiers": [
+              { "stat": "dexterity", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "If I punched someone as hard as I could...",
+        "options": [
+          {
+            "label": "they would probably laugh at me.",
+            "value": 2,
+            "id": "q63",
+            "modifiers": [
+              { "stat": "strength", "value": 2 }
+            ]
+          },
+          {
+            "label": "I might hurt them.",
+            "value": 3,
+            "id": "q63",
+            "modifiers": [
+              { "stat": "strength", "value": 3 }
+            ]
+          },
+          {
+            "label": "I would definitely hurt them.",
+            "value": 4,
+            "id": "q63",
+            "modifiers": [
+              { "stat": "strength", "value": 4 }
+            ]
+          },
+          {
+            "label": "I might kill them.",
+            "value": 5,
+            "id": "q63",
+            "modifiers": [
+              { "stat": "strength", "value": 5 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "The following statement most accurately describes my athletic ability.",
+        "options": [
+          {
+            "label": "I was picked to play for a professional sports team.",
+            "value": 5,
+            "id": "q64",
+            "modifiers": [
+              { "stat": "dexterity", "value": 5 }
+            ]
+          },
+          {
+            "label": "When being picked for a team, I am always picked first when others know of my ability.",
+            "value": 4,
+            "id": "q64",
+            "modifiers": [
+              { "stat": "dexterity", "value": 4 }
+            ]
+          },
+          {
+            "label": "I have some athletic ability, but it isn't noteworthy.",
+            "value": 3,
+            "id": "q64",
+            "modifiers": [
+              { "stat": "dexterity", "value": 3 }
+            ]
+          },
+          {
+            "label": "When being picked for a team, I am always picked last when others know of my ability.",
+            "value": 2,
+            "id": "q64",
+            "modifiers": [
+              { "stat": "dexterity", "value": 2 }
+            ]
+          }
+        ]
+      }
+    ],
+    "race": [
+      {
+        "prompt": "It's worse to be:",
+        "options": [
+          {
+            "label": "Weak",
+            "value": "weak",
+            "id": "q301",
+            "modifiers": [
+              { "stat": "elf", "value": 2 },
+              { "stat": "halfelf", "value": 1 },
+              { "stat": "halforc", "value": 2 }
+            ]
+          },
+          {
+            "label": "Fragile",
+            "value": "fragile",
+            "id": "q301",
+            "modifiers": [
+              { "stat": "halfling", "value": 2 },
+              { "stat": "gnome", "value": 1 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "It's better to be:",
+        "options": [
+          {
+            "label": "Graceful",
+            "value": "graceful",
+            "id": "q302",
+            "modifiers": [
+              { "stat": "elf", "value": 2 },
+              { "stat": "halfelf", "value": 1 },
+              { "stat": "halfling", "value": 2 }
+            ]
+          },
+          {
+            "label": "Tough",
+            "value": "tough",
+            "id": "q302",
+            "modifiers": [
+              { "stat": "dwarf", "value": 2 },
+              { "stat": "gnome", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "It's better to have:",
+        "options": [
+          {
+            "label": "Great Strength",
+            "value": "strength",
+            "id": "q303",
+            "modifiers": [
+              { "stat": "halforc", "value": 2 }
+            ]
+          },
+          {
+            "label": "Great Stamina",
+            "value": "stamina",
+            "id": "q303",
+            "modifiers": [
+              { "stat": "dwarf", "value": 2 },
+              { "stat": "gnome", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "It's better to be:",
+        "options": [
+          {
+            "label": "Physically Powerful",
+            "value": "powerful",
+            "id": "q304",
+            "modifiers": [
+              { "stat": "halforc", "value": 2 }
+            ]
+          },
+          {
+            "label": "Physically Agile",
+            "value": "agile",
+            "id": "q304",
+            "modifiers": [
+              { "stat": "elf", "value": 2 },
+              { "stat": "halfelf", "value": 1 },
+              { "stat": "halfling", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "It's worse to be:",
+        "options": [
+          {
+            "label": "Unliked",
+            "value": "unliked",
+            "id": "q305",
+            "modifiers": [
+              { "stat": "gnome", "value": 2 },
+              { "stat": "halfling", "value": 2 }
+            ]
+          },
+          {
+            "label": "Weak",
+            "value": "weak",
+            "id": "q305",
+            "modifiers": [
+              { "stat": "dwarf", "value": 2 },
+              { "stat": "halforc", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "My friends would say that I am...",
+        "options": [
+          {
+            "label": "...dependable and loyal.",
+            "value": "dependable",
+            "id": "q306",
+            "modifiers": [
+              { "stat": "dwarf", "value": 2 }
+            ]
+          },
+          {
+            "label": "...down-to-earth and relaxed.",
+            "value": "relaxed",
+            "id": "q306",
+            "modifiers": [
+              { "stat": "halfling", "value": 2 }
+            ]
+          },
+          {
+            "label": "...worldly and diplomatic.",
+            "value": "worldly",
+            "id": "q306",
+            "modifiers": [
+              { "stat": "halfelf", "value": 2 }
+            ]
+          },
+          {
+            "label": "...zany and fun.",
+            "value": "zany",
+            "id": "q306",
+            "modifiers": [
+              { "stat": "gnome", "value": 2 }
+            ]
+          },
+          {
+            "label": "...wild and crazy.",
+            "value": "wild",
+            "id": "q306",
+            "modifiers": [
+              { "stat": "halforc", "value": 2 }
+            ]
+          },
+          {
+            "label": "...sharp and witty.",
+            "value": "sharp",
+            "id": "q306",
+            "modifiers": [
+              { "stat": "elf", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "For my height, my frame is...",
+        "options": [
+          {
+            "label": "...very thin.",
+            "value": "very_thin",
+            "id": "q307",
+            "modifiers": [
+              { "stat": "elf", "value": 2 }
+            ]
+          },
+          {
+            "label": "...thin.",
+            "value": "thin",
+            "id": "q307",
+            "modifiers": [
+              { "stat": "halfelf", "value": 2 }
+            ]
+          },
+          {
+            "label": "...about average.",
+            "value": "average",
+            "id": "q307",
+            "modifiers": [
+              { "stat": "gnome", "value": 2 },
+              { "stat": "halfling", "value": 2 }
+            ]
+          },
+          {
+            "label": "...thick.",
+            "value": "thick",
+            "id": "q307",
+            "modifiers": [
+              { "stat": "halforc", "value": 2 }
+            ]
+          },
+          {
+            "label": "...very thick.",
+            "value": "very_thick",
+            "id": "q307",
+            "modifiers": [
+              { "stat": "dwarf", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "I seem to have a knack for...",
+        "options": [
+          {
+            "label": "...the military life.",
+            "value": "military",
+            "id": "q308",
+            "modifiers": [
+              { "stat": "dwarf", "value": 2 }
+            ]
+          },
+          {
+            "label": "...academics.",
+            "value": "academics",
+            "id": "q308",
+            "modifiers": [
+              { "stat": "elf", "value": 2 }
+            ]
+          },
+          {
+            "label": "...entertainment.",
+            "value": "entertainment",
+            "id": "q308",
+            "modifiers": [
+              { "stat": "gnome", "value": 2 }
+            ]
+          },
+          {
+            "label": "...law, business, or crime.",
+            "value": "business",
+            "id": "q308",
+            "modifiers": [
+              { "stat": "halfling", "value": 2 }
+            ]
+          },
+          {
+            "label": "...mingling in \"high\" society.",
+            "value": "high_society",
+            "id": "q308",
+            "modifiers": [
+              { "stat": "halfelf", "value": 2 }
+            ]
+          },
+          {
+            "label": "...hanging out in \"low\" society.",
+            "value": "low_society",
+            "id": "q308",
+            "modifiers": [
+              { "stat": "halforc", "value": 2 }
+            ]
+          },
+          {
+            "label": "...something else.",
+            "value": "other",
+            "id": "q308",
+            "modifiers": [
+              { "stat": "human", "value": 1 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "For my gender, I am...",
+        "options": [
+          {
+            "label": "...very short.",
+            "value": "very_short",
+            "id": "q309",
+            "modifiers": [
+              { "stat": "gnome", "value": 2 },
+              { "stat": "halfling", "value": 2 }
+            ]
+          },
+          {
+            "label": "...short.",
+            "value": "short",
+            "id": "q309",
+            "modifiers": [
+              { "stat": "dwarf", "value": 2 },
+              { "stat": "elf", "value": 2 }
+            ]
+          },
+          {
+            "label": "...of medium height.",
+            "value": "medium",
+            "id": "q309",
+            "modifiers": [
+              { "stat": "halfelf", "value": 2 }
+            ]
+          },
+          {
+            "label": "...tall.",
+            "value": "tall",
+            "id": "q309",
+            "modifiers": [
+              { "stat": "halforc", "value": 2 }
+            ]
+          },
+          {
+            "label": "...very tall.",
+            "value": "very_tall",
+            "id": "q309",
+            "modifiers": [
+              { "stat": "halforc", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "It's worse to be:",
+        "options": [
+          {
+            "label": "Too Skinny",
+            "value": "skinny",
+            "id": "q310",
+            "modifiers": [
+              { "stat": "dwarf", "value": 2 }
+            ]
+          },
+          {
+            "label": "Too Stocky",
+            "value": "stocky",
+            "id": "q310",
+            "modifiers": [
+              { "stat": "elf", "value": 2 },
+              { "stat": "halfelf", "value": 1 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "It's better to be:",
+        "options": [
+          {
+            "label": "Smart",
+            "value": "smart",
+            "id": "q311",
+            "modifiers": [
+              { "stat": "dwarf", "value": 2 },
+              { "stat": "elf", "value": 2 },
+              { "stat": "halfelf", "value": 2 },
+              { "stat": "gnome", "value": 2 },
+              { "stat": "halfling", "value": 2 }
+            ]
+          },
+          {
+            "label": "Strong",
+            "value": "strong",
+            "id": "q311",
+            "modifiers": [
+              { "stat": "halforc", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "In high school, I was...",
+        "options": [
+          {
+            "label": "...a jock.",
+            "value": "jock",
+            "id": "q312",
+            "modifiers": [
+              { "stat": "dwarf", "vaue": 2 }
+            ]
+          },
+          {
+            "label": "...a hood.",
+            "value": "hood",
+            "id": "q312",
+            "modifiers": [
+              { "stat": "halfling", "vaue": 2 }
+            ]
+          },
+          {
+            "label": "...a band member.",
+            "value": "band",
+            "id": "q312",
+            "modifiers": [
+              { "stat": "gnome", "vaue": 2 }
+            ]
+          },
+          {
+            "label": "...a nerd.",
+            "value": "nerd",
+            "id": "q312",
+            "modifiers": [
+              { "stat": "elf", "vaue": 2 }
+            ]
+          },
+          {
+            "label": "...an outcast.",
+            "value": "outcast",
+            "id": "q312",
+            "modifiers": [
+              { "stat": "halforc", "vaue": 2 }
+            ]
+          },
+          {
+            "label": "...a preppie.",
+            "value": "prep",
+            "id": "q312",
+            "modifiers": [
+              { "stat": "halfelf", "vaue": 2 }
+            ]
+          },
+          {
+            "label": "...something else.",
+            "value": "other",
+            "id": "q312",
+            "modifiers": [
+              { "stat": "human", "vaue": 1 }
+            ]
+          }
+        ]
+      }
+    ],
+    "class": [
+      {
+        "prompt": "The wilderness is a nice place to visit, but I wouldn't want to live there.",
+        "options": [
+          {
+            "label": "True",
+            "value": true,
+            "id": "q71",
+            "modifiers": [
+              { "stat": "barbarian", "value": 2 }
+            ]
+          },
+          {
+            "label": "False",
+            "value": false,
+            "id": "q71",
+            "modifiers": [
+              { "stat": "ranger", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "It is better to...",
+        "options": [
+          {
+            "label": "...take a stand for what you believe in.",
+            "value": "stand",
+            "id": "q72",
+            "modifiers": [
+              { "stat": "paladin", "value": 2 }
+            ]
+          },
+          {
+            "label": "...try to see both sides of an issue.",
+            "value": "compromise",
+            "id": "q72",
+            "modifiers": [
+              { "stat": "druid", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "I'm hungry for...",
+        "options": [
+          {
+            "label": "...wealth.",
+            "value": "wealth",
+            "id": "q409",
+            "modifiers": [
+              { "stat": "rogue", "value": 2 }
+            ]
+          },
+          {
+            "label": "...power.",
+            "value": "power",
+            "id": "q409",
+            "modifiers": [
+              { "stat": "warlock", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "It is better to be...",
+        "options": [
+          {
+            "label": "...rich.",
+            "value": "rich",
+            "id": "q73",
+            "modifiers": [
+              { "stat": "rogue", "value": 2 }
+            ]
+          },
+          {
+            "label": "...powerful.",
+            "value": "powerful",
+            "id": "q73",
+            "modifiers": [
+              { "stat": "sorcerer", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "I use the force of my personality...",
+        "options": [
+          {
+            "label": "...to get what I want.",
+            "value": "get",
+            "id": "q74",
+            "modifiers": [
+              { "stat": "sorcerer", "value": 2 }
+            ]
+          },
+          {
+            "label": "...to guide others in making the right decisions.",
+            "value": "guide",
+            "id": "q74",
+            "modifiers": [
+              { "stat": "paladin", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "It is better to...",
+        "options": [
+          {
+            "label": "...defend the weak.",
+            "value": "defend",
+            "id": "q75",
+            "modifiers": [
+              { "stat": "paladin", "value": 2 }
+            ]
+          },
+          {
+            "label": "...help the poor.",
+            "value": "help",
+            "id": "q75",
+            "modifiers": [
+              { "stat": "cleric", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "Civilization makes us...",
+        "options": [
+          {
+            "label": "...stronger.",
+            "value": "stronger",
+            "id": "q76",
+            "modifiers": [
+              { "stat": "paladin", "value": 2 }
+            ]
+          },
+          {
+            "label": "...weaker.",
+            "value": "weaker",
+            "id": "q76",
+            "modifiers": [
+              { "stat": "barbarian", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "It is better to confront your enemies...",
+        "options": [
+          {
+            "label": "...openly and honestly.",
+            "value": "honestly",
+            "id": "q77",
+            "modifiers": [
+              { "stat": "paladin", "value": 2 }
+            ]
+          },
+          {
+            "label": "...using guile and wit.",
+            "value": "wittingly",
+            "id": "q77",
+            "modifiers": [
+              { "stat": "ranger", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "I work out...",
+        "options": [
+          {
+            "label": "...so that I will be healthier.",
+            "value": "health",
+            "id": "q78",
+            "modifiers": [
+              { "stat": "fighter", "value": 2 }
+            ]
+          },
+          {
+            "label": "...so that I will be more attractive.",
+            "value": "appearance",
+            "id": "q78",
+            "modifiers": [
+              { "stat": "bard", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "Animals...",
+        "options": [
+          {
+            "label": "...deserve our respect.",
+            "value": "respect",
+            "id": "q79",
+            "modifiers": [
+              { "stat": "druid", "value": 2 }
+            ]
+          },
+          {
+            "label": "...are delicious.",
+            "value": "delicious",
+            "id": "q79",
+            "modifiers": [
+              { "stat": "barbarian", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "In my job, I rely more on my...",
+        "options": [
+          {
+            "label": "...education.",
+            "value": "education",
+            "id": "q80",
+            "modifiers": [
+              { "stat": "wizard", "value": 2 }
+            ]
+          },
+          {
+            "label": "...common sense.",
+            "value": "smarts",
+            "id": "q80",
+            "modifiers": [
+              { "stat": "ranger", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "Knowledge should be used to...",
+        "options": [
+          {
+            "label": "...educate and entertain others.",
+            "value": "educate",
+            "id": "q402",
+            "modifiers": [
+              { "stat": "bard", "value": 2 }
+            ]
+          },
+          {
+            "label": "...develop and enlighten yourself.",
+            "value": "enlighten",
+            "id": "q402",
+            "modifiers": [
+              { "stat": "warlock", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "I think it would be interesting to have a supernatural experience.",
+        "options": [
+          {
+            "label": "True",
+            "value": true,
+            "id": "q81",
+            "modifiers": [
+              { "stat": "cleric", "value": 2 }
+            ]
+          },
+          {
+            "label": "False",
+            "value": false,
+            "id": "q81",
+            "modifiers": [
+              { "stat": "barbarian", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "What is more important in life?",
+        "options": [
+          {
+            "label": "Feeling emotions",
+            "value": "emotions",
+            "id": "q82",
+            "modifiers": [
+              { "stat": "barbarian", "value": 2 }
+            ]
+          },
+          {
+            "label": "Being disciplined",
+            "value": "discipline",
+            "id": "q82",
+            "modifiers": [
+              { "stat": "monk", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "When handling life's challenges I call on...",
+        "options": [
+          {
+            "label": "...the power within myself.",
+            "value": "myself",
+            "id": "q406",
+            "modifiers": [
+              { "stat": "monk", "value": 2 }
+            ]
+          },
+          {
+            "label": "...the powers that watch over me.",
+            "value": "powers",
+            "id": "q406",
+            "modifiers": [
+              { "stat": "warlock", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "Personal power comes from...",
+        "options": [
+          {
+            "label": "...living a disciplined life.",
+            "value": "discipline",
+            "id": "q83",
+            "modifiers": [
+              { "stat": "monk", "value": 2 }
+            ]
+          },
+          {
+            "label": "...having confidence in yourself.",
+            "value": "confidence",
+            "id": "q83",
+            "modifiers": [
+              { "stat": "sorcerer", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "The universe is ruled by...",
+        "options": [
+          {
+            "label": "...a higher power.",
+            "value": "god",
+            "id": "q84",
+            "modifiers": [
+              { "stat": "cleric", "value": 2 }
+            ]
+          },
+          {
+            "label": "...scientific laws.",
+            "value": "science",
+            "id": "q84",
+            "modifiers": [
+              { "stat": "wizard", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "Which do you prefer?",
+        "options": [
+          {
+            "label": "New Age religion",
+            "value": "new",
+            "id": "q85",
+            "modifiers": [
+              { "stat": "druid", "value": 2 }
+            ]
+          },
+          {
+            "label": "Eastern religion",
+            "value": "eastern",
+            "id": "q85",
+            "modifiers": [
+              { "stat": "monk", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "I would rather be a member of a religion that is...",
+        "options": [
+          {
+            "label": "...well-established with a long history.",
+            "value": "old",
+            "id": "q403",
+            "modifiers": [
+              { "stat": "cleric", "value": 2 }
+            ]
+          },
+          {
+            "label": "...recently established with innovative new ideas.",
+            "value": "new",
+            "id": "q403",
+            "modifiers": [
+              { "stat": "warlock", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "What is more important in life?",
+        "options": [
+          {
+            "label": "Wisdom",
+            "value": "wisdom",
+            "id": "q86",
+            "modifiers": [
+              { "stat": "monk", "value": 2 }
+            ]
+          },
+          {
+            "label": "Wealth",
+            "value": "wealth",
+            "id": "q86",
+            "modifiers": [
+              { "stat": "rogue", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "What is more important in life?",
+        "options": [
+          {
+            "label": "Love",
+            "value": "love",
+            "id": "q87",
+            "modifiers": [
+              { "stat": "bard", "value": 2 }
+            ]
+          },
+          {
+            "label": "Honor",
+            "value": "honor",
+            "id": "q87",
+            "modifiers": [
+              { "stat": "paladin", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "Choose a statement:",
+        "options": [
+          {
+            "label": "I love the city.",
+            "value": "city",
+            "id": "q88",
+            "modifiers": [
+              { "stat": "rogue", "value": 2 }
+            ]
+          },
+          {
+            "label": "I hate the city.",
+            "value": "country",
+            "id": "q88",
+            "modifiers": [
+              { "stat": "barbarian", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "Would you cheat on an important test?",
+        "options": [
+          {
+            "label": "Yes",
+            "value": true,
+            "id": "q89",
+            "modifiers": [
+              { "stat": "rogue", "value": 2 }
+            ]
+          },
+          {
+            "label": "No",
+            "value": false,
+            "id": "q89",
+            "modifiers": [
+              { "stat": "wizard", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "In a fight it is better to...",
+        "options": [
+          {
+            "label": "...rely on your own skills.",
+            "value": "skills",
+            "id": "q405",
+            "modifiers": [
+              { "stat": "fighter", "value": 2 }
+            ]
+          },
+          {
+            "label": "...call for reinforcements.",
+            "value": "reinforcements",
+            "id": "q405",
+            "modifiers": [
+              { "stat": "warlock", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "In a fight, it is better to...",
+        "options": [
+          {
+            "label": "...keep your head and wait for opportune moments.",
+            "value": "patience",
+            "id": "q90",
+            "modifiers": [
+              { "stat": "fighter", "value": 2 }
+            ]
+          },
+          {
+            "label": "...go at it with everything you've got.",
+            "value": "attack",
+            "id": "q90",
+            "modifiers": [
+              { "stat": "barbarian", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "I am more confident...",
+        "options": [
+          {
+            "label": "...at work.",
+            "value": "work",
+            "id": "q91",
+            "modifiers": [
+              { "stat": "sorcerer", "value": 2 }
+            ]
+          },
+          {
+            "label": "...at play.",
+            "value": "play",
+            "id": "q91",
+            "modifiers": [
+              { "stat": "bard", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "I like pets that are...",
+        "options": [
+          {
+            "label": "...loyal.",
+            "value": "loyal",
+            "id": "q408",
+            "modifiers": [
+              { "stat": "ranger", "value": 2 }
+            ]
+          },
+          {
+            "label": "...exotic.",
+            "value": "exotic",
+            "id": "q408",
+            "modifiers": [
+              { "stat": "warlock", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "It is more important to support your cause with...",
+        "options": [
+          {
+            "label": "...facts.",
+            "value": "facts",
+            "id": "q92",
+            "modifiers": [
+              { "stat": "wizard", "value": 2 }
+            ]
+          },
+          {
+            "label": "...conviction.",
+            "value": "conviction",
+            "id": "q92",
+            "modifiers": [
+              { "stat": "paladin", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "I would rather live...",
+        "options": [
+          {
+            "label": "...in the city.",
+            "value": "city",
+            "id": "q93",
+            "modifiers": [
+              { "stat": "rogue", "value": 2 }
+            ]
+          },
+          {
+            "label": "...in the country.",
+            "value": "country",
+            "id": "q93",
+            "modifiers": [
+              { "stat": "ranger", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "Religion is an institution that...",
+        "options": [
+          {
+            "label": "...allows some people to exploit the fears of others.",
+            "value": "exploit",
+            "id": "q94",
+            "modifiers": [
+              { "stat": "rogue", "value": 2 }
+            ]
+          },
+          {
+            "label": "...helps people live meaningful lives.",
+            "value": "help",
+            "id": "q94",
+            "modifiers": [
+              { "stat": "cleric", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "Choose a statement:",
+        "options": [
+          {
+            "label": "Man is stronger than nature.",
+            "value": "man",
+            "id": "q95",
+            "modifiers": [
+              { "stat": "sorcerer", "value": 2 }
+            ]
+          },
+          {
+            "label": "Nature is stronger than man.",
+            "value": "nature",
+            "id": "q95",
+            "modifiers": [
+              { "stat": "druid", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "Choose a statement:",
+        "options": [
+          {
+            "label": "Technology is stronger than nature.",
+            "value": "technology",
+            "id": "q96",
+            "modifiers": [
+              { "stat": "wizard", "value": 2 }
+            ]
+          },
+          {
+            "label": "Nature is stronger than technology.",
+            "value": "nature",
+            "id": "q96",
+            "modifiers": [
+              { "stat": "druid", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "I have a greater interest in...",
+        "options": [
+          {
+            "label": "...the supernatural.",
+            "value": "supernatural",
+            "id": "q404",
+            "modifiers": [
+              { "stat": "warlock", "value": 2 }
+            ]
+          },
+          {
+            "label": "...the natural world.",
+            "value": "natural",
+            "id": "q404",
+            "modifiers": [
+              { "stat": "druid", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "There's a right way to do things and a wrong way to do things.",
+        "options": [
+          {
+            "label": "True",
+            "value": true,
+            "id": "q97",
+            "modifiers": [
+              { "stat": "paladin", "value": 2 }
+            ]
+          },
+          {
+            "label": "False",
+            "value": false,
+            "id": "q97",
+            "modifiers": [
+              { "stat": "rogue", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "It is better to...",
+        "options": [
+          {
+            "label": "...actively champion a cause.",
+            "value": "cause",
+            "id": "q98",
+            "modifiers": [
+              { "stat": "paladin", "value": 2 }
+            ]
+          },
+          {
+            "label": "...live as a good example to others.",
+            "value": "example",
+            "id": "q98",
+            "modifiers": [
+              { "stat": "monk", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "I would rather spend two hours...",
+        "options": [
+          {
+            "label": "...learning something new.",
+            "value": "learning",
+            "id": "q99",
+            "modifiers": [
+              { "stat": "sorcerer", "value": 2 }
+            ]
+          },
+          {
+            "label": "...leisurely jogging.",
+            "value": "jogging",
+            "id": "q99",
+            "modifiers": [
+              { "stat": "fighter", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "I would rather spend two hours...",
+        "options": [
+          {
+            "label": "...alone in the wilderness.",
+            "value": "wilderness",
+            "id": "q100",
+            "modifiers": [
+              { "stat": "druid", "value": 2 }
+            ]
+          },
+          {
+            "label": "...alone working with my hands.",
+            "value": "working",
+            "id": "q100",
+            "modifiers": [
+              { "stat": "rogue", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "Choose a statement:",
+        "options": [
+          {
+            "label": "I love technology.",
+            "value": "love",
+            "id": "q101",
+            "modifiers": [
+              { "stat": "sorcerer", "value": 2 }
+            ]
+          },
+          {
+            "label": "I hate technology.",
+            "value": "hate",
+            "id": "q101",
+            "modifiers": [
+              { "stat": "barbarian", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "I would rather spend two hours...",
+        "options": [
+          {
+            "label": "...playing a sport.",
+            "value": "sport",
+            "id": "q102",
+            "modifiers": [
+              { "stat": "fighter", "value": 2 }
+            ]
+          },
+          {
+            "label": "...reading a book.",
+            "value": "reading",
+            "id": "q102",
+            "modifiers": [
+              { "stat": "wizard", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "It is better to...",
+        "options": [
+          {
+            "label": "...fight fair.",
+            "value": "fair",
+            "id": "q103",
+            "modifiers": [
+              { "stat": "fighter", "value": 2 }
+            ]
+          },
+          {
+            "label": "...fight dirty.",
+            "value": "dirty",
+            "id": "q103",
+            "modifiers": [
+              { "stat": "rogue", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "Which do you prefer?",
+        "options": [
+          {
+            "label": "Eastern religion",
+            "value": "eastern",
+            "id": "q104",
+            "modifiers": [
+              { "stat": "monk", "value": 2 }
+            ]
+          },
+          {
+            "label": "Western religion",
+            "value": "western",
+            "id": "q104",
+            "modifiers": [
+              { "stat": "cleric", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "It is better to...",
+        "options": [
+          {
+            "label": "...be yourself.",
+            "value": "yourself",
+            "id": "q105",
+            "modifiers": [
+              { "stat": "barbarian", "value": 2 }
+            ]
+          },
+          {
+            "label": "...be polite.",
+            "value": "polite",
+            "id": "q105",
+            "modifiers": [
+              { "stat": "bard", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "I would rather watch...",
+        "options": [
+          {
+            "label": "...a nature documentary.",
+            "value": "nature",
+            "id": "q106",
+            "modifiers": [
+              { "stat": "ranger", "value": 2 }
+            ]
+          },
+          {
+            "label": "...a scientific documentary.",
+            "value": "science",
+            "id": "q106",
+            "modifiers": [
+              { "stat": "sorcerer", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "In a fight, it is better to be...",
+        "options": [
+          {
+            "label": "...quick.",
+            "value": "quick",
+            "id": "q107",
+            "modifiers": [
+              { "stat": "ranger", "value": 2 }
+            ]
+          },
+          {
+            "label": "...tough.",
+            "value": "tough",
+            "id": "q107",
+            "modifiers": [
+              { "stat": "fighter", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "I would rather spend two hours...",
+        "options": [
+          {
+            "label": "...hiking a trail.",
+            "value": "hiking",
+            "id": "q108",
+            "modifiers": [
+              { "stat": "ranger", "value": 2 }
+            ]
+          },
+          {
+            "label": "...discussing philosophy.",
+            "value": "discussing",
+            "id": "q108",
+            "modifiers": [
+              { "stat": "cleric", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "In my job, I...",
+        "options": [
+          {
+            "label": "...use tools and equipment.",
+            "value": "tools",
+            "id": "q109",
+            "modifiers": [
+              { "stat": "fighter", "value": 2 }
+            ]
+          },
+          {
+            "label": "...do not use tools and equipment.",
+            "value": "no_tools",
+            "id": "q109",
+            "modifiers": [
+              { "stat": "monk", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "I would rather spend two hours...",
+        "options": [
+          {
+            "label": "...at the gym.",
+            "value": "gym",
+            "id": "q110",
+            "modifiers": [
+              { "stat": "fighter", "value": 2 }
+            ]
+          },
+          {
+            "label": "...at church.",
+            "value": "church",
+            "id": "q110",
+            "modifiers": [
+              { "stat": "cleric", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "I would rather be...",
+        "options": [
+          {
+            "label": "...well-paid.",
+            "value": "paid",
+            "id": "q111",
+            "modifiers": [
+              { "stat": "fighter", "value": 2 }
+            ]
+          },
+          {
+            "label": "...doing something I enjoy.",
+            "value": "enjoy",
+            "id": "q111",
+            "modifiers": [
+              { "stat": "paladin", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "Choose a statement:",
+        "options": [
+          {
+            "label": "Nature should be left unspoiled and undisturbed.",
+            "value": "undisturbed",
+            "id": "q112",
+            "modifiers": [
+              { "stat": "druid", "value": 2 }
+            ]
+          },
+          {
+            "label": "Nature should be used responsibly and enjoyed.",
+            "value": "enjoyed",
+            "id": "q112",
+            "modifiers": [
+              { "stat": "ranger", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "I would rather spend two hours...",
+        "options": [
+          {
+            "label": "...camping with my friends.",
+            "value": "camping",
+            "id": "q113",
+            "modifiers": [
+              { "stat": "druid", "value": 2 }
+            ]
+          },
+          {
+            "label": "...drinking with my friends.",
+            "value": "drinking",
+            "id": "q113",
+            "modifiers": [
+              { "stat": "fighter", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "If you want to make a lot of money, it is important to be educated.",
+        "options": [
+          {
+            "label": "True",
+            "value": true,
+            "id": "q114",
+            "modifiers": [
+              { "stat": "bard", "value": 2 }
+            ]
+          },
+          {
+            "label": "False",
+            "value": false,
+            "id": "q114",
+            "modifiers": [
+              { "stat": "rogue", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "It is easier for me to learn by...",
+        "options": [
+          {
+            "label": "...doing.",
+            "value": "doing",
+            "id": "q115",
+            "modifiers": [
+              { "stat": "sorcerer", "value": 2 }
+            ]
+          },
+          {
+            "label": "...studying.",
+            "value": "studying",
+            "id": "q115",
+            "modifiers": [
+              { "stat": "wizard", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "When it comes to talent, I believe...",
+        "options": [
+          {
+            "label": "...a person either has it or they don't.",
+            "value": "talent",
+            "id": "q410",
+            "modifiers": [
+              { "stat": "sorcerer", "value": 2 }
+            ]
+          },
+          {
+            "label": "...that with an excellent teacher, the sky's the limit.",
+            "value": "skill",
+            "id": "q410",
+            "modifiers": [
+              { "stat": "warlock", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "When I was young, I performed better in...",
+        "options": [
+          {
+            "label": "...my math and science classes.",
+            "value": "math",
+            "id": "q116",
+            "modifiers": [
+              { "stat": "wizard", "value": 2 }
+            ]
+          },
+          {
+            "label": "...my music and art classes.",
+            "value": "music",
+            "id": "q116",
+            "modifiers": [
+              { "stat": "bard", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "Which do you prefer?",
+        "options": [
+          {
+            "label": "Western religion",
+            "value": "western",
+            "id": "q117",
+            "modifiers": [
+              { "stat": "cleric", "value": 2 }
+            ]
+          },
+          {
+            "label": "New Age religion",
+            "value": "new_age",
+            "id": "q117",
+            "modifiers": [
+              { "stat": "druid", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "Do you enjoy reading?",
+        "options": [
+          {
+            "label": "Yes",
+            "value": true,
+            "id": "q118",
+            "modifiers": [
+              { "stat": "wizard", "value": 2 }
+            ]
+          },
+          {
+            "label": "No",
+            "value": false,
+            "id": "q118",
+            "modifiers": [
+              { "stat": "barbarian", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "I would rather spend...",
+        "options": [
+          {
+            "label": "...a night on the town.",
+            "value": "night_town",
+            "id": "q119",
+            "modifiers": [
+              { "stat": "bard", "value": 2 }
+            ]
+          },
+          {
+            "label": "...a day riding horses.",
+            "value": "day_riding",
+            "id": "q119",
+            "modifiers": [
+              { "stat": "ranger", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "When I was young, I enjoyed gym class.",
+        "options": [
+          {
+            "label": "True",
+            "value": true,
+            "id": "q120",
+            "modifiers": [
+              { "stat": "monk", "value": 2 }
+            ]
+          },
+          {
+            "label": "False",
+            "value": false,
+            "id": "q120",
+            "modifiers": [
+              { "stat": "wizard", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "The universe...",
+        "options": [
+          {
+            "label": "...has supernatural beings that take a personal interest in me.",
+            "value": "supernatural",
+            "id": "q411",
+            "modifiers": [
+              { "stat": "warlock", "value": 2 }
+            ]
+          },
+          {
+            "label": "...is governed by impersonal forces that can be understood.",
+            "value": "science",
+            "id": "q411",
+            "modifiers": [
+              { "stat": "wizard", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "Life is about...",
+        "options": [
+          {
+            "label": "...improving yourself.",
+            "value": "improving",
+            "id": "q121",
+            "modifiers": [
+              { "stat": "monk", "value": 2 }
+            ]
+          },
+          {
+            "label": "...having fun.",
+            "value": "fun",
+            "id": "q121",
+            "modifiers": [
+              { "stat": "bard", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "I would rather spend two hours...",
+        "options": [
+          {
+            "label": "...enjoying the outdoors.",
+            "value": "outdoors",
+            "id": "q122",
+            "modifiers": [
+              { "stat": "druid", "value": 2 }
+            ]
+          },
+          {
+            "label": "...at a good concert.",
+            "value": "concert",
+            "id": "q122",
+            "modifiers": [
+              { "stat": "bard", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "Visiting a haunted house would...",
+        "options": [
+          {
+            "label": "...be exciting.",
+            "value": "exciting",
+            "id": "q401",
+            "modifiers": [
+              { "stat": "warlock", "value": 2 }
+            ]
+          },
+          {
+            "label": "...frighten me.",
+            "value": "frightening",
+            "id": "q401",
+            "modifiers": [
+              { "stat": "barbarian", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "It is better to serve...",
+        "options": [
+          {
+            "label": "...a cause.",
+            "value": "cause",
+            "id": "q407",
+            "modifiers": [
+              { "stat": "paladin", "value": 2 }
+            ]
+          },
+          {
+            "label": "...someone influential.",
+            "value": "influence",
+            "id": "q407",
+            "modifiers": [
+              { "stat": "warlock", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "What is more important in life?",
+        "options": [
+          {
+            "label": "Practical skills",
+            "value": "skills",
+            "id": "q123",
+            "modifiers": [
+              { "stat": "ranger", "value": 2 }
+            ]
+          },
+          {
+            "label": "Enlightenment",
+            "value": "enlightenment",
+            "id": "q123",
+            "modifiers": [
+              { "stat": "monk", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "I use the force of my personality...",
+        "options": [
+          {
+            "label": "...to convince people that I'm right.",
+            "value": "convince",
+            "id": "q124",
+            "modifiers": [
+              { "stat": "cleric", "value": 2 }
+            ]
+          },
+          {
+            "label": "...to entertain others.",
+            "value": "entertain",
+            "id": "q124",
+            "modifiers": [
+              { "stat": "bard", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "I put my faith in...",
+        "options": [
+          {
+            "label": "...a higher power.",
+            "value": "power",
+            "id": "q125",
+            "modifiers": [
+              { "stat": "cleric", "value": 2 }
+            ]
+          },
+          {
+            "label": "...myself.",
+            "value": "myself",
+            "id": "q125",
+            "modifiers": [
+              { "stat": "sorcerer", "value": 2 }
+            ]
+          }
+        ]
+      }
+    ],
+    "goodness": [
+      {
+        "prompt": "Family elders are expressing disapproval of you to the rest of the family. Do you:",
+        "options": [
+          {
+            "label": "Accept the criticism and change your ways?",
+            "value": "accept",
+            "id": "q201",
+            "modifiers": [
+              { "stat": "xg", "value": 2 }
+            ]
+          },
+          {
+            "label": "Seek a compromise with them?",
+            "value": "compromise",
+            "id": "q201",
+            "modifiers": [
+              { "stat": "xg", "value": 1 }
+            ]
+          },
+          {
+            "label": "Besmirch the reputation of those expressing disapproval as you ignore their scorn?",
+            "value": "ignore",
+            "id": "q201",
+            "modifiers": [
+              { "stat": "xe", "value": 1 }
+            ]
+          },
+          {
+            "label": "Silence them any way you can?",
+            "value": "silence",
+            "id": "q201",
+            "modifiers": [
+              { "stat": "xe", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "Would you give up a promising career to aid the family in time of need?",
+        "options": [
+          {
+            "label": "In a heartbeat.",
+            "value": "yes",
+            "id": "q202",
+            "modifiers": [
+              { "stat": "xg", "value": 2 }
+            ]
+          },
+          {
+            "label": "Yes, with some reluctance.",
+            "value": "sure",
+            "id": "q202",
+            "modifiers": [
+              { "stat": "xg", "value": 1 }
+            ]
+          },
+          {
+            "label": "Only if I was certain I'd be able to return to my career soon.",
+            "value": "depends",
+            "id": "q202",
+            "modifiers": [
+              { "stat": "xn", "value": 1 }
+            ]
+          },
+          {
+            "label": "No.",
+            "value": "no",
+            "id": "q202",
+            "modifiers": [
+              { "stat": "xn", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "Would you betray a family member to advance your own career?",
+        "options": [
+          {
+            "label": "Yes, without a twinge of guilt.",
+            "value": "yes",
+            "id": "q203",
+            "modifiers": [
+              { "stat": "xe", "value": 2 }
+            ]
+          },
+          {
+            "label": "Yes, if I could do it secretly.",
+            "value": "secretly",
+            "id": "q203",
+            "modifiers": [
+              { "stat": "xe", "value": 1 }
+            ]
+          },
+          {
+            "label": "I'd resist the temptation.",
+            "value": "resist",
+            "id": "q203",
+            "modifiers": [
+              { "stat": "xn", "value": 1 }
+            ]
+          },
+          {
+            "label": "I find the very idea abhorrent.",
+            "value": "no",
+            "id": "q203",
+            "modifiers": [
+              { "stat": "xn", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "A powerful but corrupt lawyer offers you money if you'll testify against your friend. Do you:",
+        "options": [
+          {
+            "label": "Condemn your friend and take the money?",
+            "value": "condemn",
+            "id": "q207",
+            "modifiers": [
+              { "stat": "xe", "value": 2 }
+            ]
+          },
+          {
+            "label": "Take the money and testify, but try to keep your testimony ineffective?",
+            "value": "innefective",
+            "id": "q207",
+            "modifiers": [
+              { "stat": "xe", "value": 1 }
+            ]
+          },
+          {
+            "label": "Refuse the offer and refuse to testify?",
+            "value": "refuse",
+            "id": "q207",
+            "modifiers": [
+              { "stat": "xg", "value": 1 }
+            ]
+          },
+          {
+            "label": "Testify on your friend's behalf, no matter the consequences?",
+            "value": "testify",
+            "id": "q207",
+            "modifiers": [
+              { "stat": "xg", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "Do you become close to friends, or hold most people at a safe distance?",
+        "options": [
+          {
+            "label": "I have an abundance of close friends.",
+            "value": "abundance",
+            "id": "q208",
+            "modifiers": [
+              { "stat": "xg", "value": 2 }
+            ]
+          },
+          {
+            "label": "I have some close friends.",
+            "value": "some",
+            "id": "q208",
+            "modifiers": [
+              { "stat": "xg", "value": 1 }
+            ]
+          },
+          {
+            "label": "I have few close friends.",
+            "value": "few",
+            "id": "q208",
+            "modifiers": [
+              { "stat": "xn", "value": 1 }
+            ]
+          },
+          {
+            "label": "I try to keep people at a distance.",
+            "value": "distant",
+            "id": "q208",
+            "modifiers": [
+              { "stat": "xn", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "Have you ever betrayed a friend?",
+        "options": [
+          {
+            "label": "I've done so more than once, and I sometimes get away with it.",
+            "value": "repeatedly",
+            "id": "q209",
+            "modifiers": [
+              { "stat": "xe", "value": 2 }
+            ]
+          },
+          {
+            "label": "I've done so once.",
+            "value": "once",
+            "id": "q209",
+            "modifiers": [
+              { "stat": "xe", "value": 1 }
+            ]
+          },
+          {
+            "label": "I've been tempted to do so, but I've never gone through with it.",
+            "value": "tempted",
+            "id": "q209",
+            "modifiers": [
+              { "stat": "xn", "value": 1 }
+            ]
+          },
+          {
+            "label": "I'd never contemplate such a thing.",
+            "value": "never",
+            "id": "q209",
+            "modifiers": [
+              { "stat": "xn", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "Do you donate time and money to improve the local community?",
+        "options": [
+          {
+            "label": "Yes, the needs of the community are my top priority.",
+            "value": "priority",
+            "id": "q213",
+            "modifiers": [
+              { "stat": "xg", "value": 2 }
+            ]
+          },
+          {
+            "label": "Yes, I donate as much as I can once my own needs are met.",
+            "value": "eventually",
+            "id": "q213",
+            "modifiers": [
+              { "stat": "xg", "value": 1 }
+            ]
+          },
+          {
+            "label": "No, I don't have enough time or money to spare.",
+            "value": "no",
+            "id": "q213",
+            "modifiers": [
+              { "stat": "xn", "value": 1 }
+            ]
+          },
+          {
+            "label": "No, my local community would be a waste of time and money.",
+            "value": "waste",
+            "id": "q213",
+            "modifiers": [
+              { "stat": "xn", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "The nation is at war. Your community is threatened with invasion. Do you:",
+        "options": [
+          {
+            "label": "Help defend it to your last breath?",
+            "value": "help",
+            "id": "q214",
+            "modifiers": [
+              { "stat": "xg", "value": 2 }
+            ]
+          },
+          {
+            "label": "Defend the area with the rest of your community?",
+            "value": "community",
+            "id": "q214",
+            "modifiers": [
+              { "stat": "xg", "value": 1 }
+            ]
+          },
+          {
+            "label": "Flee as soon as things look grim?",
+            "value": "flee",
+            "id": "q214",
+            "modifiers": [
+              { "stat": "xe", "value": 1 }
+            ]
+          },
+          {
+            "label": "Cut a deal with the enemy to act as a spy?",
+            "value": "spy",
+            "id": "q214",
+            "modifiers": [
+              { "stat": "xe", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "If you were injured and required immediate assistance, would members of your home town agree to help?",
+        "options": [
+          {
+            "label": "Yes, because they know I'd do the same for them.",
+            "value": "reciprocate",
+            "id": "q215",
+            "modifiers": [
+              { "stat": "xn", "value": 2 }
+            ]
+          },
+          {
+            "label": "Yes, because I'm generally well liked in my home town.",
+            "value": "liked",
+            "id": "q215",
+            "modifiers": [
+              { "stat": "xn", "value": 1 }
+            ]
+          },
+          {
+            "label": "Probably not, because I'm distrusted in my home town.",
+            "value": "probably",
+            "id": "q215",
+            "modifiers": [
+              { "stat": "xe", "value": 1 }
+            ]
+          },
+          {
+            "label": "Definitely not, I've made some enemies in my home town.",
+            "value": "no",
+            "id": "q215",
+            "modifiers": [
+              { "stat": "xe", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "Your country is wracked with famine. Would you:",
+        "options": [
+          {
+            "label": "Share what food you had with others?",
+            "value": "share",
+            "id": "q219",
+            "modifiers": [
+              { "stat": "xg", "value": 2 }
+            ]
+          },
+          {
+            "label": "Eat as little as possible yourself, and share the rest?",
+            "value": "leftovers",
+            "id": "q219",
+            "modifiers": [
+              { "stat": "xg", "value": 1 }
+            ]
+          },
+          {
+            "label": "Steal what food you needed to survive?",
+            "value": "steal",
+            "id": "q219",
+            "modifiers": [
+              { "stat": "xe", "value": 1 }
+            ]
+          },
+          {
+            "label": "Steal as much food as possible, then sell it back to the community at a high price?",
+            "value": "profit",
+            "id": "q219",
+            "modifiers": [
+              { "stat": "xe", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "If offered enough money, would you covertly assassinate the President?",
+        "options": [
+          {
+            "label": "Yes, I've done similar things before.",
+            "value": "yes",
+            "id": "q220",
+            "modifiers": [
+              { "stat": "xe", "value": 2 }
+            ]
+          },
+          {
+            "label": "Yes, if I thought I could get away with it.",
+            "value": "maybe",
+            "id": "q220",
+            "modifiers": [
+              { "stat": "xe", "value": 1 }
+            ]
+          },
+          {
+            "label": "No, although a vast sum of money would tempt me.",
+            "value": "tempted",
+            "id": "q220",
+            "modifiers": [
+              { "stat": "xn", "value": 1 }
+            ]
+          },
+          {
+            "label": "No, and I'd warn the President of the plot.",
+            "value": "no",
+            "id": "q220",
+            "modifiers": [
+              { "stat": "xn", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "A rogue state unleashes a laboratory-created disease on the nation. Would you:",
+        "options": [
+          {
+            "label": "Undertake a dangerous mission to find the cure?",
+            "value": "cure",
+            "id": "q221",
+            "modifiers": [
+                { "stat": "xg", "value": 2 }
+              ]
+          },
+          {
+            "label": "Heal the sick as best you can?",
+            "value": "help",
+            "id": "q221",
+            "modifiers": [
+              { "stat": "xg", "value": 1 }
+            ]
+          },
+          {
+            "label": "Avoid contact with the sick?",
+            "value": "avoid",
+            "id": "q221",
+            "modifiers": [
+              { "stat": "xn", "value": 1 }
+            ]
+          },
+          {
+            "label": "Flee the country?",
+            "value": "flee",
+            "id": "q221",
+            "modifiers": [
+              { "stat": "xn", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "If imprisoned, would you injure or kill others to escape?",
+        "options": [
+          {
+            "label": "Yes. Serves 'em right for locking me up.",
+            "value": "absolutely",
+            "id": "q225",
+            "modifiers": [
+              { "stat": "xe", "value": 2 }
+            ]
+          },
+          {
+            "label": "Yes. They knew the risks when they took the job.",
+            "value": "probably",
+            "id": "q225",
+            "modifiers": [
+              { "stat": "xe", "value": 1 }
+            ]
+          },
+          {
+            "label": "No, except for minor wounds that will heal easily.",
+            "value": "injure",
+            "id": "q225",
+            "modifiers": [
+              { "stat": "xn", "value": 1 }
+            ]
+          },
+          {
+            "label": "No. Those guards are just doing their jobs.",
+            "value": "no",
+            "id": "q225",
+            "modifiers": [
+              { "stat": "xn", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "Is it a supervisor's right to treat his employees badly?",
+        "options": [
+          {
+            "label": "Yes. The employees should be glad they have a job.",
+            "value": "yes",
+            "id": "q226",
+            "modifiers": [
+              { "stat": "xn", "value": 2 }
+            ]
+          },
+          {
+            "label": "Yes, because sometimes only fear will motivate them.",
+            "value": "sometimes",
+            "id": "q226",
+            "modifiers": [
+              { "stat": "xn", "value": 1 }
+            ]
+          },
+          {
+            "label": "No, supervisors should treat employees as kindly as possible.",
+            "value": "no",
+            "id": "q226",
+            "modifiers": [
+              { "stat": "xg", "value": 1 }
+            ]
+          },
+          {
+            "label": "No one has any \"right\" to treat another badly at all.",
+            "value": "never",
+            "id": "q226",
+            "modifiers": [
+              { "stat": "xg", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "You have accidentally hit someone while driving your car. Do you:",
+        "options": [
+          {
+            "label": "Turn yourself in, and attempt to make restitution to the victim?",
+            "value": "restitution",
+            "id": "q227",
+            "modifiers": [
+              { "stat": "xg", "value": 2 }
+            ]
+          },
+          {
+            "label": "Turn yourself in, throwing yourself on the mercy of the court?",
+            "value": "mercy",
+            "id": "q227",
+            "modifiers": [
+              { "stat": "xg", "value": 1 }
+            ]
+          },
+          {
+            "label": "Hide your involvement, lying if you have to?",
+            "value": "hide",
+            "id": "q227",
+            "modifiers": [
+              { "stat": "xe", "value": 1 }
+            ]
+          },
+          {
+            "label": "Try to pin the crime on another?",
+            "value": "frame",
+            "id": "q227",
+            "modifiers": [
+              { "stat": "xe", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "What is the best use of wealth?",
+        "options": [
+          {
+            "label": "To help the destitute and less fortunate.",
+            "value": "help",
+            "id": "q231",
+            "modifiers": [
+              { "stat": "xg", "value": 2 }
+            ]
+          },
+          {
+            "label": "Provide for the needs of friends and family.",
+            "value": "provide",
+            "id": "q231",
+            "modifiers": [
+              { "stat": "xg", "value": 1 }
+            ]
+          },
+          {
+            "label": "To stay on top of the heap yourself.",
+            "value": "scrooge",
+            "id": "q231",
+            "modifiers": [
+              { "stat": "xe", "value": 1 }
+            ]
+          },
+          {
+            "label": "To not only stay on top, but keep others from climbing to your level.",
+            "value": "defend",
+            "id": "q231",
+            "modifiers": [
+              { "stat": "xe", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "When confronted by beggars, do you:",
+        "options": [
+          {
+            "label": "Give generously?",
+            "value": "generous",
+            "id": "q232",
+            "modifiers": [
+              { "stat": "xg", "value": 2 }
+            ]
+          },
+          {
+            "label": "Give moderately?",
+            "value": "moderate",
+            "id": "q232",
+            "modifiers": [
+              { "stat": "xg", "value": 1 }
+            ]
+          },
+          {
+            "label": "Give only what you wouldn't miss anyway--a dollar or two at the most?",
+            "value": "stingy",
+            "id": "q232",
+            "modifiers": [
+              { "stat": "xn", "value": 1 }
+            ]
+          },
+          {
+            "label": "Ignore them as you walk by?",
+            "value": "ignore",
+            "id": "q232",
+            "modifiers": [
+              { "stat": "xn", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "If you could buy counterfeit one-hundred dollar bills for one dollar each, would you buy and spend them?",
+        "options": [
+          {
+            "label": "Yes, and I'll buy as much as I can.",
+            "value": "yes",
+            "id": "q233",
+            "modifiers": [
+              { "stat": "xe", "value": 2 }
+            ]
+          },
+          {
+            "label": "Yes, but I'll only cheat huge companies who wouldn't miss it anyway.",
+            "value": "some",
+            "id": "q233",
+            "modifiers": [
+              { "stat": "xe", "value": 1 }
+            ]
+          },
+          {
+            "label": "No, it's too risky.",
+            "value": "risky",
+            "id": "q233",
+            "modifiers": [
+              { "stat": "xn", "value": 1 }
+            ]
+          },
+          {
+            "label": "No, the business owners and employees have families to feed.",
+            "value": "no",
+            "id": "q233",
+            "modifiers": [
+              { "stat": "xn", "value": 2 }
+            ]
+          }
+        ]
+      }
+    ],
+    "lawfulness": [
+      {
+        "prompt": "Do you respect the leaders of your family?",
+        "options": [
+          {
+            "label": "Their words guide my actions.",
+            "value": "guidance",
+            "id": "q204",
+            "modifiers": [
+              { "stat": "lx", "value": 2 }
+            ]
+          },
+          {
+            "label": "They're role models for me.",
+            "value": "role_modesl",
+            "id": "q204",
+            "modifiers": [
+              { "stat": "lx", "value": 1 }
+            ]
+          },
+          {
+            "label": "They're often out of touch with my life.",
+            "value": "absent",
+            "id": "q204",
+            "modifiers": [
+              { "stat": "cx", "value": 1 }
+            ]
+          },
+          {
+            "label": "They're out of touch with reality.",
+            "value": "out_of_touch",
+            "id": "q204",
+            "modifiers": [
+              { "stat": "cx", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "If your family had arranged your marriage to someone disgusting, would you:",
+        "options": [
+          {
+            "label": "Go through with it, proud to serve your family?",
+            "value": "proud",
+            "id": "q205",
+            "modifiers": [
+              { "stat": "lx", "value": 2 }
+            ]
+          },
+          {
+            "label": "Agree, hiding your reluctance?",
+            "value": "reluctant",
+            "id": "q205",
+            "modifiers": [
+              { "stat": "lx", "value": 1 }
+            ]
+          },
+          {
+            "label": "Subtly work against the union?",
+            "value": "against",
+            "id": "q205",
+            "modifiers": [
+              { "stat": "nx", "value": 1 }
+            ]
+          },
+          {
+            "label": "Flee?",
+            "value": "flee",
+            "id": "q205",
+            "modifiers": [
+              { "stat": "nx", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "You're estranged from a family member. On his deathbed, he seeks reconciliation. Do you:",
+        "options": [
+          {
+            "label": "Speak to him, but hold your ground?",
+            "value": "speak",
+            "id": "q206",
+            "modifiers": [
+              { "stat": "cx", "value": 2 }
+            ]
+          },
+          {
+            "label": "Refuse to speak to him?",
+            "value": "refuse",
+            "id": "q206",
+            "modifiers": [
+              { "stat": "cx", "value": 1 }
+            ]
+          },
+          {
+            "label": "Discuss your estrangement openly and without rancor?",
+            "value": "discuss",
+            "id": "q206",
+            "modifiers": [
+              { "stat": "nx", "value": 1 }
+            ]
+          },
+          {
+            "label": "Actively seek reconciliation, and heed his dying words?",
+            "value": "reconcile",
+            "id": "q206",
+            "modifiers": [
+              { "stat": "nx", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "How do you view lifelong commitment to a single romantic partner?",
+        "options": [
+          {
+            "label": "I have or want such a romance.",
+            "value": "have",
+            "id": "q210",
+            "modifiers": [
+              { "stat": "lx", "value": 2 }
+            ]
+          },
+          {
+            "label": "Such a romance would be ideal--if it's achievable.",
+            "value": "ideal",
+            "id": "q210",
+            "modifiers": [
+              { "stat": "lx", "value": 1 }
+            ]
+          },
+          {
+            "label": "I worry I'd miss out on what others have to offer.",
+            "value": "worried",
+            "id": "q210",
+            "modifiers": [
+              { "stat": "cx", "value": 1 }
+            ]
+          },
+          {
+            "label": "Tie yourself to one person? Huge mistake.",
+            "value": "never",
+            "id": "q210",
+            "modifiers": [
+              { "stat": "cx", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "Do you insist on repayment when lending money to friends?",
+        "options": [
+          {
+            "label": "Yes, and I write up a contract so there's no misunderstanding.",
+            "value": "yes",
+            "id": "q211",
+            "modifiers": [
+              { "stat": "lx", "value": 2 }
+            ]
+          },
+          {
+            "label": "Yes, but I try to be flexible about the exact terms.",
+            "value": "flexible",
+            "id": "q211",
+            "modifiers": [
+              { "stat": "lx", "value": 1 }
+            ]
+          },
+          {
+            "label": "No, although it's sure nice to be repaid.",
+            "value": "sure",
+            "id": "q211",
+            "modifiers": [
+              { "stat": "nx", "value": 1 }
+            ]
+          },
+          {
+            "label": "No, they just owe me a favor.",
+            "value": "favor",
+            "id": "q211",
+            "modifiers": [
+              { "stat": "nx", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "Are you still in touch with childhood friends?",
+        "options": [
+          {
+            "label": "Yes, we correspond regularly.",
+            "value": "regularly",
+            "id": "q212",
+            "modifiers": [
+              { "stat": "nx", "value": 2 }
+            ]
+          },
+          {
+            "label": "Yes, we try to keep in touch.",
+            "value": "some",
+            "id": "q212",
+            "modifiers": [
+              { "stat": "nx", "value": 1 }
+            ]
+          },
+          {
+            "label": "No, I move around too much.",
+            "value": "not_around",
+            "id": "q212",
+            "modifiers": [
+              { "stat": "cx", "value": 1 }
+            ]
+          },
+          {
+            "label": "No, I don't have anything in common with them anymore.",
+            "value": "no",
+            "id": "q212",
+            "modifiers": [
+              { "stat": "cx", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "Do you respect the laws and authorities of the community?",
+        "options": [
+          {
+            "label": "Yes, without question.",
+            "value": "yes",
+            "id": "q216",
+            "modifiers": [
+              { "stat": "lx", "value": 2 }
+            ]
+          },
+          {
+            "label": "Yes, they're generally the best way to govern.",
+            "value": "generally",
+            "id": "q216",
+            "modifiers": [
+              { "stat": "lx", "value": 1 }
+            ]
+          },
+          {
+            "label": "When it suits me--there are some laws I just don't agree with.",
+            "value": "sometimes",
+            "id": "q216",
+            "modifiers": [
+              { "stat": "cx", "value": 1 }
+            ]
+          },
+          {
+            "label": "I don't pay attention to the authorities; they've got no hold on me.",
+            "value": "no",
+            "id": "q216",
+            "modifiers": [
+              { "stat": "cx", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "Do members of your home town shun, avoid, or mock you?",
+        "options": [
+          {
+            "label": "Yes, their small minds can't handle anyone outside the norm.",
+            "value": "yes",
+            "id": "q217",
+            "modifiers": [
+              { "stat": "cx", "value": 2 }
+            ]
+          },
+          {
+            "label": "Some do, because I don't always fit in.",
+            "value": "some",
+            "id": "q217",
+            "modifiers": [
+              { "stat": "cx", "value": 1 }
+            ]
+          },
+          {
+            "label": "No, I'm generally seen as normal.",
+            "value": "not_really",
+            "id": "q217",
+            "modifiers": [
+              { "stat": "nx", "value": 1 }
+            ]
+          },
+          {
+            "label": "No, I set the standard for what is normal in my community.",
+            "value": "no",
+            "id": "q217",
+            "modifiers": [
+              { "stat": "nx", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "Would you stand for office or seek to represent the interests of the community in some public manner?",
+        "options": [
+          {
+            "label": "To do so would be an honor I'd joyously accept.",
+            "value": "honored",
+            "id": "q218",
+            "modifiers": [
+              { "stat": "lx", "value": 2 }
+            ]
+          },
+          {
+            "label": "Of course. It's everyone's duty to do so.",
+            "value": "duty",
+            "id": "q218",
+            "modifiers": [
+              { "stat": "lx", "value": 1 }
+            ]
+          },
+          {
+            "label": "Only if no one else could handle the job.",
+            "value": "last_resort",
+            "id": "q218",
+            "modifiers": [
+              { "stat": "nx", "value": 1 }
+            ]
+          },
+          {
+            "label": "No, I don't want to be responsible for the community's welfare.",
+            "value": "no",
+            "id": "q218",
+            "modifiers": [
+              { "stat": "nx", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "Do you respect the lawful authority of the government?",
+        "options": [
+          {
+            "label": "Yes, I support the government wholeheartedly.",
+            "value": "wholeheartedly",
+            "id": "q222",
+            "modifiers": [
+              { "stat": "lx", "value": 2 }
+            ]
+          },
+          {
+            "label": "Yes, our leaders are generally fair and just.",
+            "value": "generally",
+            "id": "q222",
+            "modifiers": [
+              { "stat": "lx", "value": 1 }
+            ]
+          },
+          {
+            "label": "No, a politician is no better than anyone else.",
+            "value": "no",
+            "id": "q222",
+            "modifiers": [
+              { "stat": "cx", "value": 1 }
+            ]
+          },
+          {
+            "label": "No, politicians are invariably corrupted by power.",
+            "value": "anarchist",
+            "id": "q222",
+            "modifiers": [
+              { "stat": "cx", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "If you were offered a reasonably lucrative deal, would you spy for a hostile foreign power?",
+        "options": [
+          {
+            "label": "Yes, because this nation could stand to be knocked down a peg.",
+            "value": "absolutely",
+            "id": "q223",
+            "modifiers": [
+              { "stat": "cx", "value": 2 }
+            ]
+          },
+          {
+            "label": "Yes, because the nation's secrets mean little to me.",
+            "value": "yes",
+            "id": "q223",
+            "modifiers": [
+              { "stat": "cx", "value": 1 }
+            ]
+          },
+          {
+            "label": "No, because I might get caught.",
+            "value": "no",
+            "id": "q223",
+            "modifiers": [
+              { "stat": "nx", "value": 1 }
+            ]
+          },
+          {
+            "label": "No, because I'd never violate the trust my nation puts in me.",
+            "value": "never",
+            "id": "q223",
+            "modifiers": [
+              { "stat": "nx", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "Do you rely on the government to enforce contracts and property rights?",
+        "options": [
+          {
+            "label": "Yes, because maintaining the rule of law is more important than any individual dispute.",
+            "value": "absolutely",
+            "id": "q224",
+            "modifiers": [
+              { "stat": "lx", "value": 2 }
+            ]
+          },
+          {
+            "label": "Yes, because the courts are best equipped to handle such disputes.",
+            "value": "yes",
+            "id": "q224",
+            "modifiers": [
+              { "stat": "lx", "value": 1 }
+            ]
+          },
+          {
+            "label": "Are you kidding me? The government can't even pave roads.",
+            "value": "no",
+            "id": "q224",
+            "modifiers": [
+              { "stat": "nx", "value": 1 }
+            ]
+          },
+          {
+            "label": "Absolutely not. If I can't defend it myself, I don't deserve to have it.",
+            "value": "never",
+            "id": "q224",
+            "modifiers": [
+              { "stat": "nx", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "If guilty, would you confess to a crime?",
+        "options": [
+          {
+            "label": "Yes, because it is my duty to do so.",
+            "value": "duty",
+            "id": "q228",
+            "modifiers": [
+              { "stat": "lx", "value": 2 }
+            ]
+          },
+          {
+            "label": "Yes, because it might get me a lighter sentence.",
+            "value": "deal",
+            "id": "q228",
+            "modifiers": [
+              { "stat": "lx", "value": 1 }
+            ]
+          },
+          {
+            "label": "No, I'd make the court prove my guilt.",
+            "value": "prove_it",
+            "id": "q228",
+            "modifiers": [
+              { "stat": "nx", "value": 1 }
+            ]
+          },
+          {
+            "label": "No, and I'd try to \"prove\" my own innocence.",
+            "value": "innocent",
+            "id": "q228",
+            "modifiers": [
+              { "stat": "nx", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "Would you express a revolutionary political opinion if threatened with punishment?",
+        "options": [
+          {
+            "label": "Yes, I'd rather be punished than remain silent.",
+            "value": "punished",
+            "id": "q229",
+            "modifiers": [
+              { "stat": "cx", "value": 2 }
+            ]
+          },
+          {
+            "label": "Yes.  Somebody's got to speak the truth.",
+            "value": "truth",
+            "id": "q229",
+            "modifiers": [
+              { "stat": "cx", "value": 1 }
+            ]
+          },
+          {
+            "label": "No, although I might privately express my opinion to friends.",
+            "value": "privately",
+            "id": "q229",
+            "modifiers": [
+              { "stat": "nx", "value": 1 }
+            ]
+          },
+          {
+            "label": "No, politics aren't worth getting worked up about.",
+            "value": "no",
+            "id": "q229",
+            "modifiers": [
+              { "stat": "nx", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "While traveling on vacation, you witness an assault. You are ordered to testify, which will cut short your vacation significantly.  Do you:",
+        "options": [
+          {
+            "label": "Slip out of town at night to avoid testifying.",
+            "value": "avoid",
+            "id": "q230",
+            "modifiers": [
+              { "stat": "cx", "value": 2 }
+            ]
+          },
+          {
+            "label": "Deny you saw anything.",
+            "value": "deny",
+            "id": "q230",
+            "modifiers": [
+              { "stat": "cx", "value": 1 }
+            ]
+          },
+          {
+            "label": "Remain reluctantly, testify, and leave.",
+            "value": "reluctant",
+            "id": "q230",
+            "modifiers": [
+              { "stat": "lx", "value": 1 }
+            ]
+          },
+          {
+            "label": "Remain until the trial's conclusion in case further testimony is needed.",
+            "value": "testify",
+            "id": "q230",
+            "modifiers": [
+              { "stat": "lx", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "You have two job offers.  One pays more, but the other is secure and steady.  Which do you choose?",
+        "options": [
+          {
+            "label": "Definitely the lucrative job; steady work sounds like drudgery.",
+            "value": "lucrative",
+            "id": "q234",
+            "modifiers": [
+              { "stat": "nx", "value": 2 }
+            ]
+          },
+          {
+            "label": "Probably the lucrative job, although I'd look into the secure job.",
+            "value": "probably_lucrative",
+            "id": "q234",
+            "modifiers": [
+              { "stat": "nx", "value": 1 }
+            ]
+          },
+          {
+            "label": "The secure job, unless the other job was outrageously lucrative.",
+            "value": "probably_secure",
+            "id": "q234",
+            "modifiers": [
+              { "stat": "lx", "value": 1 }
+            ]
+          },
+          {
+            "label": "Definitely the secure job, because I plan for the long term.",
+            "value": "secure",
+            "id": "q234",
+            "modifiers": [
+              { "stat": "lx", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "What's the best path to wealth?",
+        "options": [
+          {
+            "label": "It's a matter of luck and being in the right place at the right time.",
+            "value": "luck",
+            "id": "q235",
+            "modifiers": [
+              { "stat": "cx", "value": 2 }
+            ]
+          },
+          {
+            "label": "Staying flexible so you can take advantage of good opportunities.",
+            "value": "flexible",
+            "id": "q235",
+            "modifiers": [
+              { "stat": "cx", "value": 1 }
+            ]
+          },
+          {
+            "label": "Following a long-term plan that incorporates a comfortable level of risk.",
+            "value": "plan",
+            "id": "q235",
+            "modifiers": [
+              { "stat": "lx", "value": 1 }
+            ]
+          },
+          {
+            "label": "Hard work and perseverance.",
+            "value": "work",
+            "id": "q235",
+            "modifiers": [
+              { "stat": "lx", "value": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "If you accepted a job or contract, would you try to finish the task even if it got much more dangerous?",
+        "options": [
+          {
+            "label": "Yes, my word is my bond.",
+            "value": "bond",
+            "id": "q236",
+            "modifiers": [
+              { "stat": "nx", "value": 2 }
+            ]
+          },
+          {
+            "label": "Yes, because it's good to have a reputation for dependability.",
+            "value": "reputation",
+            "id": "q236",
+            "modifiers": [
+              { "stat": "nx", "value": 1 }
+            ]
+          },
+          {
+            "label": "You can bet I'd be renegotiating.",
+            "value": "renegotiate",
+            "id": "q236",
+            "modifiers": [
+              { "stat": "cx", "value": 1 }
+            ]
+          },
+          {
+            "label": "If it's no longer a good deal, then the deal is off.",
+            "value": "cancel",
+            "id": "q236",
+            "modifiers": [
+              { "stat": "cx", "value": 2 }
+            ]
+          }
+        ]
+      }
+    ],
+    "level": [
+      {
+        "prompt": "What's your age?",
+        "options": [
+          {
+            "label": "15 or less years",
+            "value": "15",
+            "id": "q237",
+            "modifiers": [
+              { "stat": "level", "value": -1 }
+            ]
+          },
+          {
+            "label": "16 to 17 years",
+            "value": "17",
+            "id": "q237",
+            "modifiers": [
+              { "stat": "level", "value": 1 }
+            ]
+          },
+          {
+            "label": "18 to 21 years",
+            "value": "21",
+            "id": "q237",
+            "modifiers": [
+              { "stat": "level", "value": 2 }
+            ]
+          },
+          {
+            "label": "22 to 27 years",
+            "value": "27",
+            "id": "q237",
+            "modifiers": [
+              { "stat": "level", "value": 3 }
+            ]
+          },
+          {
+            "label": "28 to 35 years",
+            "value": "35",
+            "id": "q237",
+            "modifiers": [
+              { "stat": "level", "value": 4 }
+            ]
+          },
+          {
+            "label": "36 to 45 years",
+            "value": "45",
+            "id": "q237",
+            "modifiers": [
+              { "stat": "level", "value": 5 }
+            ]
+          },
+          {
+            "label": "46 to 57 years",
+            "value": "57",
+            "id": "q237",
+            "modifiers": [
+              { "stat": "level", "value": 6 }
+            ]
+          },
+          {
+            "label": "58 to 71 years",
+            "value": "71",
+            "id": "q237",
+            "modifiers": [
+              { "stat": "level", "value": 7 }
+            ]
+          },
+          {
+            "label": "72 to 87 years",
+            "value": "87",
+            "id": "q237",
+            "modifiers": [
+              { "stat": "level", "value": 8 }
+            ]
+          },
+          {
+            "label": "88 or more years",
+            "value": "old",
+            "id": "q237",
+            "modifiers": [
+              { "stat": "level", "value": 9 }
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "For my age, I have...:",
+        "options": [
+          {
+            "label": "...limited life experience. I've done significantly less than every one else.",
+            "value": "limited",
+            "id": "q238",
+            "modifiers": [
+              { "stat": "level", "value": -1 }
+            ]
+          },
+          {
+            "label": "...a moderate amount of life experience. I've done about as much as everyone else.",
+            "value": "moderate",
+            "id": "q238",
+            "modifiers": [
+              { "stat": "level", "value": 0 }
+            ]
+          },
+          {
+            "label": "...a lot of life experience.  I've done significantly more than every one else.",
+            "value": "significant",
+            "id": "q238",
+            "modifiers": [
+              { "stat": "level", "value": 1 }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

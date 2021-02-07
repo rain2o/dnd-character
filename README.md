@@ -1,4 +1,5 @@
 # dnd-character
+Survey to see what your real-life D&D character would be.
 
 ## Project setup
 ```
@@ -20,5 +21,9 @@ yarn build
 yarn lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### TODO
+* Show Results
+* Save progress
+* Show progress bar
+* Pagination
+* Add sharing capabilities (what kind and how?)
