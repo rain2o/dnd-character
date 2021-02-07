@@ -1,17 +1,20 @@
 <template>
   <div class="survey">
-    <h1>Survey says...</h1>
-    <p>
-      {{ currentPage }} out of {{ pages }} pages
-    </p>
-    <div class="questions">
-      <QuestionComponent
-        v-for="(question, index) in currentQuestions"
-        :key="index"
-        :question="question"
-        :index="index"
-        @modify="updateModifiers(index, $event)"
-      />
+    <ProgressBar :percentage="percentageComplete" />
+    <div class="px-5">
+      <h1 class="text-primary">Survey says...</h1>
+      <p>
+        {{ currentPage }} out of {{ pages }} pages
+      </p>
+      <div class="questions">
+        <QuestionComponent
+          v-for="(question, index) in currentQuestions"
+          :key="index"
+          :question="question"
+          :index="index"
+          @modify="updateModifiers(index, $event)"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -24,11 +27,13 @@ import {
 } from '../types';
 import questions from '../questions.json';
 import QuestionComponent from './Question.vue';
+import ProgressBar from './ProgressBar.vue';
 import { extractAspects } from '../helpers';
 
 export default Vue.extend({
   name: 'Survey',
   components: {
+    ProgressBar,
     QuestionComponent,
   },
   data() {
@@ -47,6 +52,11 @@ export default Vue.extend({
     finalScores(): Scores {
       const modifiers = this.scores.flat();
       return extractAspects(modifiers);
+    },
+    percentageComplete(): number {
+      const scores = this.scores.filter((score) => score !== undefined);
+      // return Math.round((this.currentPage / this.pages) * 100);
+      return Math.round((scores.length / questions.length) * 100);
     },
   },
   methods: {

@@ -1,21 +1,26 @@
 <template>
-  <div class="question">
-    <p class="question__text">
+  <div class="question py-3 my-2 border-t-2 border-secondary">
+    <p class="font-bold text-primary pt-3">
       {{ question.prompt }}
     </p>
     <div class="question__options">
-      <div
-        class="question__option"
+      <label
+        class="block border-2 rounded-md py-3 px-2 my-4"
+        :class="option.value === currentValue ? activeClass : inactiveClass"
         v-for="option in question.options"
         :key="`${index}_${option.value}`"
+        :for="`question_${index}_${option.value}`"
       >
         <input type="radio"
           :value="option.value"
           :name="`question_${index}`"
+          :id="`question_${index}_${option.value}`"
+          class="hidden"
+          v-model="currentValue"
           @change="modify"
         />
         <span class="question__label">{{ option.label }}</span>
-      </div>
+      </label>
     </div>
   </div>
 </template>
@@ -35,6 +40,13 @@ export default Vue.extend({
       type: Number,
       required: true,
     },
+  },
+  data() {
+    return {
+      currentValue: null,
+      activeClass: 'border-primary bg-primary text-background',
+      inactiveClass: 'border-secondary',
+    };
   },
   methods: {
     modify(event: Event) {
