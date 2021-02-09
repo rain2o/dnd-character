@@ -5,7 +5,7 @@
     </p>
     <div class="question__options">
       <label
-        class="block border-2 rounded-md py-3 px-2 my-4"
+        class="block border-2 rounded-md py-3 px-2 my-4 cursor-pointer"
         :class="option.value === currentValue ? activeClass : inactiveClass"
         v-for="option in question.options"
         :key="`${index}_${option.value}`"
@@ -16,6 +16,7 @@
           :name="`question_${index}`"
           :id="`question_${index}_${option.value}`"
           class="hidden"
+          :checked="option.value === currentValue"
           v-model="currentValue"
           @change="modify"
         />
@@ -40,19 +41,29 @@ export default Vue.extend({
       type: Number,
       required: true,
     },
+    answer: {
+      type: String,
+      required: false,
+      default: null,
+    },
   },
   data() {
     return {
-      currentValue: null,
+      currentValue: this.answer,
       activeClass: 'border-primary bg-primary text-background',
-      inactiveClass: 'border-secondary',
+      inactiveClass: 'border-secondary bg-background',
     };
+  },
+  watch: {
+    answer(val) {
+      this.currentValue = val;
+    },
   },
   methods: {
     modify(event: Event) {
       const target = event.target as HTMLInputElement;
       const { options } = this.question;
-      const option = options.find((opt) => opt.value.toString() === target.value);
+      const option = options.find((opt) => opt.value === target.value);
       if (option) {
         const { modifiers } = option;
         this.$emit('modify', modifiers);

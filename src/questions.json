@@ -4,7 +4,7 @@
     "options": [
       {
         "label": "ugly, I am the worst looking member of my social circle.",
-        "value": 2,
+        "value": "ugly",
         "id": "q41",
         "modifiers": [
           { "stat": "charisma", "value": 2 }
@@ -12,7 +12,7 @@
       },
       {
         "label": "average, my appearance is normal overall.",
-        "value": 3,
+        "value": "average",
         "id": "q41",
         "modifiers": [
           { "stat": "charisma", "value": 3 }
@@ -20,7 +20,7 @@
       },
       {
         "label": "attractive, I am the best looking member of my social circle.",
-        "value": 4,
+        "value": "attractive",
         "id": "q41",
         "modifiers": [
           { "stat": "charisma", "value": 4 }
@@ -28,7 +28,7 @@
       },
       {
         "label": "extremely attractive, my appearance aids me in every situation in life.",
-        "value": 5,
+        "value": "smokin",
         "id": "q41",
         "modifiers": [
           { "stat": "charisma", "value": 5 }
@@ -41,7 +41,7 @@
     "options": [
       {
         "label": "I have a really hard time remembering things.",
-        "value": 2,
+        "value": "terrible",
         "id": "q42",
         "modifiers": [
           { "stat": "intelligence", "value": 2 }
@@ -49,7 +49,7 @@
       },
       {
         "label": "I remember most things though subtle details sometimes elude me.",
-        "value": 3,
+        "value": "average",
         "id": "q42",
         "modifiers": [
           { "stat": "intelligence", "value": 3 }
@@ -57,7 +57,7 @@
       },
       {
         "label": "I remember just about everything I'm exposed to.",
-        "value": 4,
+        "value": "good",
         "id": "q42",
         "modifiers": [
           { "stat": "intelligence", "value": 4 }
@@ -65,7 +65,7 @@
       },
       {
         "label": "I have a photographic memory and I always remember every detail.",
-        "value": 5,
+        "value": "perfect",
         "id": "q42",
         "modifiers": [
           { "stat": "intelligence", "value": 5 }
@@ -78,7 +78,7 @@
     "options": [
       {
         "label": "I have an extremely difficult time making new friends.",
-        "value": 2,
+        "value": "awkward",
         "id": "q43",
         "modifiers": [
           { "stat": "charisma", "value": 2 }
@@ -86,7 +86,7 @@
       },
       {
         "label": "I make friends fairly easily and engage in small talk with new acquaintances with ease.",
-        "value": 3,
+        "value": "average",
         "id": "q43",
         "modifiers": [
           { "stat": "charisma", "value": 3 }
@@ -94,7 +94,7 @@
       },
       {
         "label": "After meeting me, people go out of their way to keep in touch with me.",
-        "value": 5,
+        "value": "social",
         "id": "q43",
         "modifiers": [
           { "stat": "charisma", "value": 5 }
@@ -102,7 +102,7 @@
       },
       {
         "label": "I make new friends everywhere I go.",
-        "value": 4,
+        "value": "butterfly",
         "id": "q43",
         "modifiers": [
           { "stat": "charisma", "value": 4 }
@@ -115,7 +115,7 @@
     "options": [
       {
         "label": "I have no vices and I've never been tempted by anything.",
-        "value": 5,
+        "value": "clean",
         "id": "q44",
         "modifiers": [
           { "stat": "wisdom", "value": 5 }
@@ -123,7 +123,7 @@
       },
       {
         "label": "I have no vices, but I've been tempted by things from time to time.",
-        "value": 4,
+        "value": "tempted",
         "id": "q44",
         "modifiers": [
           { "stat": "wisdom", "value": 4 }
@@ -131,7 +131,7 @@
       },
       {
         "label": "I have some vices and I succumb to temptation only rarely.",
-        "value": 3,
+        "value": "some",
         "id": "q44",
         "modifiers": [
           { "stat": "wisdom", "value": 3 }
@@ -139,7 +139,7 @@
       },
       {
         "label": "I have a hard time avoiding temptation and give in too often.",
-        "value": 2,
+        "value": "miami_vice",
         "id": "q44",
         "modifiers": [
           { "stat": "wisdom", "value": 2 }
@@ -152,7 +152,7 @@
     "options": [
       {
         "label": "I can make people do almost anything I want them to do.",
-        "value": 5,
+        "value": "5",
         "id": "q45",
         "modifiers": [
           { "stat": "charisma", "value": 5 }
@@ -160,7 +160,7 @@
       },
       {
         "label": "I have an easy time convincing others to see things my way.",
-        "value": 4,
+        "value": "4",
         "id": "q45",
         "modifiers": [
           { "stat": "charisma", "value": 4 }
@@ -168,7 +168,7 @@
       },
       {
         "label": "I convince others to do things my way some of the time.",
-        "value": 3,
+        "value": "3",
         "id": "q45",
         "modifiers": [
           { "stat": "charisma", "value": 3 }
@@ -176,7 +176,7 @@
       },
       {
         "label": "I have a hard time convincing others to do what I want them to do.",
-        "value": 2,
+        "value": "2",
         "id": "q45",
         "modifiers": [
           { "stat": "charisma", "value": 2 }
@@ -189,7 +189,7 @@
     "options": [
       {
         "label": "I am sick most of the time.",
-        "value": 2,
+        "value": "2",
         "id": "q46",
         "modifiers": [
           { "stat": "constitution", "value": 2 }
@@ -197,7 +197,7 @@
       },
       {
         "label": "I seem to get sick as often as most people I know.",
-        "value": 3,
+        "value": "3",
         "id": "q46",
         "modifiers": [
           { "stat": "constitution", "value": 3 }
@@ -205,7 +205,7 @@
       },
       {
         "label": "I have never missed a day of work due to illness.",
-        "value": 4,
+        "value": "4",
         "id": "q46",
         "modifiers": [
           { "stat": "constitution", "value": 4 }
@@ -213,7 +213,7 @@
       },
       {
         "label": "I can't remember ever being sick.",
-        "value": 5,
+        "value": "5",
         "id": "q46",
         "modifiers": [
           { "stat": "constitution", "value": 5 }
@@ -226,7 +226,7 @@
     "options": [
       {
         "label": "I am able to exercise with no ill effects.",
-        "value": 3,
+        "value": "3",
         "id": "q47",
         "modifiers": [
           { "stat": "constitution", "value": 3 }
@@ -234,7 +234,7 @@
       },
       {
         "label": "I have a hard time running.",
-        "value": 2,
+        "value": "2",
         "id": "q47",
         "modifiers": [
           { "stat": "constitution", "value": 2 }
@@ -242,7 +242,7 @@
       },
       {
         "label": "I regularly exert myself physically, and enjoy doing so.",
-        "value": 4,
+        "value": "4",
         "id": "q47",
         "modifiers": [
           { "stat": "constitution", "value": 4 }
@@ -250,7 +250,7 @@
       },
       {
         "label": "I physically exert myself all day long on a regular basis.",
-        "value": 5,
+        "value": "5",
         "id": "q47",
         "modifiers": [
           { "stat": "constitution", "value": 5 }
@@ -263,7 +263,7 @@
     "options": [
       {
         "label": "I've never been in a leadership position.",
-        "value": 2,
+        "value": "2",
         "id": "q48",
         "modifiers": [
           { "stat": "charisma", "value": 2 }
@@ -271,7 +271,7 @@
       },
       {
         "label": "I perform adequately when I'm the leader.",
-        "value": 3,
+        "value": "3",
         "id": "q48",
         "modifiers": [
           { "stat": "charisma", "value": 3 }
@@ -279,7 +279,7 @@
       },
       {
         "label": "People look to me for direction instinctively.",
-        "value": 4,
+        "value": "4",
         "id": "q48",
         "modifiers": [
           { "stat": "charisma", "value": 4 }
@@ -287,7 +287,7 @@
       },
       {
         "label": "People go out of their way to put me in leadership positions.",
-        "value": 5,
+        "value": "5",
         "id": "q48",
         "modifiers": [
           { "stat": "charisma", "value": 5 }
@@ -300,7 +300,7 @@
     "options": [
       {
         "label": "I can learn new things very quickly.",
-        "value": 4,
+        "value": "4",
         "id": "q49",
         "modifiers": [
           { "stat": "intelligence", "value": 4 }
@@ -308,7 +308,7 @@
       },
       {
         "label": "I learn as fast as everyone else it seems.",
-        "value": 3,
+        "value": "3",
         "id": "q49",
         "modifiers": [
           { "stat": "intelligence", "value": 3 }
@@ -316,7 +316,7 @@
       },
       {
         "label": "I'm constantly learning new subjects at an astounding rate.",
-        "value": 5,
+        "value": "5",
         "id": "q49",
         "modifiers": [
           { "stat": "intelligence", "value": 5 }
@@ -324,7 +324,7 @@
       },
       {
         "label": "I have a hard time learning new things.",
-        "value": 2,
+        "value": "2",
         "id": "q49",
         "modifiers": [
           { "stat": "intelligence", "value": 2 }
@@ -337,7 +337,7 @@
     "options": [
       {
         "label": "I am sometimes able to figure out a solution for a problem.",
-        "value": 2,
+        "value": "2",
         "id": "q50",
         "modifiers": [
           { "stat": "intelligence", "value": 2 }
@@ -345,7 +345,7 @@
       },
       {
         "label": "I think I'm pretty good at solving problems and organizing information.",
-        "value": 3,
+        "value": "3",
         "id": "q50",
         "modifiers": [
           { "stat": "intelligence", "value": 3 }
@@ -353,7 +353,7 @@
       },
       {
         "label": "I can easily find solutions to complex problems.",
-        "value": 4,
+        "value": "4",
         "id": "q50",
         "modifiers": [
           { "stat": "intelligence", "value": 4 }
@@ -361,7 +361,7 @@
       },
       {
         "label": "My critical thinking skills are absolutely flawless.",
-        "value": 5,
+        "value": "5",
         "id": "q50",
         "modifiers": [
           { "stat": "intelligence", "value": 5 }
@@ -374,7 +374,7 @@
     "options": [
       {
         "label": "I can take punches that would drop normal people.",
-        "value": 4,
+        "value": "4",
         "id": "q51",
         "modifiers": [
           { "stat": "constitution", "value": 4 }
@@ -382,7 +382,7 @@
       },
       {
         "label": "I've taken massive blows and kept on fighting.",
-        "value": 5,
+        "value": "5",
         "id": "q51",
         "modifiers": [
           { "stat": "constitution", "value": 5 }
@@ -390,7 +390,7 @@
       },
       {
         "label": "I'm not fragile.",
-        "value": 3,
+        "value": "3",
         "id": "q51",
         "modifiers": [
           { "stat": "constitution", "value": 3 }
@@ -398,7 +398,7 @@
       },
       {
         "label": "When people jokingly hit me, they hurt me.",
-        "value": 2,
+        "value": "2",
         "id": "q51",
         "modifiers": [
           { "stat": "constitution", "value": 2 }
@@ -411,7 +411,7 @@
     "options": [
       {
         "label": "is in pretty good shape, given my age.",
-        "value": 3,
+        "value": "3",
         "id": "q52",
         "modifiers": [
           { "stat": "strength", "value": 3 }
@@ -419,7 +419,7 @@
       },
       {
         "label": "is on par with most professional athletes.",
-        "value": 5,
+        "value": "5",
         "id": "q52",
         "modifiers": [
           { "stat": "strength", "value": 5 }
@@ -427,7 +427,7 @@
       },
       {
         "label": "is in superb shape.",
-        "value": 4,
+        "value": "4",
         "id": "q52",
         "modifiers": [
           { "stat": "strength", "value": 4 }
@@ -435,7 +435,7 @@
       },
       {
         "label": "is out of shape, when compared to almost everyone else.",
-        "value": 2,
+        "value": "2",
         "id": "q52",
         "modifiers": [
           { "stat": "strength", "value": 2 }
@@ -448,7 +448,7 @@
     "options": [
       {
         "label": "People seem to know more than I do most of the time.",
-        "value": 2,
+        "value": "2",
         "id": "q53",
         "modifiers": [
           { "stat": "wisdom", "value": 2 }
@@ -456,7 +456,7 @@
       },
       {
         "label": "I rarely make the same mistake twice.",
-        "value": 3,
+        "value": "3",
         "id": "q53",
         "modifiers": [
           { "stat": "wisdom", "value": 3 }
@@ -464,7 +464,7 @@
       },
       {
         "label": "People always come to me for advice.",
-        "value": 4,
+        "value": "4",
         "id": "q53",
         "modifiers": [
           { "stat": "wisdom", "value": 4 }
@@ -472,7 +472,7 @@
       },
       {
         "label": "I am exceptionally shrewd and cunning.",
-        "value": 5,
+        "value": "5",
         "id": "q53",
         "modifiers": [
           { "stat": "wisdom", "value": 5 }
@@ -485,7 +485,7 @@
     "options": [
       {
         "label": "I am aware of most things that occur around me.",
-        "value": 3,
+        "value": "3",
         "id": "q54",
         "modifiers": [
           { "stat": "wisdom", "value": 3 }
@@ -493,7 +493,7 @@
       },
       {
         "label": "I have the keenest senses of anyone I know.",
-        "value": 5,
+        "value": "5",
         "id": "q54",
         "modifiers": [
           { "stat": "wisdom", "value": 5 }
@@ -501,7 +501,7 @@
       },
       {
         "label": "I have extremely poor awareness of my surroundings.",
-        "value": 2,
+        "value": "2",
         "id": "q54",
         "modifiers": [
           { "stat": "wisdom", "value": 2 }
@@ -509,7 +509,7 @@
       },
       {
         "label": "I easily spot details that others miss.",
-        "value": 4,
+        "value": "4",
         "id": "q54",
         "modifiers": [
           { "stat": "wisdom", "value": 4 }
@@ -522,7 +522,7 @@
     "options": [
       {
         "label": "about as much as a person of my gender and age should be able to lift.",
-        "value": 3,
+        "value": "3",
         "id": "q55",
         "modifiers": [
           { "stat": "strength", "value": 3 }
@@ -530,7 +530,7 @@
       },
       {
         "label": "a lot less than I should be able to lift.  I am weak.",
-        "value": 2,
+        "value": "2",
         "id": "q55",
         "modifiers": [
           { "stat": "strength", "value": 2 }
@@ -538,7 +538,7 @@
       },
       {
         "label": "noticeably more than most people I know.  I am strong.",
-        "value": 4,
+        "value": "4",
         "id": "q55",
         "modifiers": [
           { "stat": "strength", "value": 4 }
@@ -546,7 +546,7 @@
       },
       {
         "label": "an astounding amount of weight.  I engage in extensive weight training.",
-        "value": 5,
+        "value": "5",
         "id": "q55",
         "modifiers": [
           { "stat": "strength", "value": 5 }
@@ -559,7 +559,7 @@
     "options": [
       {
         "label": "I am slower than most people I know.",
-        "value": 2,
+        "value": "2",
         "id": "q56",
         "modifiers": [
           { "stat": "dexterity", "value": 2 }
@@ -567,7 +567,7 @@
       },
       {
         "label": "I am neither slow nor fast compared to the people I know.",
-        "value": 3,
+        "value": "3",
         "id": "q56",
         "modifiers": [
           { "stat": "dexterity", "value": 3 }
@@ -575,7 +575,7 @@
       },
       {
         "label": "I am faster than most people I know.",
-        "value": 4,
+        "value": "4",
         "id": "q56",
         "modifiers": [
           { "stat": "dexterity", "value": 4 }
@@ -583,7 +583,7 @@
       },
       {
         "label": "I am faster than everyone else.",
-        "value": 5,
+        "value": "5",
         "id": "q56",
         "modifiers": [
           { "stat": "dexterity", "value": 5 }
@@ -596,7 +596,7 @@
     "options": [
       {
         "label": "My insight concerning life is almost supernatural.",
-        "value": 5,
+        "value": "5",
         "id": "q57",
         "modifiers": [
           { "stat": "wisdom", "value": 5 }
@@ -604,7 +604,7 @@
       },
       {
         "label": "My gut feelings are always right.",
-        "value": 4,
+        "value": "4",
         "id": "q57",
         "modifiers": [
           { "stat": "wisdom", "value": 4 }
@@ -612,7 +612,7 @@
       },
       {
         "label": "I have a hard time judging people's intentions.",
-        "value": 2,
+        "value": "2",
         "id": "q57",
         "modifiers": [
           { "stat": "wisdom", "value": 2 }
@@ -620,7 +620,7 @@
       },
       {
         "label": "Sometimes my gut feelings are right.",
-        "value": 3,
+        "value": "3",
         "id": "q57",
         "modifiers": [
           { "stat": "wisdom", "value": 3 }
@@ -633,7 +633,7 @@
     "options": [
       {
         "label": "I'm horrible at video games.",
-        "value": 2,
+        "value": "2",
         "id": "q58",
         "modifiers": [
           { "stat": "dexterity", "value": 2 }
@@ -641,7 +641,7 @@
       },
       {
         "label": "I could be an Olympic marksman.",
-        "value": 5,
+        "value": "5",
         "id": "q58",
         "modifiers": [
           { "stat": "dexterity", "value": 5 }
@@ -649,7 +649,7 @@
       },
       {
         "label": "I'm about average.",
-        "value": 3,
+        "value": "3",
         "id": "q58",
         "modifiers": [
           { "stat": "dexterity", "value": 3 }
@@ -657,7 +657,7 @@
       },
       {
         "label": "I can juggle well.",
-        "value": 4,
+        "value": "4",
         "id": "q58",
         "modifiers": [
           { "stat": "dexterity", "value": 4 }
@@ -670,7 +670,7 @@
     "options": [
       {
         "label": "I had the highest GPA in my class.",
-        "value": 5,
+        "value": "5",
         "id": "q59",
         "modifiers": [
           { "stat": "intelligence", "value": 5 }
@@ -678,7 +678,7 @@
       },
       {
         "label": "I was a good student.  I consistently made the A/B Honor Roll.",
-        "value": 4,
+        "value": "4",
         "id": "q59",
         "modifiers": [
           { "stat": "intelligence", "value": 4 }
@@ -686,7 +686,7 @@
       },
       {
         "label": "I was an average student.  I had decent grades.",
-        "value": 3,
+        "value": "3",
         "id": "q59",
         "modifiers": [
           { "stat": "intelligence", "value": 3 }
@@ -694,7 +694,7 @@
       },
       {
         "label": "I was a bad student.  I had a hard time keeping up.",
-        "value": 2,
+        "value": "2",
         "id": "q59",
         "modifiers": [
           { "stat": "intelligence", "value": 2 }
@@ -707,7 +707,7 @@
     "options": [
       {
         "label": "I can drink all night and I never get drunk.",
-        "value": 5,
+        "value": "5",
         "id": "q60",
         "modifiers": [
           { "stat": "constitution", "value": 5 }
@@ -715,7 +715,7 @@
       },
       {
         "label": "I have a hard time getting drunk when I drink.  I never have a hangover.",
-        "value": 4,
+        "value": "4",
         "id": "q60",
         "modifiers": [
           { "stat": "constitution", "value": 4 }
@@ -723,7 +723,7 @@
       },
       {
         "label": "I have a normal tolerance for alcohol.  Sometimes I have hangovers from drinking.",
-        "value": 3,
+        "value": "3",
         "id": "q60",
         "modifiers": [
           { "stat": "constitution", "value": 3 }
@@ -731,7 +731,7 @@
       },
       {
         "label": "I become drunk even when I consume small amounts of alcohol.  My hangovers are horrible.",
-        "value": 2,
+        "value": "2",
         "id": "q60",
         "modifiers": [
           { "stat": "constitution", "value": 2 }
@@ -744,7 +744,7 @@
     "options": [
       {
         "label": "I engage in difficult physical labor all during the week.",
-        "value": 5,
+        "value": "5",
         "id": "q61",
         "modifiers": [
           { "stat": "strength", "value": 5 }
@@ -752,7 +752,7 @@
       },
       {
         "label": "My job involves physical labor or I have an intensive work-out schedule.",
-        "value": 4,
+        "value": "4",
         "id": "q61",
         "modifiers": [
           { "stat": "strength", "value": 4 }
@@ -760,7 +760,7 @@
       },
       {
         "label": "My job does not involve much physical labor, but I get enough exercise.",
-        "value": 3,
+        "value": "3",
         "id": "q61",
         "modifiers": [
           { "stat": "strength", "value": 3 }
@@ -768,7 +768,7 @@
       },
       {
         "label": "Very little, I have a sedentary job and I do not work out.",
-        "value": 2,
+        "value": "2",
         "id": "q61",
         "modifiers": [
           { "stat": "strength", "value": 2 }
@@ -781,7 +781,7 @@
     "options": [
       {
         "label": "My reflexes have saved my life on more than one occasion.",
-        "value": 5,
+        "value": "5",
         "id": "q62",
         "modifiers": [
           { "stat": "dexterity", "value": 5 }
@@ -789,7 +789,7 @@
       },
       {
         "label": "I am extremely quick.",
-        "value": 4,
+        "value": "4",
         "id": "q62",
         "modifiers": [
           { "stat": "dexterity", "value": 4 }
@@ -797,7 +797,7 @@
       },
       {
         "label": "I've never noticed whether I'm fast or slow.",
-        "value": 3,
+        "value": "3",
         "id": "q62",
         "modifiers": [
           { "stat": "dexterity", "value": 3 }
@@ -805,7 +805,7 @@
       },
       {
         "label": "I am extremely slow.",
-        "value": 2,
+        "value": "2",
         "id": "q62",
         "modifiers": [
           { "stat": "dexterity", "value": 2 }
@@ -818,7 +818,7 @@
     "options": [
       {
         "label": "they would probably laugh at me.",
-        "value": 2,
+        "value": "2",
         "id": "q63",
         "modifiers": [
           { "stat": "strength", "value": 2 }
@@ -826,7 +826,7 @@
       },
       {
         "label": "I might hurt them.",
-        "value": 3,
+        "value": "3",
         "id": "q63",
         "modifiers": [
           { "stat": "strength", "value": 3 }
@@ -834,7 +834,7 @@
       },
       {
         "label": "I would definitely hurt them.",
-        "value": 4,
+        "value": "4",
         "id": "q63",
         "modifiers": [
           { "stat": "strength", "value": 4 }
@@ -842,7 +842,7 @@
       },
       {
         "label": "I might kill them.",
-        "value": 5,
+        "value": "5",
         "id": "q63",
         "modifiers": [
           { "stat": "strength", "value": 5 }
@@ -855,7 +855,7 @@
     "options": [
       {
         "label": "I was picked to play for a professional sports team.",
-        "value": 5,
+        "value": "5",
         "id": "q64",
         "modifiers": [
           { "stat": "dexterity", "value": 5 }
@@ -863,7 +863,7 @@
       },
       {
         "label": "When being picked for a team, I am always picked first when others know of my ability.",
-        "value": 4,
+        "value": "4",
         "id": "q64",
         "modifiers": [
           { "stat": "dexterity", "value": 4 }
@@ -871,7 +871,7 @@
       },
       {
         "label": "I have some athletic ability, but it isn't noteworthy.",
-        "value": 3,
+        "value": "3",
         "id": "q64",
         "modifiers": [
           { "stat": "dexterity", "value": 3 }
@@ -879,7 +879,7 @@
       },
       {
         "label": "When being picked for a team, I am always picked last when others know of my ability.",
-        "value": 2,
+        "value": "2",
         "id": "q64",
         "modifiers": [
           { "stat": "dexterity", "value": 2 }
@@ -1323,7 +1323,7 @@
     "options": [
       {
         "label": "True",
-        "value": true,
+        "value": "true",
         "id": "q71",
         "modifiers": [
           { "stat": "barbarian", "value": 2 }
@@ -1331,7 +1331,7 @@
       },
       {
         "label": "False",
-        "value": false,
+        "value": "false",
         "id": "q71",
         "modifiers": [
           { "stat": "ranger", "value": 2 }
@@ -1575,7 +1575,7 @@
     "options": [
       {
         "label": "True",
-        "value": true,
+        "value": "true",
         "id": "q81",
         "modifiers": [
           { "stat": "cleric", "value": 2 }
@@ -1583,7 +1583,7 @@
       },
       {
         "label": "False",
-        "value": false,
+        "value": "false",
         "id": "q81",
         "modifiers": [
           { "stat": "barbarian", "value": 2 }
@@ -1785,7 +1785,7 @@
     "options": [
       {
         "label": "Yes",
-        "value": true,
+        "value": "true",
         "id": "q89",
         "modifiers": [
           { "stat": "rogue", "value": 2 }
@@ -1793,7 +1793,7 @@
       },
       {
         "label": "No",
-        "value": false,
+        "value": "false",
         "id": "q89",
         "modifiers": [
           { "stat": "wizard", "value": 2 }
@@ -2016,7 +2016,7 @@
     "options": [
       {
         "label": "True",
-        "value": true,
+        "value": "true",
         "id": "q97",
         "modifiers": [
           { "stat": "paladin", "value": 2 }
@@ -2024,7 +2024,7 @@
       },
       {
         "label": "False",
-        "value": false,
+        "value": "false",
         "id": "q97",
         "modifiers": [
           { "stat": "rogue", "value": 2 }
@@ -2373,7 +2373,7 @@
     "options": [
       {
         "label": "True",
-        "value": true,
+        "value": "true",
         "id": "q114",
         "modifiers": [
           { "stat": "bard", "value": 2 }
@@ -2381,7 +2381,7 @@
       },
       {
         "label": "False",
-        "value": false,
+        "value": "false",
         "id": "q114",
         "modifiers": [
           { "stat": "rogue", "value": 2 }
@@ -2478,7 +2478,7 @@
     "options": [
       {
         "label": "Yes",
-        "value": true,
+        "value": "true",
         "id": "q118",
         "modifiers": [
           { "stat": "wizard", "value": 2 }
@@ -2486,7 +2486,7 @@
       },
       {
         "label": "No",
-        "value": false,
+        "value": "false",
         "id": "q118",
         "modifiers": [
           { "stat": "barbarian", "value": 2 }
@@ -2520,7 +2520,7 @@
     "options": [
       {
         "label": "True",
-        "value": true,
+        "value": "true",
         "id": "q120",
         "modifiers": [
           { "stat": "monk", "value": 2 }
@@ -2528,7 +2528,7 @@
       },
       {
         "label": "False",
-        "value": false,
+        "value": "false",
         "id": "q120",
         "modifiers": [
           { "stat": "wizard", "value": 2 }

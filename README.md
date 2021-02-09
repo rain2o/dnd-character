@@ -23,7 +23,7 @@ yarn lint
 
 ### TODO
 * Show Results
-* Save progress
-* Show progress bar
-* Pagination
 * Add sharing capabilities (what kind and how?)
+* style everything
+* add better copy
+* PWA?

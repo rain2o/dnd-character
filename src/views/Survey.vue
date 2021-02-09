@@ -1,7 +1,8 @@
 <template>
   <div class="survey">
     <ProgressBar :percentage="percentageComplete" />
-    <div class="px-5">
+    <ResetModal :show="showModal" @confirm="resetAnswers" @cancel="showModal = false" />
+    <div class="px-5 max-w-2xl mx-auto">
       <p class="text-center my-2">page {{ currentPage }} of {{ pages }}</p>
       <div class="questions">
         <QuestionComponent
@@ -9,18 +10,24 @@
           :key="question.index"
           :question="question"
           :index="question.index"
+          :answer="getSelectedAnswer(question)"
           @modify="updateModifiers(question.index, $event)"
         />
       </div>
     </div>
     <div class="sticky bottom-0 w-full">
       <router-link
-        class="bg-primary text-background inline-block w-1/2 py-3 font-bold text-center
+        class="bg-primary text-background inline-block w-1/3 py-3 font-bold text-center
                border-r-2 border-secondary"
         :to="previous"
       >{{ previousText }}</router-link>
+      <button
+        :disabled="!scores.filter(Boolean).length"
+        class="bg-primary text-background inline-block w-1/3 py-3 font-bold text-center"
+        @click="showModal = true"
+      >Reset</button>
       <router-link
-        class="bg-primary text-background inline-block w-1/2 py-3 font-bold text-center
+        class="bg-primary text-background inline-block w-1/3 py-3 font-bold text-center
                border-l-2 border-secondary"
         :to="next"
       >{{ nextText }}</router-link>
@@ -37,6 +44,7 @@ import {
 import questions from '../questions.json';
 import QuestionComponent from '../components/Question.vue';
 import ProgressBar from '../components/ProgressBar.vue';
+import ResetModal from '../components/ResetModal.vue';
 import { extractAspects } from '../helpers';
 
 /** map index to question object */
@@ -50,6 +58,7 @@ export default Vue.extend({
   components: {
     ProgressBar,
     QuestionComponent,
+    ResetModal,
   },
   data() {
     return {
@@ -57,6 +66,7 @@ export default Vue.extend({
       perPage: 10,
       pages: 0,
       scores: new Array(allQuestions.length) as Array<Modifier>[],
+      showModal: false,
     };
   },
   computed: {
@@ -72,12 +82,11 @@ export default Vue.extend({
       return allQuestions.slice(start, start + this.perPage);
     },
     finalScores(): Scores {
-      const modifiers = this.scores.flat();
+      const modifiers = this.scores.flat().filter(Boolean);
       return extractAspects(modifiers);
     },
     percentageComplete(): number {
-      const scores = this.scores.filter((score) => score !== undefined);
-      // return Math.round((this.currentPage / this.pages) * 100);
+      const scores = this.scores.filter(Boolean);
       return Math.round((scores.length / allQuestions.length) * 100);
     },
     previous(): string {
@@ -89,7 +98,7 @@ export default Vue.extend({
     },
     previousText(): string {
       if (this.currentPage > 1) {
-        return '< Previous';
+        return 'Previous';
       }
       return 'Home';
     },
@@ -104,16 +113,65 @@ export default Vue.extend({
       if (this.currentPage === this.pages) {
         return 'See Results';
       }
-      return 'Next >';
+      return 'Next';
     },
   },
   methods: {
+    /**
+     * Update the selected modifiers for the provided index
+     */
     updateModifiers(index: number, modifiers: Modifier[]) {
       this.$set(this.scores, index, modifiers);
+      this.saveScores();
+    },
+    /**
+     * Save current scores in storage
+     */
+    saveScores() {
+      const data = JSON.stringify(this.scores);
+      localStorage.setItem('scores', data);
+    },
+    /**
+     * Retrieve selected answer, if any, for
+     * the provided question
+     */
+    getSelectedAnswer(question: Question): string {
+      const modifiers = this.scores[question.index];
+      if (modifiers) {
+        const serializedModifiers = JSON.stringify(modifiers);
+        const selectedOption = question.options
+          .find((option) => JSON.stringify(option.modifiers) === serializedModifiers);
+        return selectedOption ? selectedOption.value : '';
+      }
+      return '';
+    },
+    /**
+     * Reset all saved answers
+     */
+    resetAnswers() {
+      this.scores = new Array(allQuestions.length) as Array<Modifier>[];
+      localStorage.removeItem('scores');
+      this.showModal = false;
+      // go back to page 1 if we're not
+      if (this.currentPage > 1) {
+        this.$router.push('/survey');
+      }
     },
   },
   mounted() {
     this.pages = allQuestions.length / this.perPage;
+  },
+  beforeMount() {
+    // load saved scores if there are any
+    const savedScores = localStorage.getItem('scores');
+    if (savedScores) {
+      try {
+        this.scores = JSON.parse(savedScores);
+      } catch (e) {
+        // invalid data, remove it
+        localStorage.removeItem('scores');
+      }
+    }
   },
 });
 </script>

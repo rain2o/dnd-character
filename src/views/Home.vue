@@ -1,10 +1,11 @@
 <template>
   <div class="home">
-    <div class="content px-5 py-4">
+    <ResetModal :show="showModal" @confirm="resetAnswers" @cancel="showModal = false" />
+    <div class="content px-5 py-4 max-w-2xl mx-auto">
       <h1 class="text-2xl font-bold text-primary text-center mb-2">
         What Kind of D&amp;D Character Would You Be?
       </h1>
-      <h3 class="text-lg text-center mb-2">
+      <p class="text-lg text-center mb-4">
         Based on
         <a
           href="http://easydamus.com/character.html"
@@ -12,8 +13,10 @@
           rel="noopener noreferrer"
           class="text-primary underline hover:text-secondary"
         >easydamus's version</a>
-      </h3>
-      <p class="text-justify mb-2">
+      </p>
+
+      <h2 class="text-lg font-bold mb-2">Details</h2>
+      <p class="text-justify mb-4">
       This survey will determine your ability scores, fantasy race, class, alignment, and character
       level describing what you would be if you were transformed into a Dungeons and Dragons
       character. This is a long survey, so set aside about 15 to 20 minutes to complete all 140
@@ -24,16 +27,31 @@
       alignment, and character level combinations, this survey can produce over 1.5 TRILLION
       different results.
       </p>
-      <p class="text-justify mb-2">
-      Once you have finished answering all of the questions, submit your responses using the button
-      at the bottom of this page. The results page will display all of your basic character
-      information and the details of your alignment, race, and class. Also, HTML code that can be
-      used to display the results on your own site and a detailed breakdown of your scores in
-      various categories will be shown if you leave the option boxes checked.
+
+      <h2 class="text-lg font-bold mb-2">Save as you level up</h2>
+      <p class="text-justify mb-4">
+      Your progress will be saved in your browser as you go. Don't worry, I don't store anything on
+      my servers, it's all in your browser. So you can take a break, go grab a coffee or beer, and
+      start back where you left off. There's a reset button if you want to delete your progress and
+      start over.
       </p>
     </div>
+
+    <div v-if="hasResults" class="sticky bottom-0 w-full">
+      <router-link
+        class="bg-primary text-background inline-block w-1/2 py-3 font-bold text-center
+               border-r-2 border-secondary"
+        to="/results"
+      >See Results</router-link>
+      <button
+        class="bg-primary text-background inline-block w-1/2 py-3 font-bold text-center"
+        @click="showModal = true"
+      >Reset</button>
+    </div>
     <router-link
-      class="sticky bottom-0 w-full bg-primary text-background py-3 font-bold block text-center"
+      v-else
+      class="sticky bottom-0 w-full bg-primary text-background py-3 font-bold block text-center
+             lg:max-w-xl lg:relate lg:mx-auto"
       to="/survey"
     >
       Start Survey Now!
@@ -42,7 +60,44 @@
 </template>
 
 <script>
+import ResetModal from '../components/ResetModal.vue';
+
 export default {
   name: 'Home',
+  components: {
+    ResetModal,
+  },
+  data() {
+    return {
+      hasResults: false,
+      showModal: false,
+    };
+  },
+  methods: {
+    /**
+     * Reset all saved answers
+     */
+    resetAnswers() {
+      localStorage.removeItem('scores');
+      this.showModal = false;
+      this.hasResults = false;
+    },
+  },
+  beforeMount() {
+    // if user has filled out the survey, show results button
+    const savedScores = localStorage.getItem('scores');
+    if (savedScores) {
+      try {
+        const parsedScores = JSON.parse(savedScores);
+        const answers = parsedScores.filter(Boolean);
+        if (parsedScores.length === answers.length) {
+          this.hasResults = true;
+        }
+      } catch (e) {
+        // invalid data, remove it
+        localStorage.removeItem('scores');
+      }
+    }
+  },
 };
 </script>

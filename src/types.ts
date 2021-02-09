@@ -1,6 +1,6 @@
 export type QuestionOption = {
   label: string;
-  value: boolean | number | string;
+  value: string;
   modifiers: Modifier[];
   id?: string; // for compatibility for now
 }
