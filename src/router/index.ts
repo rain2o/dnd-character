@@ -16,6 +16,11 @@ const routes: Array<RouteConfig> = [
     component: () => import(/* webpackChunkName: "survey" */ '../views/Survey.vue'),
   },
   {
+    path: '/character',
+    name: 'Character',
+    component: () => import(/* webpackChunkName: "character" */ '../views/Character.vue'),
+  },
+  {
     // Catch-all for 404 handler
     path: '*',
     component: () => import(/* webpackChunkName: "notfound" */ '../views/NotFound.vue'),

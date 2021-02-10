@@ -20,6 +20,11 @@ import {
   RaceScores,
 } from '@/types';
 
+const baseScores: { [key in Stat]?: number } = {
+  human: 13,
+  halfelf: 4,
+};
+
 /**
  * Filter modifiers to the provided stats
  * @param modifiers All modifiers of which to filter
@@ -40,13 +45,15 @@ export const filterModifiers = (
  * @param modifiers Scoped modifiers
  * @param stat Stat of which to calculate the score
  */
-export const reduceScore = (modifiers: Modifier[], stat: Stat) => modifiers
-  .reduce((accumulator: number, currentModifier: Modifier) => {
+export const reduceScore = (modifiers: Modifier[], stat: Stat) => {
+  const start = baseScores[stat] || 0;
+  return modifiers.reduce((accumulator: number, currentModifier: Modifier) => {
     if (currentModifier.stat === stat) {
       return accumulator + currentModifier.value;
     }
     return accumulator;
-  }, 0);
+  }, start);
+};
 
 /**
  * Calculate the final scores of a given group of stats
