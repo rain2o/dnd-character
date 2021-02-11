@@ -22,7 +22,6 @@ yarn lint
 ```
 
 ### TODO
-* Show Results
 * Add sharing capabilities (what kind and how?)
 * style everything
 * add better copy

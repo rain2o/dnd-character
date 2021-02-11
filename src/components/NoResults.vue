@@ -1,5 +1,5 @@
 <template>
-  <div class="no-results pt-10 px-4">
+  <div class="no-results pt-5 px-4">
     <h1 class="text-2xl font-bold text-primary text-center mb-2">
       Looks like that's a natural 1!
     </h1>

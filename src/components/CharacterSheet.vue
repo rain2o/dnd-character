@@ -1,33 +1,56 @@
 <template>
   <div class="character-sheet">
     <p class="text-secondary capitalize text-center mb-1 text-lg font-semibold">
+      {{ alignmentDetails[scores.alignment].name }}
+    </p>
+    <p class="text-secondary capitalize text-center mb-1 text-lg font-semibold">
+      Level {{ scores.level }}
+    </p>
+    <p class="text-secondary capitalize text-center mb-3 text-lg font-semibold">
       <span>{{ race }}</span> |
       <span class="text-primary">{{ primaryClass }}</span>
       <span v-if="secondaryClass" class="text-primary">
           / {{ secondaryClass }}
       </span>
     </p>
-    <p class="text-secondary capitalize text-center mb-3 text-lg font-semibold">
-      Level {{ scores.level }}
-    </p>
 
     <AbilityScores :abilities="scores.abilityScores" />
+
+    <hr class="border border-secondary w-full my-4" />
+    <StatDetails name="Alignment" :stat="alignmentDetails[scores.alignment]" />
+    <hr class="border border-secondary w-full my-4" />
+    <StatDetails name="Race" :stat="raceDetails[race]" />
+    <hr class="border border-secondary w-full my-4" />
+    <StatDetails name="Class" :stat="classDetails[primaryClass]" />
+    <template v-if="secondaryClass">
+      <hr class="border border-secondary w-full my-4" />
+      <StatDetails name="Secondary Class" :stat="classDetails[secondaryClass]" />
+    </template>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
 import {
+  Alignment,
   ClassName,
+  Details,
   Race,
   Scores,
 } from '@/types';
 import AbilityScores from './AbilityScores.vue';
+import StatDetails from './StatDetails.vue';
+import {
+  alignment as alignmentDetails,
+  race as raceDetails,
+  class as classDetails,
+} from '../details.json';
 
 export default Vue.extend({
   name: 'CharacterSheet',
   components: {
     AbilityScores,
+    StatDetails,
   },
   props: {
     scores: {
@@ -39,6 +62,15 @@ export default Vue.extend({
     return {
       defaultClass: 'fighter' as ClassName,
       defaultRace: 'human' as Race,
+      alignmentDetails: alignmentDetails as {
+        [key in Alignment]: Details
+      },
+      raceDetails: raceDetails as {
+        [key in Race]: Details
+      },
+      classDetails: classDetails as {
+        [key in ClassName]: Details
+      },
     };
   },
   computed: {

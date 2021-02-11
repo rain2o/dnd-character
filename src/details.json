@@ -1,0 +1,120 @@
+{
+  "alignment": {
+    "lg": {
+      "name": "Lawful Good",
+      "details": "A lawful good character acts as a good person is expected or required to act. He combines a commitment to oppose evil with the discipline to fight relentlessly. He tells the truth, keeps his word, helps those in need, and speaks out against injustice. A lawful good character hates to see the guilty go unpunished.  Lawful good is the best alignment you can be because it combines honor and compassion.  However, lawful good can be a dangerous alignment when it restricts freedom and criminalizes self-interest."
+    },
+    "ng": {
+      "name": "Neutral Good",
+      "details": "A neutral good character does the best that a good person can do. He is devoted to helping others. He works with kings and magistrates but does not feel beholden to them. Neutral good is the best alignment you can be because it means doing what is good without bias for or against order. However, neutral good can be a dangerous alignment when it advances mediocrity by limiting the actions of the truly capable."
+    },
+    "cg": {
+      "name": "Chaotic Good",
+      "details": "A chaotic good character acts as his conscience directs him with little regard for what others expect of him. He makes his own way, but he's kind and benevolent. He believes in goodness and right but has little use for laws and regulations. He hates it when people try to intimidate others and tell them what to do. He follows his own moral compass, which, although good, may not agree with that of society. Chaotic good is the best alignment you can be because it combines a good heart with a free spirit. However, chaotic good can be a dangerous alignment when it disrupts the order of society and punishes those who do well for themselves."
+    },
+    "ln": {
+      "name": "Lawful Neutral",
+      "details": "A lawful neutral character acts as law, tradition, or a personal code directs him. Order and organization are paramount to him. He may believe in personal order and live by a code or standard, or he may believe in order for all and favor a strong, organized government. Lawful neutral is the best alignment you can be because it means you are reliable and honorable without being a zealot. However, lawful neutral can be a dangerous alignment when it seeks to eliminate all freedom, choice, and diversity in society."
+    },
+    "nn": {
+      "name": "True Neutral",
+      "details": "A true neutral character does what seems to be a good idea. He doesn't feel strongly one way or the other when it comes to good vs. evil or law vs. chaos. Most true neutral characters exhibit a lack of conviction or bias rather than a commitment to neutrality. Such a character thinks of good as better than evil after all, he would rather have good neighbors and rulers than evil ones. Still, he's not personally committed to upholding good in any abstract or universal way. Some true neutral characters, on the other hand, commit themselves philosophically to neutrality. They see good, evil, law, and chaos as prejudices and dangerous extremes. They advocate the middle way of neutrality as the best, most balanced road in the long run. True neutral is the best alignment you can be because it means you act naturally, without prejudice or compulsion. However, true neutral can be a dangerous alignment when it represents apathy, indifference, and a lack of conviction."
+    },
+    "cn": {
+      "name": "Chaotic Neutral",
+      "details": "A chaotic neutral character follows his whims. He is an individualist first and last. He values his own liberty but doesn't strive to protect others' freedom. He avoids authority, resents restrictions, and challenges traditions. A chaotic neutral character does not intentionally disrupt organizations as part of a campaign of anarchy. To do so, he would have to be motivated either by good (and a desire to liberate others) or evil (and a desire to make   those different from himself suffer). A chaotic neutral character may be unpredictable, but   his behavior is not totally random. He is not as likely to jump off a bridge as to cross it.   Chaotic neutral is the best alignment you can be because it represents true freedom from both   society's restrictions and a do-gooder's zeal. However, chaotic neutral can be a dangerous   alignment when it seeks to eliminate all authority, harmony, and order in society."
+    },
+    "le": {
+      "name": "Lawful Evil",
+      "details": "A lawful evil villain methodically takes what he wants within the limits of his code of conduct without regard for whom it hurts. He cares about tradition, loyalty, and order but not about freedom, dignity, or life. He plays by the rules but without mercy or compassion. He is comfortable in a hierarchy and would like to rule, but is willing to serve. He condemns others not according to their actions but according to race, religion, homeland, or social rank. He is loath to break laws or promises.  This reluctance comes partly from his nature and partly because he depends on order to protect himself from those who oppose him on moral grounds. Some lawful evil villains have particular taboos, such as not killing in cold blood (but having underlings do it) or not letting children come to harm (if it can be helped). They imagine that these compunctions put them above unprincipled villains.  Some lawful evil people and creatures commit themselves to evil with a zeal like that of a crusader committed to good. Beyond being willing to hurt others for their own ends, they take pleasure in spreading evil as an end unto itself. They may also see doing evil as part of a duty to an evil deity or master. Lawful evil is sometimes called diabolical, because devils are the epitome of lawful evil. Lawful evil is the best alignment you can be because it combines honor and dedicated self-interest. However, lawful evil can be a dangerous alignment because it represents methodical, intentional, and frequently successful evil."
+    },
+    "ne": {
+      "name": "Neutral Evil",
+      "details": "A neutral evil villain does whatever he can get away with. He is out for himself, pure and simple. He sheds no tears for those he kills, whether for profit, sport, or convenience. He has no love of order and holds no illusion that following laws, traditions, or codes would make him any better or more noble. On the other hand, he doesn't have the restless nature or love of conflict that a chaotic evil villain has.  Some neutral evil villains hold up evil as an ideal, committing evil for its own sake. Most often, such villains are devoted to evil deities or secret societies. Neutral evil is the best alignment you can be because you can advance yourself without regard for others. However, neutral evil can be a dangerous alignment because it represents pure evil without honor and without variation."
+    },
+    "ce": {
+      "name": "Chaotic Evil",
+      "details": "A chaotic evil character does whatever his greed, hatred, and lust for destruction drive him to do. He is hot-tempered, vicious, arbitrarily violent, and unpredictable. If he is simply out for whatever he can get, he is ruthless and brutal. If he is committed to the spread of evil and chaos, he is even worse. Thankfully, his plans are haphazard, and any groups he joins or forms are poorly organized. Typically, chaotic evil people can be made to work together only by force, and their leader lasts only as long as he can thwart attempts to topple or assassinate him. Chaotic evil is sometimes called demonic because demons are the epitome of chaotic evil. Chaotic evil is the best alignment you can be because combines self-interest and pure freedom. However, chaotic evil can be a dangerous alignment because it represents the destruction not only of beauty and life but also of the order on which beauty and life "
+    }
+  },
+  "race": {
+    "human": {
+      "name": "Humans",
+      "details": "are the most adaptable of the common races. Short generations and a penchant for migration and conquest have made them physically diverse as well. Humans are often unorthodox in their dress, sporting unusual hairstyles, fanciful clothes, tattoos, and the like."
+    },
+    "halfling": {
+      "name": "Halflings",
+      "details": "are clever, capable and resourceful survivors. They are notoriously curious and show a daring that many larger people can't match. They can be lured by wealth but tend to spend rather than hoard. They prefer practical clothing and would rather wear a comfortable shirt than jewelry. Halflings stand about 3 feet tall and commonly live to see 150."
+    },
+    "elf": {
+      "name": "Elves",
+      "details": "are known for their poetry, song, and magical arts, but when danger threatens they show great skill with weapons and strategy. Elves can live to be over 700 years old and, by human standards, are slow to make friends and enemies, and even slower to forget them. Elves are slim and stand 4.5 to 5.5 feet tall. They have no facial or body hair, prefer comfortable clothes, and possess unearthly grace. Many others races find them hauntingly beautiful."
+    },
+    "halfelf": {
+      "name": "Half-Elves",
+      "details": "have the curiosity and ambition for their human parent and the refined senses and love of nature of their elven parent, although they are outsiders among both cultures. To humans, half-elves are paler, fairer and smoother-skinned than their human parents, but their actual skin tones and other details vary just as human features do.  Half-elves tend to have green, elven eyes. They live to about 180."
+    },
+    "gnome": {
+      "name": "Gnomes",
+      "details": "are in wide demand as alchemists, inventors, and technicians, though most prefer to remain among their own kind in simple comfort. Gnomes adore animals, gems, and jokes, especially pranks. They love to learn by personal experience, and are always trying new ways to build things. Gnomes stand 3 to 3.5 feet tall and live about 350 to 500 years."
+    },
+    "halforc": {
+      "name": "Half-Orcs",
+      "details": "are the short-tempered and sullen result of human and orc pairings. They would rather act than ponder and would rather fight than argue. They love simple pleasures, such as feasting, boasting, and wild dancing. They are an asset at the right sort of party, but not at the duchess's grand ball. Half-orcs are as tall as humans but their brutish features betray their lineage.  They regard scars as tokens of pride and things of beauty. They rarely reach 75 years of age."
+    },
+    "dwarf": {
+      "name": "Dwarves",
+      "details": "are known for their skill in warfare, their ability to withstand physical and magical punishment, their hard work, and their capacity for drinking ale. Dwarves are slow to jest and suspicious of strangers, but they are generous to those who earn their trust. They stand just 4 to 4.5 feet tall, but are broad and compactly built, almost as wide as they are tall. Dwarven men value their beards highly."
+    }
+  },
+  "class": {
+    "fighter": {
+      "name": "Fighters",
+      "details": "Fighters can be many things, from soldiers to criminal enforcers. Some see adventure as a way to get rich, while others use their skills to protect the innocent. Fighters have the best all-around fighting capabilities of the PC classes, and they are trained to use all standard weapons and armor. A fighter's rigorous martial training grants him many bonus feats as he progresses, and high-level fighters have access to special melee maneuvers and exotic weapons not available to any other character."
+    },
+    "ranger": {
+      "name": "Rangers",
+      "details": "Rangers are skilled stalkers and hunters who make their home in the woods. Their martial skill is nearly the equal of the fighter, but they lack the latter's dedication to the craft of fighting. Instead, the ranger focuses his skills and training on a specific enemy a type of creature he bears a vengeful grudge against and hunts above all others. Rangers often accept the role of protector, aiding those who live in or travel through the woods. His skills allow him to move quietly and stick to the shadows, especially in natural settings, and he also has special knowledge of certain types of creatures. Finally, an experienced ranger has such a tie to nature that he can actually draw on natural power to cast divine spells, much as a druid does, and like a druid he is often accompanied by animal companions. A ranger's Wisdom score should be high, as this determines the maximum spell level that he can cast."
+    },
+    "paladin": {
+      "name": "Paladins",
+      "details": "Paladins take their adventures seriously, and even a mundane mission is, in the heart of the paladin, a personal test an opportunity to demonstrate bravery, to learn tactics, and to find ways to do good. Divine power protects these warriors of virtue, warding off harm, protecting from disease, healing, and guarding against fear. The paladin can also direct this power to help others, healing wounds or curing diseases, and also use it to destroy evil. Experienced paladins can smite evil foes and turn away undead. A paladin's Wisdom score should be high, as this determines the maximum spell level that they can cast. Many of the paladin's special abilities also benefit from a high Charisma score."
+    },
+    "cleric": {
+      "name": "Clerics",
+      "details": "Clerics act as intermediaries between the earthly and the divine (or infernal) worlds. A good cleric helps those in need, while an evil cleric seeks to spread his patron's vision of evil across the world. All clerics can heal wounds and bring people back from the brink of death, and powerful clerics can even raise the dead. Likewise, all clerics have authority over undead creatures, and they can turn away or even destroy these creatures. Clerics are trained in the use of simple weapons, and can use all forms of armor and shields without penalty, since armor does not interfere with the casting of divine spells. In addition to his normal complement of spells, every cleric chooses to focus on two of his deity's domains. These domains grants the cleric special powers, and give him access to spells that he might otherwise never learn. A cleric's Wisdom score should be high, since this determines the maximum spell level that he can cast."
+    },
+    "druid": {
+      "name": "Druids",
+      "details": "Druids gain power not by ruling nature but by being at one with it. They hate the unnatural, including aberrations or undead, and destroy them where possible. Druids receive divine spells from nature, not the gods, and can gain an array of powers as they gain experience, including the ability to take the shapes of animals. The weapons and armor of a druid are restricted by their traditional oaths, not simply training. A druid's Wisdom score should be high, as this determines the maximum spell level that they can cast."
+    },
+    "monk": {
+      "name": "Monks",
+      "details": "Monks are versatile warriors skilled at fighting without weapons or armor. Good-aligned monks serve as protectors of the people, while evil monks make ideal spies and assassins. Though they don't cast spells, monks channel a subtle energy, called ki. This energy allows them to perform amazing feats, such as healing themselves, catching arrows in flight, and dodging blows with lightning speed. Their mundane and ki-based abilities grow with experience, granting them more power over themselves and their environment. Monks suffer unique penalties to their abilities if they wear armor, as doing so violates their rigid oath. A monk wearing armor loses their Wisdom and level based armor class bonuses, their movement speed, and their additional unarmed attacks per round."
+    },
+    "wizard": {
+      "name": "Wizards",
+      "details": "Wizards are arcane spellcasters who depend on intensive study to create their magic. To wizards, magic is not a talent but a difficult, rewarding art. When they are prepared for battle, wizards can use their spells to devastating effect. When caught by surprise, they are vulnerable. The wizard's strength is her spells, everything else is secondary. She learns new spells as she experiments and grows in experience, and she can also learn them from other wizards. In addition, over time a wizard learns to manipulate her spells so they go farther, work better, or are improved in some other way. A wizard can call a familiar- a small, magical, animal companion that serves her. With a high Intelligence, wizards are capable of casting very high levels of spells."
+    },
+    "barbarian": {
+      "name": "Barbarians",
+      "details": "Barbarians are brave, even reckless, and their warrior skills make them well suited to adventure. Instead of training and discipline, barbarians have a powerful rage that makes them stronger, tougher, and better able to withstand attacks. They only have the energy for a few such displays per day, but it is usually sufficient. Constant exposure to danger has also given barbarians a sort of 'sixth sense,' the preternatural ability to sense danger and dodge attacks, and their running stamina is legendary."
+    },
+    "rogue": {
+      "name": "Rogues",
+      "details": "Rogues have little in common with each other. While some - maybe even the majority - are stealthy thieves, many serve as scouts, spies, investigators, diplomats, and simple thugs. Rogues are versatile, adaptable, and skilled at getting what others don't want them to get. While not equal to a fighter in combat, a rogue knows how to hit where it hurts, and a sneak attack can dish out a lot of damage. Rogues also seem to have a sixth sense when it comes to avoiding danger. Experienced rogues develop nearly magical powers and skills as they master the arts of stealth, evasion, and sneak attacks. In addition, while not capable of casting spells on their own, a rogue can sometimes 'fake it' well enough to cast spells from scrolls, activate wands, and use just about any other magic item."
+    },
+    "sorcerer": {
+      "name": "Sorcerers",
+      "details": "Sorcerers are arcane spellcasters who manipulate magic energy with imagination and talent rather than studious discipline. They have no books, no mentors, no theories just raw power that they direct at will. Sorcerers know fewer spells than wizards do and acquire them more slowly, but they can cast individual spells more often and have no need to prepare their incantations ahead of time. Also unlike wizards, sorcerers cannot specialize in a school of magic. Since sorcerers gain their powers without undergoing the years of rigorous study that wizards go through, they have more time to learn fighting skills and are proficient with simple weapons. Charisma is very important for sorcerers; the higher their value in this ability, the higher the spell level they can cast."
+    },
+    "warlock": {
+      "name": "Warlocks",
+      "details": "Warlocks are driven by an insatiable need for knowledge and power, which compels them to enter into a pact with an otherworldly being.  Sometimes the relationship between a warlock and their patron is like that of a cleric and a deity, though the beings that serve as patrons to warlocks are not gods.  A warlock might lead a cult dedicated to a fey prince, an archdevil, or an utterly alien entity - beings not typically served by clerics.  More often, though, the arrangement is similar to that between a master and an apprentice.  The warlock learns and grows in power, at the cost of occasional services performed on the patron's behalf."
+    },
+    "bard": {
+      "name": "Bards",
+      "details": "Bards often serve as negotiators, messengers, scouts, and spies. They love to accompany heroes (and villains) to witness heroic (or villainous) deeds firsthand, since a bard who can tell a story from personal experience earns renown among his fellows. A bard casts arcane spells without any advance preparation, much like a sorcerer. Bards also share some specialized skills with rogues, and their knowledge of item lore is nearly unmatched. A high Charisma score allows a bard to cast high-level spells."
+    }
+  }
+}

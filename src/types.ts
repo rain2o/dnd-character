@@ -60,28 +60,28 @@ export const ALIGNMENTS = [
   'lg',
   'ln',
   'le',
-  'ng',
-  'nn',
-  'ne',
   'cg',
   'cn',
   'ce',
+  'ng',
+  'ne',
+  'nn',
 ] as const;
 export type AlignmentTuple = typeof ALIGNMENTS;
 export type Alignment = AlignmentTuple[number];
 
 export const LAWFULNESS_RANGE = [
   'lx',
-  'nx',
   'cx',
+  'nx',
 ] as const;
 export type LawfulnessTuple = typeof LAWFULNESS_RANGE;
 export type Lawfulness = LawfulnessTuple[number];
 
 export const GOODNESS_RANGE = [
   'xg',
-  'xn',
   'xe',
+  'xn',
 ] as const;
 export type GoodnessTuple = typeof GOODNESS_RANGE;
 export type Goodness = GoodnessTuple[number];
@@ -102,7 +102,7 @@ export enum ScoreTypes {
   races = 'races',
   classes = 'classes',
   abilityScores = 'abilityScores',
-  alignments = 'alignments',
+  alignment = 'alignment',
   lawfulness = 'lawfulness',
   goodness = 'goodness',
   level = 'level',
@@ -121,7 +121,7 @@ export type ClassScores = {
 }
 
 export type AlignmentScores = {
-  [key in Alignment]: number;
+  [key in Alignment]?: number;
 }
 
 export type LawfulnessScores = {
@@ -143,7 +143,7 @@ export type Scores = {
   [ScoreTypes.races]: RaceScores;
   [ScoreTypes.classes]: ClassScores;
   [ScoreTypes.abilityScores]: AbilityScoreScores;
-  [ScoreTypes.alignments]: AlignmentScores;
+  [ScoreTypes.alignment]: Alignment;
   [ScoreTypes.lawfulness]: LawfulnessScores;
   [ScoreTypes.goodness]: GoodnessScores;
   [ScoreTypes.level]: number;
@@ -179,4 +179,9 @@ export type Character = {
     [key in AbilityScore]: number
   };
   alignment: Alignment;
+}
+
+export type Details = {
+  name: string;
+  details: string;
 }

@@ -1,6 +1,6 @@
 <template>
   <div class="ability-score">
-    <div class="border-secondary border-2 rounded text-center p-1">
+    <div class="border-secondary border-2 rounded-xl text-center p-1">
       <p class="text-gray-600 mb-2">{{ name }}</p>
       <p class="text-lg font-semibold text-secondary relative -bottom-1">{{ score }}</p>
       <p
