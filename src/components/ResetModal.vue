@@ -8,7 +8,7 @@
         <!--content-->
         <div
           class="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none
-                 focus:outline-none"
+                 focus:outline-none max-w-xl"
         >
           <!--header-->
           <div
@@ -19,11 +19,11 @@
               Confirm Reset
             </h3>
             <button
-              class="p-1 ml-auto bg-transparent border-0 text-secondary float-right
+              class="p-1 ml-auto bg-transparent border-0 float-right
                     text-3xl leading-none font-semibold outline-none focus:outline-none"
               v-on:click="$emit('cancel')"
             >
-              <span class="bg-transparent text-secondary h-6 w-6 text-2xl block
+              <span class="bg-transparent h-6 w-6 text-2xl block
                     outline-none focus:outline-none">
                 ×
               </span>
@@ -39,36 +39,25 @@
           <!--footer-->
           <div class="flex items-center justify-evenly p-6 border-t border-solid border-gray-300
               rounded-b">
-            <button
-              class="text-background bg-primary border border-solid border-primary hover:text-white
-                     active:bg-red-600 font-bold uppercase text-sm
-                     px-6 py-3 rounded outline-none focus:outline-none mr-1 mb-1"
-              type="button"
-              style="transition: all .15s ease"
-              v-on:click="$emit('confirm')"
-            >
-              Confirm
-            </button>
-            <button
-              class="text-primary background-transparent font-bold uppercase px-6 py-3 text-sm
-                     border-primary border-solid border outline-none focus:outline-none mr-1 mb-1"
-              type="button"
-              style="transition: all .15s ease"
-              v-on:click="$emit('cancel')"
-            >
-              Cancel
-            </button>
+            <Button @click="$emit('confirm')">Confirm</Button>
+            <Button :secondary="true" @click="$emit('cancel')">Cancel</Button>
           </div>
         </div>
       </div>
     </div>
-    <div class="opacity-25 fixed inset-0 z-40 bg-secondary"></div>
+    <div class="opacity-25 fixed inset-0 z-40 bg-black"></div>
   </div>
 </template>
 
 <script>
-export default {
+import Vue from 'vue';
+import Button from './Button.vue';
+
+export default Vue.extend({
   name: 'ResetModal',
+  components: {
+    Button,
+  },
   props: {
     show: {
       type: Boolean,
@@ -76,5 +65,5 @@ export default {
       default: true,
     },
   },
-};
+});
 </script>

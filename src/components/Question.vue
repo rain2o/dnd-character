@@ -1,11 +1,12 @@
 <template>
-  <div class="question py-3 my-2 border-t-2 border-secondary">
-    <p class="font-bold text-primary pt-3">
+  <div class="question py-3 my-2 border-t-2 border-red-300">
+    <p class="font-bold text-red-800 pt-3">
       {{ question.prompt }}
     </p>
-    <div class="question__options">
+    <div class="question__options md:grid md:grid-cols-2">
       <label
-        class="block border-2 rounded-md py-3 px-2 my-4 cursor-pointer"
+        class="block border-2 rounded-xl py-3 px-4 my-4 md:my-2 cursor-pointer
+              md:flex md:items-center md:justify-center md:mx-4 md:text-center"
         :class="option.value === currentValue ? activeClass : inactiveClass"
         v-for="option in question.options"
         :key="`${index}_${option.value}`"
@@ -50,8 +51,9 @@ export default Vue.extend({
   data() {
     return {
       currentValue: this.answer,
-      activeClass: 'border-primary bg-primary text-background',
-      inactiveClass: 'border-secondary bg-background',
+      activeClass:
+        'border-red-800 text-white bg-red-600',
+      inactiveClass: 'border-red-300 bg-white md:bg-red-50',
     };
   },
   watch: {

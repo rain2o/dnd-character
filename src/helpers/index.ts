@@ -13,11 +13,13 @@ import {
   Score,
   AbilityScoreScores,
   StatsTuple,
-  AlignmentScores,
   ClassScores,
   GoodnessScores,
   LawfulnessScores,
   RaceScores,
+  Goodness,
+  Lawfulness,
+  Alignment,
 } from '@/types';
 
 const baseScores: { [key in Stat]?: number } = {
@@ -68,6 +70,25 @@ export const reduceScores = (modifiers: Modifier[], stats: StatsTuple) => {
 };
 
 /**
+ * Find the final alignment using the scores of
+ * goodness and lawfulness
+ * @param goodnessScores   Final goodness scores
+ * @param lawfulnessScores Final lawfulness scores
+ */
+export const reduceAlignments = (
+  goodnessScores: GoodnessScores,
+  lawfulnessScores: LawfulnessScores,
+): Alignment => {
+  const gProps = Object.keys(goodnessScores) as Goodness[];
+  const goodness = gProps.reduce((a, b) => (goodnessScores[a] > goodnessScores[b] ? a : b));
+
+  const lProps = Object.keys(lawfulnessScores) as Lawfulness[];
+  const lawfulness = lProps.reduce((a, b) => (lawfulnessScores[a] > lawfulnessScores[b] ? a : b));
+
+  return lawfulness.substr(0, 1) + goodness.substr(1, 1) as Alignment;
+};
+
+/**
  * Extract the stat-specific modifiers from the
  * provided array of all modifiers.
  * The name would be better as extractModifiers, but it's a
@@ -80,32 +101,33 @@ export const extractAspects = (modifiers: Modifier[]): Scores => {
     [ScoreTypes.abilityScores]: filterModifiers(modifiers, ABILITY_SCORES),
     [ScoreTypes.races]: filterModifiers(modifiers, RACES),
     [ScoreTypes.classes]: filterModifiers(modifiers, CLASSES),
-    [ScoreTypes.alignments]: filterModifiers(modifiers, ALIGNMENTS),
+    [ScoreTypes.alignment]: filterModifiers(modifiers, ALIGNMENTS),
     [ScoreTypes.goodness]: filterModifiers(modifiers, GOODNESS_RANGE),
     [ScoreTypes.lawfulness]: filterModifiers(modifiers, LAWFULNESS_RANGE),
     [ScoreTypes.level]: modifiers.filter((modifier) => modifier.stat === ScoreTypes.level),
   };
+
+  const goodnessScores = reduceScores(
+    scopedModifiers[ScoreTypes.goodness],
+    GOODNESS_RANGE,
+  ) as GoodnessScores;
+  const lawfulnessScores = reduceScores(
+    scopedModifiers[ScoreTypes.lawfulness],
+    LAWFULNESS_RANGE,
+  ) as LawfulnessScores;
+
   const scores: Scores = {
     [ScoreTypes.abilityScores]: reduceScores(
       scopedModifiers[ScoreTypes.abilityScores],
       ABILITY_SCORES,
     ) as AbilityScoreScores,
-    [ScoreTypes.alignments]: reduceScores(
-      scopedModifiers[ScoreTypes.alignments],
-      ALIGNMENTS,
-    ) as AlignmentScores,
     [ScoreTypes.classes]: reduceScores(
       scopedModifiers[ScoreTypes.classes],
       CLASSES,
     ) as ClassScores,
-    [ScoreTypes.goodness]: reduceScores(
-      scopedModifiers[ScoreTypes.goodness],
-      GOODNESS_RANGE,
-    ) as GoodnessScores,
-    [ScoreTypes.lawfulness]: reduceScores(
-      scopedModifiers[ScoreTypes.lawfulness],
-      LAWFULNESS_RANGE,
-    ) as LawfulnessScores,
+    [ScoreTypes.goodness]: goodnessScores,
+    [ScoreTypes.lawfulness]: lawfulnessScores,
+    [ScoreTypes.alignment]: reduceAlignments(goodnessScores, lawfulnessScores),
     [ScoreTypes.races]: reduceScores(
       scopedModifiers[ScoreTypes.races],
       RACES,

@@ -2,35 +2,40 @@
   <div class="survey">
     <ProgressBar :percentage="percentageComplete" />
     <ResetModal :show="showModal" @confirm="resetAnswers" @cancel="showModal = false" />
-    <div class="px-5 max-w-2xl mx-auto">
-      <p class="text-center my-2">page {{ currentPage }} of {{ pages }}</p>
-      <div class="questions">
-        <QuestionComponent
-          v-for="question in currentQuestions"
-          :key="question.index"
-          :question="question"
-          :index="question.index"
-          :answer="getSelectedAnswer(question)"
-          @modify="updateModifiers(question.index, $event)"
-        />
+    <div class="pt-0 md:pt-8 md:px-10 md:py-8">
+      <div class="max-w-4xl mx-auto md:px-12 md:py-4 md:bg-white md:rounded-lg md:shadow-md">
+        <div class="p-4">
+          <p class="text-center mb-4">page {{ currentPage }} of {{ pages }}</p>
+          <div class="questions">
+            <QuestionComponent
+              v-for="question in currentQuestions"
+              :key="question.index"
+              :question="question"
+              :index="question.index"
+              :answer="getSelectedAnswer(question)"
+              @modify="updateModifiers(question.index, $event)"
+            />
+          </div>
+        </div>
+        <div class="sticky md:relative text-center bottom-0 w-full">
+          <Button
+            :link="previous"
+            :sticky="true"
+            class="inline-block w-1/3 sm:mx-2 sm:w-1/4 border-r border-black sm:border-none"
+          >{{ previousText }}</Button>
+          <Button
+            :disabled="!scores.filter(Boolean).length"
+            :sticky="true"
+            class="inline-block w-1/3 sm:mx-2 sm:w-1/4"
+            @click="showModal = true"
+          >Reset</Button>
+          <Button
+            :link="next"
+            :sticky="true"
+            class="inline-block w-1/3 sm:mx-2 sm:w-1/4 border-l border-black sm:border-none"
+          >{{ nextText }}</Button>
+        </div>
       </div>
-    </div>
-    <div class="sticky bottom-0 w-full">
-      <router-link
-        class="bg-primary text-background inline-block w-1/3 py-3 font-bold text-center
-               border-r-2 border-secondary"
-        :to="previous"
-      >{{ previousText }}</router-link>
-      <button
-        :disabled="!scores.filter(Boolean).length"
-        class="bg-primary text-background inline-block w-1/3 py-3 font-bold text-center"
-        @click="showModal = true"
-      >Reset</button>
-      <router-link
-        class="bg-primary text-background inline-block w-1/3 py-3 font-bold text-center
-               border-l-2 border-secondary"
-        :to="next"
-      >{{ nextText }}</router-link>
     </div>
   </div>
 </template>
@@ -42,6 +47,7 @@ import {
   Scores,
 } from '../types';
 import questions from '../questions.json';
+import Button from '../components/Button.vue';
 import QuestionComponent from '../components/Question.vue';
 import ProgressBar from '../components/ProgressBar.vue';
 import ResetModal from '../components/ResetModal.vue';
@@ -56,6 +62,7 @@ const allQuestions = questions.map((current, index) => {
 export default Vue.extend({
   name: 'Survey',
   components: {
+    Button,
     ProgressBar,
     QuestionComponent,
     ResetModal,

@@ -1,31 +1,28 @@
 <template>
-  <div class="character py-4 max-w-2xl mx-auto">
-    <ResetModal :show="showModal" @confirm="resetAnswers" @cancel="showModal = false" />
+  <div class="pt-10 md:px-10 md:py-10">
+    <div class="character py-4 max-w-4xl mx-auto md:p-12 md:bg-white md:rounded-lg md:shadow-md">
+      <ResetModal :show="showModal" @confirm="resetAnswers" @cancel="showModal = false" />
 
-    <div v-if="scores.length > 0" class="px-4">
-      <h1 class="text-2xl font-bold text-primary text-center mb-2">
-        Welcome adventurer!
-      </h1>
-      <h2 class="text-lg font-bold text-secondary text-center mb-4">
-        Let's have a look at you...
-      </h2>
-      <hr class="border border-secondary w-full my-4" />
+      <div v-if="scores.length > 0" class="px-4">
+        <h1 class="text-2xl font-bold text-red-800 text-center mb-2">
+          Welcome adventurer!
+        </h1>
+        <h2 class="text-lg font-bold text-center mb-4">
+          Let's have a look at you...
+        </h2>
+        <Separator />
 
-      <CharacterSheet :scores="finalScores" />
+        <CharacterSheet :scores="finalScores" />
 
-      <hr class="border border-secondary w-full my-4" />
-      <div class="actions">
-        <button
-          class="bg-primary text-background block w-auto py-2 px-4 font-bold text-center
-                 mx-auto my-4"
-          @click="showModal = true"
-        >Reset My Character</button>
-
-        <p class="text-secondary text-center">Share coming soon...</p>
+        <Separator />
+        <div class="actions">
+          <Button class="mb-4 mx-auto" @click="showModal = true">Reset My Character</Button>
+          <p class="text-center">Share coming soon...</p>
+        </div>
       </div>
-    </div>
 
-    <NoResults v-else />
+      <NoResults v-else />
+    </div>
   </div>
 </template>
 
@@ -36,13 +33,17 @@ import { Modifier, Scores } from '@/types';
 import CharacterSheet from '../components/CharacterSheet.vue';
 import NoResults from '../components/NoResults.vue';
 import ResetModal from '../components/ResetModal.vue';
+import Button from '../components/Button.vue';
+import Separator from '../components/Separator.vue';
 
 export default Vue.extend({
   name: 'Character',
   components: {
     CharacterSheet,
+    Button,
     NoResults,
     ResetModal,
+    Separator,
   },
   data() {
     return {

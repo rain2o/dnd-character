@@ -23,6 +23,7 @@ yarn lint
 
 ### TODO
 * Add sharing capabilities (what kind and how?)
-* style everything
 * add better copy
 * PWA?
+* acessibility
+* icons? like classes maybe

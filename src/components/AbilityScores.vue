@@ -4,32 +4,32 @@
     <AbilityScore
       name="Strength"
       :score="abilities.strength"
-      class="w-1/3 md:w-1/6 p-1 mb-3"
+      class="w-1/3 md:w-1/4 lg:w-1/6 md:mx-2 lg:mx-0 p-1 mb-3"
     />
     <AbilityScore
       name="Dexterity"
       :score="abilities.dexterity"
-      class="w-1/3 md:w-1/6 p-1 mb-3"
+      class="w-1/3 md:w-1/4 lg:w-1/6 md:mx-2 lg:mx-0 p-1 mb-3"
     />
     <AbilityScore
       name="Constitution"
       :score="abilities.constitution"
-      class="w-1/3 md:w-1/6 p-1 mb-3"
+      class="w-1/3 md:w-1/4 lg:w-1/6 md:mx-2 lg:mx-0 p-1 mb-3"
     />
     <AbilityScore
       name="Intelligence"
       :score="abilities.intelligence"
-      class="w-1/3 md:w-1/6 p-1 mb-3"
+      class="w-1/3 md:w-1/4 lg:w-1/6 md:mx-2 lg:mx-0 p-1 mb-3"
     />
     <AbilityScore
       name="Wisdom"
       :score="abilities.wisdom"
-      class="w-1/3 md:w-1/6 p-1 mb-3"
+      class="w-1/3 md:w-1/4 lg:w-1/6 md:mx-2 lg:mx-0 p-1 mb-3"
     />
     <AbilityScore
       name="Charisma"
       :score="abilities.charisma"
-      class="w-1/3 md:w-1/6 p-1 mb-3"
+      class="w-1/3 md:w-1/4 lg:w-1/6 md:mx-2 lg:mx-0 p-1 mb-3"
     />
   </div>
 </template>

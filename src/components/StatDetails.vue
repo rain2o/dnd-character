@@ -1,6 +1,6 @@
 <template>
   <div class="details text-secondary font-medium">
-    <p class="text-primary text-lg font-semibold mb-2">{{ name }}</p>
+    <p class="text-red-800 text-lg font-semibold mb-2">{{ name }}</p>
     <span class="font-semibold">{{ stat.name }}</span> - {{ stat.details }}
   </div>
 </template>
