@@ -1,25 +1,25 @@
 <template>
   <div class="character-sheet">
     <p class="capitalize text-center mb-1 text-lg font-semibold">
-      {{ alignmentDetails[scores.alignment].name }}
+      {{ alignmentDetails[character.alignment].name }}
     </p>
     <p class="capitalize text-center mb-1 text-lg font-semibold">
-      Level {{ scores.level }}
+      Level {{ character.level }}
     </p>
     <p class="capitalize text-center mb-3 text-lg font-semibold">
-      <span>{{ race }}</span> |
+      <span>{{ character.race }}</span> |
       <span class="text-red-800">{{ primaryClass }}</span>
       <span v-if="secondaryClass" class="text-red-800">
           / {{ secondaryClass }}
       </span>
     </p>
 
-    <AbilityScores :abilities="scores.abilityScores" />
+    <AbilityScores :abilities="character.abilityScores" />
 
     <Separator />
-    <StatDetails name="Alignment" :stat="alignmentDetails[scores.alignment]" />
+    <StatDetails name="Alignment" :stat="alignmentDetails[character.alignment]" />
     <Separator />
-    <StatDetails name="Race" :stat="raceDetails[race]" />
+    <StatDetails name="Race" :stat="raceDetails[character.race]" />
     <Separator />
     <StatDetails name="Class" :stat="classDetails[primaryClass]" />
     <template v-if="secondaryClass">
@@ -33,10 +33,10 @@
 import Vue from 'vue';
 import {
   Alignment,
+  Character,
   ClassName,
   Details,
   Race,
-  Scores,
 } from '@/types';
 import {
   alignment as alignmentDetails,
@@ -55,15 +55,13 @@ export default Vue.extend({
     StatDetails,
   },
   props: {
-    scores: {
-      type: Object as () => Scores,
+    character: {
+      type: Object as () => Character,
       required: true,
     },
   },
   data() {
     return {
-      defaultClass: 'fighter' as ClassName,
-      defaultRace: 'human' as Race,
       alignmentDetails: alignmentDetails as {
         [key in Alignment]: Details
       },
@@ -76,35 +74,12 @@ export default Vue.extend({
     };
   },
   computed: {
-    race(): Race {
-      const raceScores = this.scores.races;
-      const races = (Object.keys(raceScores) as Race[])
-        .filter((race: Race) => raceScores[race] > 0);
-      return races.length ? races.reduce(this.raceReducer) : this.defaultRace;
-    },
-    filteredClasses(): ClassName[] {
-      const classes = Object.keys(this.scores.classes) as ClassName[];
-      return classes
-        .filter((className: ClassName) => this.scores.classes[className] > 0);
-    },
     primaryClass(): ClassName {
-      const classes = this.filteredClasses;
-      return classes.length ? classes.reduce(this.classReducer) : this.defaultClass;
+      return this.character.class[0];
     },
     secondaryClass(): ClassName|null {
-      const classes = this.filteredClasses
-        .filter((className: ClassName) => className !== this.primaryClass);
-      return classes.length ? classes.reduce(this.classReducer) : null;
-    },
-  },
-  methods: {
-    classReducer(firstClass: ClassName, secondClass: ClassName) {
-      const { classes } = this.scores;
-      return classes[firstClass] > classes[secondClass] ? firstClass : secondClass;
-    },
-    raceReducer(firstRace: Race, secondRace: Race) {
-      const { races } = this.scores;
-      return races[firstRace] > races[secondRace] ? firstRace : secondRace;
+      const characterClass = this.character.class;
+      return characterClass.length > 1 ? characterClass[1] : null;
     },
   },
 });

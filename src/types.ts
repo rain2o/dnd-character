@@ -102,7 +102,7 @@ export enum ScoreTypes {
   races = 'races',
   classes = 'classes',
   abilityScores = 'abilityScores',
-  alignment = 'alignment',
+  alignments = 'alignments',
   lawfulness = 'lawfulness',
   goodness = 'goodness',
   level = 'level',
@@ -121,7 +121,7 @@ export type ClassScores = {
 }
 
 export type AlignmentScores = {
-  [key in Alignment]?: number;
+  [key in Alignment]: number;
 }
 
 export type LawfulnessScores = {
@@ -130,6 +130,10 @@ export type LawfulnessScores = {
 
 export type GoodnessScores = {
   [key in Goodness]: number;
+}
+
+export type StatScores = {
+  [key in Stat]?: number;
 }
 
 export type Score = AbilityScoreScores
@@ -143,7 +147,7 @@ export type Scores = {
   [ScoreTypes.races]: RaceScores;
   [ScoreTypes.classes]: ClassScores;
   [ScoreTypes.abilityScores]: AbilityScoreScores;
-  [ScoreTypes.alignment]: Alignment;
+  [ScoreTypes.alignments]: AlignmentScores;
   [ScoreTypes.lawfulness]: LawfulnessScores;
   [ScoreTypes.goodness]: GoodnessScores;
   [ScoreTypes.level]: number;
@@ -159,23 +163,16 @@ export type MappedModifiers = {
   [key in ScoreTypes]: Modifier[]
 }
 
-export type ScoreMap = {
-  ability_scores: typeof ABILITY_SCORES;
-  classes: typeof CLASSES;
-}
-
-export type StatTypes = 'ability_scores' | 'classes';
-
-export type CharacterClass = {
-  name: ClassName;
-  level: number;
-}
+// export type CharacterClass = {
+//   name: ClassName;
+//   level: number;
+// }
 
 export type Character = {
   race: Race;
-  class: CharacterClass[];
+  class: ClassName[];
   level: number;
-  ability_scores: {
+  abilityScores: {
     [key in AbilityScore]: number
   };
   alignment: Alignment;
@@ -184,4 +181,16 @@ export type Character = {
 export type Details = {
   name: string;
   details: string;
+}
+
+export type ScoreDetails = {
+  key: Stat;
+  score: number;
+  title: string;
+  percentage: number;
+  color: string;
+}
+
+export type StatDetails = {
+  [key in Stat]?: Details;
 }

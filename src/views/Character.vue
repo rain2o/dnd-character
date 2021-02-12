@@ -12,7 +12,10 @@
         </h2>
         <Separator />
 
-        <CharacterSheet :scores="finalScores" />
+        <CharacterSheet :character="character" />
+
+        <Separator />
+        <DetailedResults :scores="finalScores" :character="character" />
 
         <Separator />
         <div class="actions">
@@ -28,9 +31,11 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import { extractAspects } from '@/helpers';
-import { Modifier, Scores } from '@/types';
+import { extractScores } from '@/helpers/scores';
+import { buildCharacter } from '@/helpers/character';
+import { Character, Modifier, Scores } from '@/types';
 import CharacterSheet from '../components/CharacterSheet.vue';
+import DetailedResults from '../components/DetailedResults.vue';
 import NoResults from '../components/NoResults.vue';
 import ResetModal from '../components/ResetModal.vue';
 import Button from '../components/Button.vue';
@@ -40,6 +45,7 @@ export default Vue.extend({
   name: 'Character',
   components: {
     CharacterSheet,
+    DetailedResults,
     Button,
     NoResults,
     ResetModal,
@@ -54,7 +60,10 @@ export default Vue.extend({
   computed: {
     finalScores(): Scores {
       const modifiers = this.scores.flat().filter(Boolean);
-      return extractAspects(modifiers);
+      return extractScores(modifiers);
+    },
+    character(): Character {
+      return buildCharacter(this.finalScores);
     },
   },
   methods: {
@@ -65,7 +74,6 @@ export default Vue.extend({
       localStorage.removeItem('scores');
       this.showModal = false;
       this.scores = [] as Array<Modifier>[];
-      // this.$router.push('/');
     },
   },
   beforeMount() {

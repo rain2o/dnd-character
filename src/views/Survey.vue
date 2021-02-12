@@ -51,7 +51,7 @@ import Button from '../components/Button.vue';
 import QuestionComponent from '../components/Question.vue';
 import ProgressBar from '../components/ProgressBar.vue';
 import ResetModal from '../components/ResetModal.vue';
-import { extractAspects } from '../helpers';
+import { extractScores } from '../helpers/scores';
 
 /** map index to question object */
 const allQuestions = questions.map((current, index) => {
@@ -90,7 +90,7 @@ export default Vue.extend({
     },
     finalScores(): Scores {
       const modifiers = this.scores.flat().filter(Boolean);
-      return extractAspects(modifiers);
+      return extractScores(modifiers);
     },
     percentageComplete(): number {
       const scores = this.scores.filter(Boolean);
