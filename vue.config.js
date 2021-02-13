@@ -12,5 +12,12 @@ module.exports = {
     name: 'D&D & Me',
     themeColor: '#991B1B',
     msTileColor: '#000000',
+    workboxPluginMode: 'InjectManifest',
+    workboxOptions: {
+      // swSrc is required in InjectManifest mode.
+      swSrc: 'service-worker.js',
+      // ...other Workbox options...
+      exclude: [/\.map$/, /_redirects/],
+    }
   }
 };

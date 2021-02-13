@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2f948712-4727-403c-89cb-54b9e1490274/deploy-status)](https://app.netlify.com/sites/dnd-character/deploys)
+
 # DND Character
 Survey to see what your real-life D&D character would be. Built using Vue 2 and Tailwind CSS.
 
