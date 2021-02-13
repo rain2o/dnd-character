@@ -35,6 +35,5 @@ yarn lint
 * Add sharing capabilities (what kind and how?)
 * add better copy
 * PWA?
-* acessibility
-* logo and site name (seo/meta data)
 * add link to github for contributing or forking
+* analytics

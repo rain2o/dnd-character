@@ -6,6 +6,11 @@ module.exports = {
 
     svgRule
       .use('html-loader')
-      .loader('html-loader')
+      .loader('html-loader');
   },
+  pwa: {
+    name: 'D&D & Me',
+    themeColor: '#991B1B',
+    msTileColor: '#000000',
+  }
 };
