@@ -37,3 +37,4 @@ yarn lint
 * PWA?
 * acessibility
 * logo and site name (seo/meta data)
+* add link to github for contributing or forking

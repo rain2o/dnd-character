@@ -4,6 +4,7 @@
     <ResetModal :show="showModal" @confirm="resetAnswers" @cancel="showModal = false" />
     <div class="pt-0 md:pt-8 md:px-10 md:py-8">
       <div class="max-w-4xl mx-auto md:px-12 md:py-4 md:bg-white md:rounded-lg md:shadow-md">
+        <h1 class="hidden" aria-hidden="false">Survey</h1>
         <div class="p-4">
           <p class="text-center mb-4">page {{ currentPage }} of {{ pages }}</p>
           <div class="questions">
@@ -179,6 +180,13 @@ export default Vue.extend({
         localStorage.removeItem('scores');
       }
     }
+  },
+  metaInfo: {
+    title: 'Survey | D&D & Me',
+    meta: [
+      { property: 'og:title', content: 'Survey | D&D & Me' },
+      { property: 'twitter:title', content: 'Survey | D&D & Me' },
+    ],
   },
 });
 </script>

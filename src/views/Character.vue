@@ -88,5 +88,12 @@ export default Vue.extend({
       }
     }
   },
+  metaInfo: {
+    title: 'My Character | D&D & Me',
+    meta: [
+      { property: 'og:title', content: 'My Character | D&D & Me' },
+      { property: 'twitter:title', content: 'My Character | D&D & Me' },
+    ],
+  },
 });
 </script>
