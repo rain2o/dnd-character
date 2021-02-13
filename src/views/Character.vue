@@ -20,8 +20,8 @@
         <Separator />
         <div class="actions">
           <Button class="mb-4 mx-auto" @click="showModal = true">Reset My Character</Button>
-          <p class="text-center">Share coming soon...</p>
         </div>
+        <Share :character="character" />
       </div>
 
       <NoResults v-else />
@@ -40,6 +40,7 @@ import NoResults from '../components/NoResults.vue';
 import ResetModal from '../components/ResetModal.vue';
 import Button from '../components/Button.vue';
 import Separator from '../components/Separator.vue';
+import Share from '../components/Share.vue';
 
 export default Vue.extend({
   name: 'Character',
@@ -50,6 +51,7 @@ export default Vue.extend({
     NoResults,
     ResetModal,
     Separator,
+    Share,
   },
   data() {
     return {

@@ -37,7 +37,6 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import { MetaInfo } from 'vue-meta';
 import {
   Alignment,
   Character,
@@ -90,40 +89,6 @@ export default Vue.extend({
       const characterClass = this.character.class;
       return characterClass.length > 1 ? characterClass[1] : null;
     },
-    pageDescription(): string {
-      const classes = this.character.class;
-      const classNames = classes.map((className) => this.capitalize(className));
-      const { level, alignment, race } = this.character;
-      let title = `I am a level ${level} ${this.alignmentDetails[alignment].name}`;
-      title += ` ${this.capitalize(race)} ${classNames.join('/')}!`;
-      return title;
-    },
-  },
-  methods: {
-    capitalize(string: string): string {
-      return string.charAt(0).toUpperCase() + string.slice(1);
-    },
-  },
-  metaInfo(): MetaInfo {
-    return {
-      title: 'My Character | D&D & Me',
-      meta: [
-        { property: 'og:title', content: 'My Character | D&D & Me' },
-        { property: 'twitter:title', content: 'My Character | D&D & Me' },
-        {
-          name: 'description',
-          content: `${this.pageDescription}`,
-        },
-        {
-          property: 'og:description',
-          content: `${this.pageDescription}`,
-        },
-        {
-          property: 'twitter:description',
-          content: `${this.pageDescription}`,
-        },
-      ],
-    };
   },
 });
 </script>

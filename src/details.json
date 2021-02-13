@@ -39,81 +39,81 @@
   },
   "race": {
     "human": {
-      "name": "Humans",
-      "details": "are the most adaptable of the common races. Short generations and a penchant for migration and conquest have made them physically diverse as well. Humans are often unorthodox in their dress, sporting unusual hairstyles, fanciful clothes, tattoos, and the like."
+      "name": "Human",
+      "details": "Humans are the most adaptable of the common races. Short generations and a penchant for migration and conquest have made them physically diverse as well. Humans are often unorthodox in their dress, sporting unusual hairstyles, fanciful clothes, tattoos, and the like."
     },
     "halfling": {
-      "name": "Halflings",
-      "details": "are clever, capable and resourceful survivors. They are notoriously curious and show a daring that many larger people can't match. They can be lured by wealth but tend to spend rather than hoard. They prefer practical clothing and would rather wear a comfortable shirt than jewelry. Halflings stand about 3 feet tall and commonly live to see 150."
+      "name": "Halfling",
+      "details": "Halflings are clever, capable and resourceful survivors. They are notoriously curious and show a daring that many larger people can't match. They can be lured by wealth but tend to spend rather than hoard. They prefer practical clothing and would rather wear a comfortable shirt than jewelry. Halflings stand about 3 feet tall and commonly live to see 150."
     },
     "elf": {
-      "name": "Elves",
-      "details": "are known for their poetry, song, and magical arts, but when danger threatens they show great skill with weapons and strategy. Elves can live to be over 700 years old and, by human standards, are slow to make friends and enemies, and even slower to forget them. Elves are slim and stand 4.5 to 5.5 feet tall. They have no facial or body hair, prefer comfortable clothes, and possess unearthly grace. Many others races find them hauntingly beautiful."
+      "name": "Elf",
+      "details": "Elves are known for their poetry, song, and magical arts, but when danger threatens they show great skill with weapons and strategy. Elves can live to be over 700 years old and, by human standards, are slow to make friends and enemies, and even slower to forget them. Elves are slim and stand 4.5 to 5.5 feet tall. They have no facial or body hair, prefer comfortable clothes, and possess unearthly grace. Many others races find them hauntingly beautiful."
     },
     "halfelf": {
-      "name": "Half-Elves",
-      "details": "have the curiosity and ambition for their human parent and the refined senses and love of nature of their elven parent, although they are outsiders among both cultures. To humans, half-elves are paler, fairer and smoother-skinned than their human parents, but their actual skin tones and other details vary just as human features do.  Half-elves tend to have green, elven eyes. They live to about 180."
+      "name": "Half-Elf",
+      "details": "Half-elves have the curiosity and ambition for their human parent and the refined senses and love of nature of their elven parent, although they are outsiders among both cultures. To humans, half-elves are paler, fairer and smoother-skinned than their human parents, but their actual skin tones and other details vary just as human features do.  Half-elves tend to have green, elven eyes. They live to about 180."
     },
     "gnome": {
-      "name": "Gnomes",
-      "details": "are in wide demand as alchemists, inventors, and technicians, though most prefer to remain among their own kind in simple comfort. Gnomes adore animals, gems, and jokes, especially pranks. They love to learn by personal experience, and are always trying new ways to build things. Gnomes stand 3 to 3.5 feet tall and live about 350 to 500 years."
+      "name": "Gnome",
+      "details": "Gnomes are in wide demand as alchemists, inventors, and technicians, though most prefer to remain among their own kind in simple comfort. Gnomes adore animals, gems, and jokes, especially pranks. They love to learn by personal experience, and are always trying new ways to build things. Gnomes stand 3 to 3.5 feet tall and live about 350 to 500 years."
     },
     "halforc": {
-      "name": "Half-Orcs",
-      "details": "are the short-tempered and sullen result of human and orc pairings. They would rather act than ponder and would rather fight than argue. They love simple pleasures, such as feasting, boasting, and wild dancing. They are an asset at the right sort of party, but not at the duchess's grand ball. Half-orcs are as tall as humans but their brutish features betray their lineage.  They regard scars as tokens of pride and things of beauty. They rarely reach 75 years of age."
+      "name": "Half-Orc",
+      "details": "Half-Orcs are the short-tempered and sullen result of human and orc pairings. They would rather act than ponder and would rather fight than argue. They love simple pleasures, such as feasting, boasting, and wild dancing. They are an asset at the right sort of party, but not at the duchess's grand ball. Half-orcs are as tall as humans but their brutish features betray their lineage.  They regard scars as tokens of pride and things of beauty. They rarely reach 75 years of age."
     },
     "dwarf": {
-      "name": "Dwarves",
-      "details": "are known for their skill in warfare, their ability to withstand physical and magical punishment, their hard work, and their capacity for drinking ale. Dwarves are slow to jest and suspicious of strangers, but they are generous to those who earn their trust. They stand just 4 to 4.5 feet tall, but are broad and compactly built, almost as wide as they are tall. Dwarven men value their beards highly."
+      "name": "Dwarf",
+      "details": "Dwarves are known for their skill in warfare, their ability to withstand physical and magical punishment, their hard work, and their capacity for drinking ale. Dwarves are slow to jest and suspicious of strangers, but they are generous to those who earn their trust. They stand just 4 to 4.5 feet tall, but are broad and compactly built, almost as wide as they are tall. Dwarven men value their beards highly."
     }
   },
   "class": {
     "fighter": {
-      "name": "Fighters",
+      "name": "Fighter",
       "details": "Fighters can be many things, from soldiers to criminal enforcers. Some see adventure as a way to get rich, while others use their skills to protect the innocent. Fighters have the best all-around fighting capabilities of the PC classes, and they are trained to use all standard weapons and armor. A fighter's rigorous martial training grants him many bonus feats as he progresses, and high-level fighters have access to special melee maneuvers and exotic weapons not available to any other character."
     },
     "ranger": {
-      "name": "Rangers",
+      "name": "Ranger",
       "details": "Rangers are skilled stalkers and hunters who make their home in the woods. Their martial skill is nearly the equal of the fighter, but they lack the latter's dedication to the craft of fighting. Instead, the ranger focuses his skills and training on a specific enemy a type of creature he bears a vengeful grudge against and hunts above all others. Rangers often accept the role of protector, aiding those who live in or travel through the woods. His skills allow him to move quietly and stick to the shadows, especially in natural settings, and he also has special knowledge of certain types of creatures. Finally, an experienced ranger has such a tie to nature that he can actually draw on natural power to cast divine spells, much as a druid does, and like a druid he is often accompanied by animal companions. A ranger's Wisdom score should be high, as this determines the maximum spell level that he can cast."
     },
     "paladin": {
-      "name": "Paladins",
+      "name": "Paladin",
       "details": "Paladins take their adventures seriously, and even a mundane mission is, in the heart of the paladin, a personal test an opportunity to demonstrate bravery, to learn tactics, and to find ways to do good. Divine power protects these warriors of virtue, warding off harm, protecting from disease, healing, and guarding against fear. The paladin can also direct this power to help others, healing wounds or curing diseases, and also use it to destroy evil. Experienced paladins can smite evil foes and turn away undead. A paladin's Wisdom score should be high, as this determines the maximum spell level that they can cast. Many of the paladin's special abilities also benefit from a high Charisma score."
     },
     "cleric": {
-      "name": "Clerics",
+      "name": "Cleric",
       "details": "Clerics act as intermediaries between the earthly and the divine (or infernal) worlds. A good cleric helps those in need, while an evil cleric seeks to spread his patron's vision of evil across the world. All clerics can heal wounds and bring people back from the brink of death, and powerful clerics can even raise the dead. Likewise, all clerics have authority over undead creatures, and they can turn away or even destroy these creatures. Clerics are trained in the use of simple weapons, and can use all forms of armor and shields without penalty, since armor does not interfere with the casting of divine spells. In addition to his normal complement of spells, every cleric chooses to focus on two of his deity's domains. These domains grants the cleric special powers, and give him access to spells that he might otherwise never learn. A cleric's Wisdom score should be high, since this determines the maximum spell level that he can cast."
     },
     "druid": {
-      "name": "Druids",
+      "name": "Druid",
       "details": "Druids gain power not by ruling nature but by being at one with it. They hate the unnatural, including aberrations or undead, and destroy them where possible. Druids receive divine spells from nature, not the gods, and can gain an array of powers as they gain experience, including the ability to take the shapes of animals. The weapons and armor of a druid are restricted by their traditional oaths, not simply training. A druid's Wisdom score should be high, as this determines the maximum spell level that they can cast."
     },
     "monk": {
-      "name": "Monks",
+      "name": "Monk",
       "details": "Monks are versatile warriors skilled at fighting without weapons or armor. Good-aligned monks serve as protectors of the people, while evil monks make ideal spies and assassins. Though they don't cast spells, monks channel a subtle energy, called ki. This energy allows them to perform amazing feats, such as healing themselves, catching arrows in flight, and dodging blows with lightning speed. Their mundane and ki-based abilities grow with experience, granting them more power over themselves and their environment. Monks suffer unique penalties to their abilities if they wear armor, as doing so violates their rigid oath. A monk wearing armor loses their Wisdom and level based armor class bonuses, their movement speed, and their additional unarmed attacks per round."
     },
     "wizard": {
-      "name": "Wizards",
+      "name": "Wizard",
       "details": "Wizards are arcane spellcasters who depend on intensive study to create their magic. To wizards, magic is not a talent but a difficult, rewarding art. When they are prepared for battle, wizards can use their spells to devastating effect. When caught by surprise, they are vulnerable. The wizard's strength is her spells, everything else is secondary. She learns new spells as she experiments and grows in experience, and she can also learn them from other wizards. In addition, over time a wizard learns to manipulate her spells so they go farther, work better, or are improved in some other way. A wizard can call a familiar- a small, magical, animal companion that serves her. With a high Intelligence, wizards are capable of casting very high levels of spells."
     },
     "barbarian": {
-      "name": "Barbarians",
+      "name": "Barbarian",
       "details": "Barbarians are brave, even reckless, and their warrior skills make them well suited to adventure. Instead of training and discipline, barbarians have a powerful rage that makes them stronger, tougher, and better able to withstand attacks. They only have the energy for a few such displays per day, but it is usually sufficient. Constant exposure to danger has also given barbarians a sort of 'sixth sense,' the preternatural ability to sense danger and dodge attacks, and their running stamina is legendary."
     },
     "rogue": {
-      "name": "Rogues",
+      "name": "Rogue",
       "details": "Rogues have little in common with each other. While some - maybe even the majority - are stealthy thieves, many serve as scouts, spies, investigators, diplomats, and simple thugs. Rogues are versatile, adaptable, and skilled at getting what others don't want them to get. While not equal to a fighter in combat, a rogue knows how to hit where it hurts, and a sneak attack can dish out a lot of damage. Rogues also seem to have a sixth sense when it comes to avoiding danger. Experienced rogues develop nearly magical powers and skills as they master the arts of stealth, evasion, and sneak attacks. In addition, while not capable of casting spells on their own, a rogue can sometimes 'fake it' well enough to cast spells from scrolls, activate wands, and use just about any other magic item."
     },
     "sorcerer": {
-      "name": "Sorcerers",
+      "name": "Sorcerer",
       "details": "Sorcerers are arcane spellcasters who manipulate magic energy with imagination and talent rather than studious discipline. They have no books, no mentors, no theories just raw power that they direct at will. Sorcerers know fewer spells than wizards do and acquire them more slowly, but they can cast individual spells more often and have no need to prepare their incantations ahead of time. Also unlike wizards, sorcerers cannot specialize in a school of magic. Since sorcerers gain their powers without undergoing the years of rigorous study that wizards go through, they have more time to learn fighting skills and are proficient with simple weapons. Charisma is very important for sorcerers; the higher their value in this ability, the higher the spell level they can cast."
     },
     "warlock": {
-      "name": "Warlocks",
+      "name": "Warlock",
       "details": "Warlocks are driven by an insatiable need for knowledge and power, which compels them to enter into a pact with an otherworldly being.  Sometimes the relationship between a warlock and their patron is like that of a cleric and a deity, though the beings that serve as patrons to warlocks are not gods.  A warlock might lead a cult dedicated to a fey prince, an archdevil, or an utterly alien entity - beings not typically served by clerics.  More often, though, the arrangement is similar to that between a master and an apprentice.  The warlock learns and grows in power, at the cost of occasional services performed on the patron's behalf."
     },
     "bard": {
-      "name": "Bards",
+      "name": "Bard",
       "details": "Bards often serve as negotiators, messengers, scouts, and spies. They love to accompany heroes (and villains) to witness heroic (or villainous) deeds firsthand, since a bard who can tell a story from personal experience earns renown among his fellows. A bard casts arcane spells without any advance preparation, much like a sorcerer. Bards also share some specialized skills with rogues, and their knowledge of item lore is nearly unmatched. A high Charisma score allows a bard to cast high-level spells."
     }
   }
