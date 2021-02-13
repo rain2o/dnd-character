@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter, { RouteConfig } from 'vue-router';
 import Meta from 'vue-meta';
 import Home from '../views/Home.vue';
+import sendtoAnalytics from '../helpers/analytics';
 
 Vue.use(VueRouter);
 Vue.use(Meta);
@@ -36,6 +37,13 @@ const router = new VueRouter({
   scrollBehavior() {
     return { x: 0, y: 0 };
   },
+});
+
+/**
+ * Send beacon to analytics on each page view
+ */
+router.afterEach(() => {
+  sendtoAnalytics({ t: 'pageview' });
 });
 
 export default router;
