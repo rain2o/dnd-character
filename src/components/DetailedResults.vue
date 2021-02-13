@@ -102,13 +102,11 @@ export default Vue.extend({
         const score = scores[key] || 0;
         const title = statDetails[key]?.name || key;
         const percentage = Math.round((score / topScore) * 100);
-        const color = (percentage === 100) ? 'green' : 'red';
         return {
           key,
           title,
           score,
           percentage,
-          color,
         };
       });
     },

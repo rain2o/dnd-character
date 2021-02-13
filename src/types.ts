@@ -188,7 +188,6 @@ export type ScoreDetails = {
   score: number;
   title: string;
   percentage: number;
-  color: string;
 }
 
 export type StatDetails = {

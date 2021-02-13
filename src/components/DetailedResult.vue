@@ -6,13 +6,13 @@
       <div class="relative pt-1">
         <div
           class="overflow-hidden h-3 mb-4 text-xs flex rounded-lg"
-          :class="`bg-${result.color}-200`"
+          :class="(result.percentage === 100) ? 'bg-green-200' : 'bg-red-200'"
         >
           <div
             :style="`width: ${result.percentage}%`"
             class="shadow-none flex flex-col text-center whitespace-nowrap text-white
                     justify-center"
-            :class="`bg-${result.color}-500`"
+            :class="(result.percentage === 100) ? 'bg-green-500' : 'bg-red-500'"
           ></div>
         </div>
       </div>

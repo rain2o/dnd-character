@@ -36,6 +36,3 @@ yarn lint
 ### TODO
 * Add sharing capabilities (what kind and how?)
 * add better copy
-* PWA?
-* add link to github for contributing or forking
-* analytics
