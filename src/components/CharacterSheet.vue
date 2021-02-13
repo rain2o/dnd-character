@@ -1,18 +1,24 @@
 <template>
   <div class="character-sheet">
-    <p class="capitalize text-center mb-1 text-lg font-semibold">
-      {{ alignmentDetails[character.alignment].name }}
-    </p>
-    <p class="capitalize text-center mb-1 text-lg font-semibold">
-      Level {{ character.level }}
-    </p>
-    <p class="capitalize text-center mb-3 text-lg font-semibold">
-      <span>{{ character.race }}</span> |
-      <span class="text-red-800">{{ primaryClass }}</span>
-      <span v-if="secondaryClass" class="text-red-800">
-          / {{ secondaryClass }}
-      </span>
-    </p>
+    <div class="flex mx-auto w-auto justify-around align-middle items-center">
+      <div>
+        <p class="capitalize text-center mb-1 text-lg font-semibold lg:inline-block">
+          {{ alignmentDetails[character.alignment].name }}
+        </p>
+        <p class="capitalize text-center mb-1 text-lg font-semibold lg:inline-block lg:ml-2 lg:pl-2
+                  lg:border-l-2 lg:border-black">
+          Level {{ character.level }}
+        </p>
+        <p class="capitalize text-center mb-3 text-lg font-semibold">
+          <span>{{ character.race }}</span> |
+          <span class="text-red-800">{{ primaryClass }}</span>
+          <span v-if="secondaryClass" class="text-red-800">
+              / {{ secondaryClass }}
+          </span>
+        </p>
+      </div>
+      <SvgIcon :name="primaryClass" class="w-16 h-16 text-red-800 lg:mt-2 lg:mb-6" />
+    </div>
 
     <AbilityScores :abilities="character.abilityScores" />
 
@@ -44,6 +50,7 @@ import {
   class as classDetails,
 } from '../details.json';
 import AbilityScores from './AbilityScores.vue';
+import SvgIcon from './SvgIcon.vue';
 import Separator from './Separator.vue';
 import StatDetails from './StatDetails.vue';
 
@@ -51,6 +58,7 @@ export default Vue.extend({
   name: 'CharacterSheet',
   components: {
     AbilityScores,
+    SvgIcon,
     Separator,
     StatDetails,
   },
