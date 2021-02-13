@@ -22,7 +22,6 @@
         <div class="actions mt-4">
           <Button class="mb-4 mx-auto" @click="showModal = true">Reset My Character</Button>
         </div>
-        <Share :character="character" />
       </div>
 
       <NoResults v-else />
@@ -34,6 +33,7 @@
 import Vue from 'vue';
 import { extractScores } from '@/helpers/scores';
 import { buildCharacter } from '@/helpers/character';
+import analytics from '@/helpers/analytics';
 import { Character, Modifier, Scores } from '@/types';
 import CharacterSheet from '../components/CharacterSheet.vue';
 import DetailedResults from '../components/DetailedResults.vue';
@@ -88,6 +88,36 @@ export default Vue.extend({
       } catch (e) {
         // invalid data, remove it
         localStorage.removeItem('scores');
+      }
+    }
+  },
+  mounted() {
+    // check if we have already sent this result
+    if (this.scores) {
+      const dispatched = localStorage.getItem('is-dispatched');
+      if (dispatched === null) {
+        analytics({
+          t: 'event',
+          ec: 'Race',
+          el: this.character.race,
+          ea: 'character',
+          ni: '1',
+        });
+        this.character.class.forEach((className) => analytics({
+          t: 'event',
+          ec: 'Primary Class',
+          el: className,
+          ea: 'character',
+          ni: '1',
+        }));
+        analytics({
+          t: 'event',
+          ec: 'Alignment',
+          el: this.character.alignment,
+          ea: 'character',
+          ni: '1',
+        });
+        localStorage.setItem('is-dispatched', 'true');
       }
     }
   },
