@@ -54,7 +54,7 @@
           See Results
         </Button>
       </div>
-      <Button v-else link="/survey" :sticky="true" class="sm:mx-auto lg:mt-10">
+      <Button v-else link="/survey" :sticky="true" class="w-full sm:w-auto sm:mx-auto lg:mt-10">
         Start Survey Now!
       </Button>
     </div>
