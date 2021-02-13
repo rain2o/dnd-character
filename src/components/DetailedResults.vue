@@ -1,13 +1,24 @@
 <template>
   <div class="detailed-results">
-    <p class="text-red-800 text-2xl font-bold mb-4">Detailed Results</p>
+    <p
+      class="text-red-800 text-2xl font-bold mb-4 cursor-pointer flex items-center"
+      @click="isContentVisible = !isContentVisible"
+    >
+      <span>Detailed Results</span>
+      <SvgIcon
+        name="cheveron-down"
+        class="w-10 h-10 inline-block transform transition ease-linear duration-100"
+        :class="isContentVisible ? 'rotate-180' : ''"
+      />
+    </p>
 
-    <!-- Alignment -->
-    <DetailedResult title="Alignment" :results="alignments" />
-    <div class="w-2/3 mx-auto py-2"><Separator /></div>
-    <DetailedResult title="Race" :results="races" />
-    <div class="w-2/3 mx-auto py-2"><Separator /></div>
-    <DetailedResult title="Class" :results="classes" />
+    <div v-show="isContentVisible">
+      <DetailedResult title="Alignment" :results="alignments" />
+      <div class="w-2/3 mx-auto py-2"><Separator /></div>
+      <DetailedResult title="Race" :results="races" />
+      <div class="w-2/3 mx-auto py-2"><Separator /></div>
+      <DetailedResult title="Class" :results="classes" />
+    </div>
   </div>
 </template>
 
@@ -31,6 +42,7 @@ import {
 } from '../details.json';
 import DetailedResult from './DetailedResult.vue';
 import Separator from './Separator.vue';
+import SvgIcon from './SvgIcon.vue';
 
 const statDetails: StatDetails = {
   ...alignmentDetails,
@@ -43,6 +55,7 @@ export default Vue.extend({
   components: {
     DetailedResult,
     Separator,
+    SvgIcon,
   },
   props: {
     scores: {
@@ -53,6 +66,11 @@ export default Vue.extend({
       type: Object as () => Character,
       required: true,
     },
+  },
+  data() {
+    return {
+      isContentVisible: false,
+    };
   },
   computed: {
     alignments(): ScoreDetails[] {
