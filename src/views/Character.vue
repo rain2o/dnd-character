@@ -22,6 +22,7 @@
         <div class="actions mt-4">
           <Button class="mb-4 mx-auto" @click="showModal = true">Reset My Character</Button>
         </div>
+        <Share :character="character" />
       </div>
 
       <NoResults v-else />
