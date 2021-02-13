@@ -1,6 +1,6 @@
 <template>
   <router-link
-    v-if="link"
+    v-if="link && !external"
     :to="link"
     :disabled="disabled"
     class="button font-semibold block py-6 md:py-3 px-4 w-auto text-center sm:max-w-xl"
@@ -8,15 +8,28 @@
     custom
     v-slot="{ navigate }"
   >
-    <button
+    <a
       :disabled="disabled"
       class="button font-semibold block py-6 md:py-3 px-4 w-auto text-center sm:max-w-xl"
       :class="sticky ? stickyClass : standardClass"
+      :href="link"
       @click="navigate"
     >
       <slot />
-    </button>
+    </a>
   </router-link>
+
+  <a
+    v-else-if="link && external"
+    target="blank"
+    rel="noopener noreferrer"
+    :href="link"
+    class="button font-semibold block py-3 px-4 w-auto text-center sm:max-w-xl"
+    :class="sticky ? stickyClass : standardClass"
+  >
+    <slot />
+  </a>
+
   <button
     v-else
     :disabled="disabled"
@@ -50,6 +63,11 @@ export default Vue.extend({
       default: false,
     },
     secondary: {
+      type: Boolean,
+      required: false,
+      default: false,
+    },
+    external: {
       type: Boolean,
       required: false,
       default: false,
