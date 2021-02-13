@@ -48,7 +48,7 @@
         </Button>
         <Button
           class="inline-block w-1/2 sm:w-1/3 sm:mx-2 border-l border-black sm:border-none"
-          link="/results"
+          link="/character"
           :sticky="true"
         >
           See Results

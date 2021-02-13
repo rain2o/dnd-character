@@ -1,6 +1,7 @@
 module.exports = {
   devServer: {
     https: true,
+    host: 'dnd-character.local',
   },
   chainWebpack: (config) => {
     const svgRule = config.module.rule('svg');
@@ -21,6 +22,6 @@ module.exports = {
       swSrc: 'service-worker.js',
       // ...other Workbox options...
       exclude: [/\.map$/, /_redirects/],
-    }
-  }
+    },
+  },
 };

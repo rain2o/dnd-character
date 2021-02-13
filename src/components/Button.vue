@@ -8,14 +8,15 @@
     custom
     v-slot="{ navigate }"
   >
-    <button
+    <a
       :disabled="disabled"
       class="button font-semibold block py-6 md:py-3 px-4 w-auto text-center sm:max-w-xl"
       :class="sticky ? stickyClass : standardClass"
+      :href="link"
       @click="navigate"
     >
       <slot />
-    </button>
+    </a>
   </router-link>
 
   <a
