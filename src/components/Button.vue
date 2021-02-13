@@ -3,14 +3,14 @@
     v-if="link"
     :to="link"
     :disabled="disabled"
-    class="button font-semibold block py-3 px-4 w-auto text-center sm:max-w-xl"
+    class="button font-semibold block py-6 md:py-3 px-4 w-auto text-center sm:max-w-xl"
     :class="sticky ? stickyClass : standardClass"
     custom
     v-slot="{ navigate }"
   >
     <button
       :disabled="disabled"
-      class="button font-semibold block py-3 px-4 w-auto text-center sm:max-w-xl"
+      class="button font-semibold block py-6 md:py-3 px-4 w-auto text-center sm:max-w-xl"
       :class="sticky ? stickyClass : standardClass"
       @click="navigate"
     >
@@ -20,7 +20,7 @@
   <button
     v-else
     :disabled="disabled"
-    class="button font-semibold block py-3 px-4 w-auto text-center sm:max-w-xl"
+    class="button font-semibold block py-6 md:py-3 px-4 w-auto text-center sm:max-w-xl"
     :class="sticky ? stickyClass : standardClass"
     @click="$emit('click')"
   >
