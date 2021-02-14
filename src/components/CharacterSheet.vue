@@ -1,7 +1,10 @@
 <template>
   <div class="character-sheet">
-    <div class="flex mx-auto w-auto justify-around align-middle items-center">
-      <div>
+    <div
+      class="flex mx-auto w-auto justify-around align-middle items-center"
+      :class="secondaryClass ? 'flex-col sm:flex-row' : 'flex-row'"
+    >
+      <div class="text-center">
         <p class="capitalize text-center mb-1 text-lg font-semibold lg:inline-block">
           {{ alignmentDetails[character.alignment].name }}
         </p>
@@ -17,7 +20,17 @@
           </span>
         </p>
       </div>
-      <SvgIcon :name="primaryClass" class="w-16 h-16 text-red-800 lg:mt-2 lg:mb-6" />
+
+      <!-- Show both class icons if secondary class exists -->
+      <div v-if="secondaryClass" class="flex justify-evenly mb-4">
+        <SvgIcon :name="primaryClass" class="w-16 h-16 text-red-800 lg:mt-2 lg:mb-6 mx-2" />
+        <SvgIcon
+          v-if="secondaryClass"
+          :name="secondaryClass"
+          class="w-16 h-16 text-red-800 lg:mt-2 lg:mb-6 mx-2"
+        />
+      </div>
+      <SvgIcon v-else :name="primaryClass" class="w-16 h-16 text-red-800 lg:mt-2 lg:mb-6" />
     </div>
 
     <AbilityScores :abilities="character.abilityScores" />
