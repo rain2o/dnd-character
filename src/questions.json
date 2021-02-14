@@ -1269,8 +1269,8 @@
         ]
       },
       {
-        "label": "...a hood.",
-        "value": "hood",
+        "label": "...a creative.",
+        "value": "creative",
         "id": "q312",
         "modifiers": [
           { "stat": "halfling", "value": 2 }
