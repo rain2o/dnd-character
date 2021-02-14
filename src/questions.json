@@ -906,7 +906,7 @@
         "id": "q301",
         "modifiers": [
           { "stat": "halfling", "value": 2 },
-          { "stat": "gnome", "value": 1 }
+          { "stat": "gnome", "value": 2 }
         ]
       }
     ]
@@ -2816,561 +2816,6 @@
     ]
   },
   {
-    "prompt": "A powerful but corrupt lawyer offers you money if you'll testify against your friend. Do you:",
-    "options": [
-      {
-        "label": "Condemn your friend and take the money?",
-        "value": "condemn",
-        "id": "q207",
-        "modifiers": [
-          { "stat": "xe", "value": 2 }
-        ]
-      },
-      {
-        "label": "Take the money and testify, but try to keep your testimony ineffective?",
-        "value": "innefective",
-        "id": "q207",
-        "modifiers": [
-          { "stat": "xe", "value": 1 }
-        ]
-      },
-      {
-        "label": "Refuse the offer and refuse to testify?",
-        "value": "refuse",
-        "id": "q207",
-        "modifiers": [
-          { "stat": "xg", "value": 1 }
-        ]
-      },
-      {
-        "label": "Testify on your friend's behalf, no matter the consequences?",
-        "value": "testify",
-        "id": "q207",
-        "modifiers": [
-          { "stat": "xg", "value": 2 }
-        ]
-      }
-    ]
-  },
-  {
-    "prompt": "Do you become close to friends, or hold most people at a safe distance?",
-    "options": [
-      {
-        "label": "I have an abundance of close friends.",
-        "value": "abundance",
-        "id": "q208",
-        "modifiers": [
-          { "stat": "xg", "value": 2 }
-        ]
-      },
-      {
-        "label": "I have some close friends.",
-        "value": "some",
-        "id": "q208",
-        "modifiers": [
-          { "stat": "xg", "value": 1 }
-        ]
-      },
-      {
-        "label": "I have few close friends.",
-        "value": "few",
-        "id": "q208",
-        "modifiers": [
-          { "stat": "xn", "value": 1 }
-        ]
-      },
-      {
-        "label": "I try to keep people at a distance.",
-        "value": "distant",
-        "id": "q208",
-        "modifiers": [
-          { "stat": "xn", "value": 2 }
-        ]
-      }
-    ]
-  },
-  {
-    "prompt": "Have you ever betrayed a friend?",
-    "options": [
-      {
-        "label": "I've done so more than once, and I sometimes get away with it.",
-        "value": "repeatedly",
-        "id": "q209",
-        "modifiers": [
-          { "stat": "xe", "value": 2 }
-        ]
-      },
-      {
-        "label": "I've done so once.",
-        "value": "once",
-        "id": "q209",
-        "modifiers": [
-          { "stat": "xe", "value": 1 }
-        ]
-      },
-      {
-        "label": "I've been tempted to do so, but I've never gone through with it.",
-        "value": "tempted",
-        "id": "q209",
-        "modifiers": [
-          { "stat": "xn", "value": 1 }
-        ]
-      },
-      {
-        "label": "I'd never contemplate such a thing.",
-        "value": "never",
-        "id": "q209",
-        "modifiers": [
-          { "stat": "xn", "value": 2 }
-        ]
-      }
-    ]
-  },
-  {
-    "prompt": "Do you donate time and money to improve the local community?",
-    "options": [
-      {
-        "label": "Yes, the needs of the community are my top priority.",
-        "value": "priority",
-        "id": "q213",
-        "modifiers": [
-          { "stat": "xg", "value": 2 }
-        ]
-      },
-      {
-        "label": "Yes, I donate as much as I can once my own needs are met.",
-        "value": "eventually",
-        "id": "q213",
-        "modifiers": [
-          { "stat": "xg", "value": 1 }
-        ]
-      },
-      {
-        "label": "No, I don't have enough time or money to spare.",
-        "value": "no",
-        "id": "q213",
-        "modifiers": [
-          { "stat": "xn", "value": 1 }
-        ]
-      },
-      {
-        "label": "No, my local community would be a waste of time and money.",
-        "value": "waste",
-        "id": "q213",
-        "modifiers": [
-          { "stat": "xn", "value": 2 }
-        ]
-      }
-    ]
-  },
-  {
-    "prompt": "The nation is at war. Your community is threatened with invasion. Do you:",
-    "options": [
-      {
-        "label": "Help defend it to your last breath?",
-        "value": "help",
-        "id": "q214",
-        "modifiers": [
-          { "stat": "xg", "value": 2 }
-        ]
-      },
-      {
-        "label": "Defend the area with the rest of your community?",
-        "value": "community",
-        "id": "q214",
-        "modifiers": [
-          { "stat": "xg", "value": 1 }
-        ]
-      },
-      {
-        "label": "Flee as soon as things look grim?",
-        "value": "flee",
-        "id": "q214",
-        "modifiers": [
-          { "stat": "xe", "value": 1 }
-        ]
-      },
-      {
-        "label": "Cut a deal with the enemy to act as a spy?",
-        "value": "spy",
-        "id": "q214",
-        "modifiers": [
-          { "stat": "xe", "value": 2 }
-        ]
-      }
-    ]
-  },
-  {
-    "prompt": "If you were injured and required immediate assistance, would members of your home town agree to help?",
-    "options": [
-      {
-        "label": "Yes, because they know I'd do the same for them.",
-        "value": "reciprocate",
-        "id": "q215",
-        "modifiers": [
-          { "stat": "xn", "value": 2 }
-        ]
-      },
-      {
-        "label": "Yes, because I'm generally well liked in my home town.",
-        "value": "liked",
-        "id": "q215",
-        "modifiers": [
-          { "stat": "xn", "value": 1 }
-        ]
-      },
-      {
-        "label": "Probably not, because I'm distrusted in my home town.",
-        "value": "probably",
-        "id": "q215",
-        "modifiers": [
-          { "stat": "xe", "value": 1 }
-        ]
-      },
-      {
-        "label": "Definitely not, I've made some enemies in my home town.",
-        "value": "no",
-        "id": "q215",
-        "modifiers": [
-          { "stat": "xe", "value": 2 }
-        ]
-      }
-    ]
-  },
-  {
-    "prompt": "Your country is wracked with famine. Would you:",
-    "options": [
-      {
-        "label": "Share what food you had with others?",
-        "value": "share",
-        "id": "q219",
-        "modifiers": [
-          { "stat": "xg", "value": 2 }
-        ]
-      },
-      {
-        "label": "Eat as little as possible yourself, and share the rest?",
-        "value": "leftovers",
-        "id": "q219",
-        "modifiers": [
-          { "stat": "xg", "value": 1 }
-        ]
-      },
-      {
-        "label": "Steal what food you needed to survive?",
-        "value": "steal",
-        "id": "q219",
-        "modifiers": [
-          { "stat": "xe", "value": 1 }
-        ]
-      },
-      {
-        "label": "Steal as much food as possible, then sell it back to the community at a high price?",
-        "value": "profit",
-        "id": "q219",
-        "modifiers": [
-          { "stat": "xe", "value": 2 }
-        ]
-      }
-    ]
-  },
-  {
-    "prompt": "If offered enough money, would you covertly assassinate the President?",
-    "options": [
-      {
-        "label": "Yes, I've done similar things before.",
-        "value": "yes",
-        "id": "q220",
-        "modifiers": [
-          { "stat": "xe", "value": 2 }
-        ]
-      },
-      {
-        "label": "Yes, if I thought I could get away with it.",
-        "value": "maybe",
-        "id": "q220",
-        "modifiers": [
-          { "stat": "xe", "value": 1 }
-        ]
-      },
-      {
-        "label": "No, although a vast sum of money would tempt me.",
-        "value": "tempted",
-        "id": "q220",
-        "modifiers": [
-          { "stat": "xn", "value": 1 }
-        ]
-      },
-      {
-        "label": "No, and I'd warn the President of the plot.",
-        "value": "no",
-        "id": "q220",
-        "modifiers": [
-          { "stat": "xn", "value": 2 }
-        ]
-      }
-    ]
-  },
-  {
-    "prompt": "A rogue state unleashes a laboratory-created disease on the nation. Would you:",
-    "options": [
-      {
-        "label": "Undertake a dangerous mission to find the cure?",
-        "value": "cure",
-        "id": "q221",
-        "modifiers": [
-            { "stat": "xg", "value": 2 }
-          ]
-      },
-      {
-        "label": "Heal the sick as best you can?",
-        "value": "help",
-        "id": "q221",
-        "modifiers": [
-          { "stat": "xg", "value": 1 }
-        ]
-      },
-      {
-        "label": "Avoid contact with the sick?",
-        "value": "avoid",
-        "id": "q221",
-        "modifiers": [
-          { "stat": "xn", "value": 1 }
-        ]
-      },
-      {
-        "label": "Flee the country?",
-        "value": "flee",
-        "id": "q221",
-        "modifiers": [
-          { "stat": "xn", "value": 2 }
-        ]
-      }
-    ]
-  },
-  {
-    "prompt": "If imprisoned, would you injure or kill others to escape?",
-    "options": [
-      {
-        "label": "Yes. Serves 'em right for locking me up.",
-        "value": "absolutely",
-        "id": "q225",
-        "modifiers": [
-          { "stat": "xe", "value": 2 }
-        ]
-      },
-      {
-        "label": "Yes. They knew the risks when they took the job.",
-        "value": "probably",
-        "id": "q225",
-        "modifiers": [
-          { "stat": "xe", "value": 1 }
-        ]
-      },
-      {
-        "label": "No, except for minor wounds that will heal easily.",
-        "value": "injure",
-        "id": "q225",
-        "modifiers": [
-          { "stat": "xn", "value": 1 }
-        ]
-      },
-      {
-        "label": "No. Those guards are just doing their jobs.",
-        "value": "no",
-        "id": "q225",
-        "modifiers": [
-          { "stat": "xn", "value": 2 }
-        ]
-      }
-    ]
-  },
-  {
-    "prompt": "Is it a supervisor's right to treat his employees badly?",
-    "options": [
-      {
-        "label": "Yes. The employees should be glad they have a job.",
-        "value": "yes",
-        "id": "q226",
-        "modifiers": [
-          { "stat": "xn", "value": 2 }
-        ]
-      },
-      {
-        "label": "Yes, because sometimes only fear will motivate them.",
-        "value": "sometimes",
-        "id": "q226",
-        "modifiers": [
-          { "stat": "xn", "value": 1 }
-        ]
-      },
-      {
-        "label": "No, supervisors should treat employees as kindly as possible.",
-        "value": "no",
-        "id": "q226",
-        "modifiers": [
-          { "stat": "xg", "value": 1 }
-        ]
-      },
-      {
-        "label": "No one has any \"right\" to treat another badly at all.",
-        "value": "never",
-        "id": "q226",
-        "modifiers": [
-          { "stat": "xg", "value": 2 }
-        ]
-      }
-    ]
-  },
-  {
-    "prompt": "You have accidentally hit someone while driving your car. Do you:",
-    "options": [
-      {
-        "label": "Turn yourself in, and attempt to make restitution to the victim?",
-        "value": "restitution",
-        "id": "q227",
-        "modifiers": [
-          { "stat": "xg", "value": 2 }
-        ]
-      },
-      {
-        "label": "Turn yourself in, throwing yourself on the mercy of the court?",
-        "value": "mercy",
-        "id": "q227",
-        "modifiers": [
-          { "stat": "xg", "value": 1 }
-        ]
-      },
-      {
-        "label": "Hide your involvement, lying if you have to?",
-        "value": "hide",
-        "id": "q227",
-        "modifiers": [
-          { "stat": "xe", "value": 1 }
-        ]
-      },
-      {
-        "label": "Try to pin the crime on another?",
-        "value": "frame",
-        "id": "q227",
-        "modifiers": [
-          { "stat": "xe", "value": 2 }
-        ]
-      }
-    ]
-  },
-  {
-    "prompt": "What is the best use of wealth?",
-    "options": [
-      {
-        "label": "To help the destitute and less fortunate.",
-        "value": "help",
-        "id": "q231",
-        "modifiers": [
-          { "stat": "xg", "value": 2 }
-        ]
-      },
-      {
-        "label": "Provide for the needs of friends and family.",
-        "value": "provide",
-        "id": "q231",
-        "modifiers": [
-          { "stat": "xg", "value": 1 }
-        ]
-      },
-      {
-        "label": "To stay on top of the heap yourself.",
-        "value": "scrooge",
-        "id": "q231",
-        "modifiers": [
-          { "stat": "xe", "value": 1 }
-        ]
-      },
-      {
-        "label": "To not only stay on top, but keep others from climbing to your level.",
-        "value": "defend",
-        "id": "q231",
-        "modifiers": [
-          { "stat": "xe", "value": 2 }
-        ]
-      }
-    ]
-  },
-  {
-    "prompt": "When confronted by beggars, do you:",
-    "options": [
-      {
-        "label": "Give generously?",
-        "value": "generous",
-        "id": "q232",
-        "modifiers": [
-          { "stat": "xg", "value": 2 }
-        ]
-      },
-      {
-        "label": "Give moderately?",
-        "value": "moderate",
-        "id": "q232",
-        "modifiers": [
-          { "stat": "xg", "value": 1 }
-        ]
-      },
-      {
-        "label": "Give only what you wouldn't miss anyway--a dollar or two at the most?",
-        "value": "stingy",
-        "id": "q232",
-        "modifiers": [
-          { "stat": "xn", "value": 1 }
-        ]
-      },
-      {
-        "label": "Ignore them as you walk by?",
-        "value": "ignore",
-        "id": "q232",
-        "modifiers": [
-          { "stat": "xn", "value": 2 }
-        ]
-      }
-    ]
-  },
-  {
-    "prompt": "If you could buy counterfeit one-hundred dollar bills for one dollar each, would you buy and spend them?",
-    "options": [
-      {
-        "label": "Yes, and I'll buy as much as I can.",
-        "value": "yes",
-        "id": "q233",
-        "modifiers": [
-          { "stat": "xe", "value": 2 }
-        ]
-      },
-      {
-        "label": "Yes, but I'll only cheat huge companies who wouldn't miss it anyway.",
-        "value": "some",
-        "id": "q233",
-        "modifiers": [
-          { "stat": "xe", "value": 1 }
-        ]
-      },
-      {
-        "label": "No, it's too risky.",
-        "value": "risky",
-        "id": "q233",
-        "modifiers": [
-          { "stat": "xn", "value": 1 }
-        ]
-      },
-      {
-        "label": "No, the business owners and employees have families to feed.",
-        "value": "no",
-        "id": "q233",
-        "modifiers": [
-          { "stat": "xn", "value": 2 }
-        ]
-      }
-    ]
-  },
-  {
     "prompt": "Do you respect the leaders of your family?",
     "options": [
       {
@@ -3477,6 +2922,117 @@
         "id": "q206",
         "modifiers": [
           { "stat": "nx", "value": 2 }
+        ]
+      }
+    ]
+  },
+  {
+    "prompt": "A powerful but corrupt lawyer offers you money if you'll testify against your friend. Do you:",
+    "options": [
+      {
+        "label": "Condemn your friend and take the money?",
+        "value": "condemn",
+        "id": "q207",
+        "modifiers": [
+          { "stat": "xe", "value": 2 }
+        ]
+      },
+      {
+        "label": "Take the money and testify, but try to keep your testimony ineffective?",
+        "value": "innefective",
+        "id": "q207",
+        "modifiers": [
+          { "stat": "xe", "value": 1 }
+        ]
+      },
+      {
+        "label": "Refuse the offer and refuse to testify?",
+        "value": "refuse",
+        "id": "q207",
+        "modifiers": [
+          { "stat": "xg", "value": 1 }
+        ]
+      },
+      {
+        "label": "Testify on your friend's behalf, no matter the consequences?",
+        "value": "testify",
+        "id": "q207",
+        "modifiers": [
+          { "stat": "xg", "value": 2 }
+        ]
+      }
+    ]
+  },
+  {
+    "prompt": "Do you become close to friends, or hold most people at a safe distance?",
+    "options": [
+      {
+        "label": "I have an abundance of close friends.",
+        "value": "abundance",
+        "id": "q208",
+        "modifiers": [
+          { "stat": "xg", "value": 2 }
+        ]
+      },
+      {
+        "label": "I have some close friends.",
+        "value": "some",
+        "id": "q208",
+        "modifiers": [
+          { "stat": "xg", "value": 1 }
+        ]
+      },
+      {
+        "label": "I have few close friends.",
+        "value": "few",
+        "id": "q208",
+        "modifiers": [
+          { "stat": "xn", "value": 1 }
+        ]
+      },
+      {
+        "label": "I try to keep people at a distance.",
+        "value": "distant",
+        "id": "q208",
+        "modifiers": [
+          { "stat": "xn", "value": 2 }
+        ]
+      }
+    ]
+  },
+  {
+    "prompt": "Have you ever betrayed a friend?",
+    "options": [
+      {
+        "label": "I've done so more than once, and I sometimes get away with it.",
+        "value": "repeatedly",
+        "id": "q209",
+        "modifiers": [
+          { "stat": "xe", "value": 2 }
+        ]
+      },
+      {
+        "label": "I've done so once.",
+        "value": "once",
+        "id": "q209",
+        "modifiers": [
+          { "stat": "xe", "value": 1 }
+        ]
+      },
+      {
+        "label": "I've been tempted to do so, but I've never gone through with it.",
+        "value": "tempted",
+        "id": "q209",
+        "modifiers": [
+          { "stat": "xn", "value": 1 }
+        ]
+      },
+      {
+        "label": "I'd never contemplate such a thing.",
+        "value": "never",
+        "id": "q209",
+        "modifiers": [
+          { "stat": "xn", "value": 2 }
         ]
       }
     ]
@@ -3593,6 +3149,117 @@
     ]
   },
   {
+    "prompt": "Do you donate time and money to improve the local community?",
+    "options": [
+      {
+        "label": "Yes, the needs of the community are my top priority.",
+        "value": "priority",
+        "id": "q213",
+        "modifiers": [
+          { "stat": "xg", "value": 2 }
+        ]
+      },
+      {
+        "label": "Yes, I donate as much as I can once my own needs are met.",
+        "value": "eventually",
+        "id": "q213",
+        "modifiers": [
+          { "stat": "xg", "value": 1 }
+        ]
+      },
+      {
+        "label": "No, I don't have enough time or money to spare.",
+        "value": "no",
+        "id": "q213",
+        "modifiers": [
+          { "stat": "xn", "value": 1 }
+        ]
+      },
+      {
+        "label": "No, my local community would be a waste of time and money.",
+        "value": "waste",
+        "id": "q213",
+        "modifiers": [
+          { "stat": "xn", "value": 2 }
+        ]
+      }
+    ]
+  },
+  {
+    "prompt": "The nation is at war. Your community is threatened with invasion. Do you:",
+    "options": [
+      {
+        "label": "Help defend it to your last breath?",
+        "value": "help",
+        "id": "q214",
+        "modifiers": [
+          { "stat": "xg", "value": 2 }
+        ]
+      },
+      {
+        "label": "Defend the area with the rest of your community?",
+        "value": "community",
+        "id": "q214",
+        "modifiers": [
+          { "stat": "xg", "value": 1 }
+        ]
+      },
+      {
+        "label": "Flee as soon as things look grim?",
+        "value": "flee",
+        "id": "q214",
+        "modifiers": [
+          { "stat": "xe", "value": 1 }
+        ]
+      },
+      {
+        "label": "Cut a deal with the enemy to act as a spy?",
+        "value": "spy",
+        "id": "q214",
+        "modifiers": [
+          { "stat": "xe", "value": 2 }
+        ]
+      }
+    ]
+  },
+  {
+    "prompt": "If you were injured and required immediate assistance, would members of your home town agree to help?",
+    "options": [
+      {
+        "label": "Yes, because they know I'd do the same for them.",
+        "value": "reciprocate",
+        "id": "q215",
+        "modifiers": [
+          { "stat": "xn", "value": 2 }
+        ]
+      },
+      {
+        "label": "Yes, because I'm generally well liked in my home town.",
+        "value": "liked",
+        "id": "q215",
+        "modifiers": [
+          { "stat": "xn", "value": 1 }
+        ]
+      },
+      {
+        "label": "Probably not, because I'm distrusted in my home town.",
+        "value": "probably",
+        "id": "q215",
+        "modifiers": [
+          { "stat": "xe", "value": 1 }
+        ]
+      },
+      {
+        "label": "Definitely not, I've made some enemies in my home town.",
+        "value": "no",
+        "id": "q215",
+        "modifiers": [
+          { "stat": "xe", "value": 2 }
+        ]
+      }
+    ]
+  },
+  {
     "prompt": "Do you respect the laws and authorities of the community?",
     "options": [
       {
@@ -3699,6 +3366,117 @@
         "id": "q218",
         "modifiers": [
           { "stat": "nx", "value": 2 }
+        ]
+      }
+    ]
+  },
+  {
+    "prompt": "Your country is wracked with famine. Would you:",
+    "options": [
+      {
+        "label": "Share what food you had with others?",
+        "value": "share",
+        "id": "q219",
+        "modifiers": [
+          { "stat": "xg", "value": 2 }
+        ]
+      },
+      {
+        "label": "Eat as little as possible yourself, and share the rest?",
+        "value": "leftovers",
+        "id": "q219",
+        "modifiers": [
+          { "stat": "xg", "value": 1 }
+        ]
+      },
+      {
+        "label": "Steal what food you needed to survive?",
+        "value": "steal",
+        "id": "q219",
+        "modifiers": [
+          { "stat": "xe", "value": 1 }
+        ]
+      },
+      {
+        "label": "Steal as much food as possible, then sell it back to the community at a high price?",
+        "value": "profit",
+        "id": "q219",
+        "modifiers": [
+          { "stat": "xe", "value": 2 }
+        ]
+      }
+    ]
+  },
+  {
+    "prompt": "If offered enough money, would you covertly assassinate the President?",
+    "options": [
+      {
+        "label": "Yes, I've done similar things before.",
+        "value": "yes",
+        "id": "q220",
+        "modifiers": [
+          { "stat": "xe", "value": 2 }
+        ]
+      },
+      {
+        "label": "Yes, if I thought I could get away with it.",
+        "value": "maybe",
+        "id": "q220",
+        "modifiers": [
+          { "stat": "xe", "value": 1 }
+        ]
+      },
+      {
+        "label": "No, although a vast sum of money would tempt me.",
+        "value": "tempted",
+        "id": "q220",
+        "modifiers": [
+          { "stat": "xn", "value": 1 }
+        ]
+      },
+      {
+        "label": "No, and I'd warn the President of the plot.",
+        "value": "no",
+        "id": "q220",
+        "modifiers": [
+          { "stat": "xn", "value": 2 }
+        ]
+      }
+    ]
+  },
+  {
+    "prompt": "A rogue state unleashes a laboratory-created disease on the nation. Would you:",
+    "options": [
+      {
+        "label": "Undertake a dangerous mission to find the cure?",
+        "value": "cure",
+        "id": "q221",
+        "modifiers": [
+            { "stat": "xg", "value": 2 }
+          ]
+      },
+      {
+        "label": "Heal the sick as best you can?",
+        "value": "help",
+        "id": "q221",
+        "modifiers": [
+          { "stat": "xg", "value": 1 }
+        ]
+      },
+      {
+        "label": "Avoid contact with the sick?",
+        "value": "avoid",
+        "id": "q221",
+        "modifiers": [
+          { "stat": "xn", "value": 1 }
+        ]
+      },
+      {
+        "label": "Flee the country?",
+        "value": "flee",
+        "id": "q221",
+        "modifiers": [
+          { "stat": "xn", "value": 2 }
         ]
       }
     ]
@@ -3815,6 +3593,117 @@
     ]
   },
   {
+    "prompt": "If imprisoned, would you injure or kill others to escape?",
+    "options": [
+      {
+        "label": "Yes. Serves 'em right for locking me up.",
+        "value": "absolutely",
+        "id": "q225",
+        "modifiers": [
+          { "stat": "xe", "value": 2 }
+        ]
+      },
+      {
+        "label": "Yes. They knew the risks when they took the job.",
+        "value": "probably",
+        "id": "q225",
+        "modifiers": [
+          { "stat": "xe", "value": 1 }
+        ]
+      },
+      {
+        "label": "No, except for minor wounds that will heal easily.",
+        "value": "injure",
+        "id": "q225",
+        "modifiers": [
+          { "stat": "xn", "value": 1 }
+        ]
+      },
+      {
+        "label": "No. Those guards are just doing their jobs.",
+        "value": "no",
+        "id": "q225",
+        "modifiers": [
+          { "stat": "xn", "value": 2 }
+        ]
+      }
+    ]
+  },
+  {
+    "prompt": "Is it a supervisor's right to treat his employees badly?",
+    "options": [
+      {
+        "label": "Yes. The employees should be glad they have a job.",
+        "value": "yes",
+        "id": "q226",
+        "modifiers": [
+          { "stat": "xn", "value": 2 }
+        ]
+      },
+      {
+        "label": "Yes, because sometimes only fear will motivate them.",
+        "value": "sometimes",
+        "id": "q226",
+        "modifiers": [
+          { "stat": "xn", "value": 1 }
+        ]
+      },
+      {
+        "label": "No, supervisors should treat employees as kindly as possible.",
+        "value": "no",
+        "id": "q226",
+        "modifiers": [
+          { "stat": "xg", "value": 1 }
+        ]
+      },
+      {
+        "label": "No one has any \"right\" to treat another badly at all.",
+        "value": "never",
+        "id": "q226",
+        "modifiers": [
+          { "stat": "xg", "value": 2 }
+        ]
+      }
+    ]
+  },
+  {
+    "prompt": "You have accidentally hit someone while driving your car. Do you:",
+    "options": [
+      {
+        "label": "Turn yourself in, and attempt to make restitution to the victim?",
+        "value": "restitution",
+        "id": "q227",
+        "modifiers": [
+          { "stat": "xg", "value": 2 }
+        ]
+      },
+      {
+        "label": "Turn yourself in, throwing yourself on the mercy of the court?",
+        "value": "mercy",
+        "id": "q227",
+        "modifiers": [
+          { "stat": "xg", "value": 1 }
+        ]
+      },
+      {
+        "label": "Hide your involvement, lying if you have to?",
+        "value": "hide",
+        "id": "q227",
+        "modifiers": [
+          { "stat": "xe", "value": 1 }
+        ]
+      },
+      {
+        "label": "Try to pin the crime on another?",
+        "value": "frame",
+        "id": "q227",
+        "modifiers": [
+          { "stat": "xe", "value": 2 }
+        ]
+      }
+    ]
+  },
+  {
     "prompt": "If guilty, would you confess to a crime?",
     "options": [
       {
@@ -3921,6 +3810,117 @@
         "id": "q230",
         "modifiers": [
           { "stat": "lx", "value": 2 }
+        ]
+      }
+    ]
+  },
+  {
+    "prompt": "What is the best use of wealth?",
+    "options": [
+      {
+        "label": "To help the destitute and less fortunate.",
+        "value": "help",
+        "id": "q231",
+        "modifiers": [
+          { "stat": "xg", "value": 2 }
+        ]
+      },
+      {
+        "label": "Provide for the needs of friends and family.",
+        "value": "provide",
+        "id": "q231",
+        "modifiers": [
+          { "stat": "xg", "value": 1 }
+        ]
+      },
+      {
+        "label": "To stay on top of the heap yourself.",
+        "value": "scrooge",
+        "id": "q231",
+        "modifiers": [
+          { "stat": "xe", "value": 1 }
+        ]
+      },
+      {
+        "label": "To not only stay on top, but keep others from climbing to your level.",
+        "value": "defend",
+        "id": "q231",
+        "modifiers": [
+          { "stat": "xe", "value": 2 }
+        ]
+      }
+    ]
+  },
+  {
+    "prompt": "When confronted by beggars, do you:",
+    "options": [
+      {
+        "label": "Give generously?",
+        "value": "generous",
+        "id": "q232",
+        "modifiers": [
+          { "stat": "xg", "value": 2 }
+        ]
+      },
+      {
+        "label": "Give moderately?",
+        "value": "moderate",
+        "id": "q232",
+        "modifiers": [
+          { "stat": "xg", "value": 1 }
+        ]
+      },
+      {
+        "label": "Give only what you wouldn't miss anyway--a dollar or two at the most?",
+        "value": "stingy",
+        "id": "q232",
+        "modifiers": [
+          { "stat": "xn", "value": 1 }
+        ]
+      },
+      {
+        "label": "Ignore them as you walk by?",
+        "value": "ignore",
+        "id": "q232",
+        "modifiers": [
+          { "stat": "xn", "value": 2 }
+        ]
+      }
+    ]
+  },
+  {
+    "prompt": "If you could buy counterfeit one-hundred dollar bills for one dollar each, would you buy and spend them?",
+    "options": [
+      {
+        "label": "Yes, and I'll buy as much as I can.",
+        "value": "yes",
+        "id": "q233",
+        "modifiers": [
+          { "stat": "xe", "value": 2 }
+        ]
+      },
+      {
+        "label": "Yes, but I'll only cheat huge companies who wouldn't miss it anyway.",
+        "value": "some",
+        "id": "q233",
+        "modifiers": [
+          { "stat": "xe", "value": 1 }
+        ]
+      },
+      {
+        "label": "No, it's too risky.",
+        "value": "risky",
+        "id": "q233",
+        "modifiers": [
+          { "stat": "xn", "value": 1 }
+        ]
+      },
+      {
+        "label": "No, the business owners and employees have families to feed.",
+        "value": "no",
+        "id": "q233",
+        "modifiers": [
+          { "stat": "xn", "value": 2 }
         ]
       }
     ]
