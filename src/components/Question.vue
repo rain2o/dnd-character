@@ -1,6 +1,6 @@
 <template>
-  <div class="question py-3 my-2 border-t-2 border-red-300">
-    <p class="font-bold text-red-800 pt-3">
+  <div class="question pt-4 pb-2 my-2 border-t-2 border-b-2 border-red-400">
+    <p class="font-bold text-lg text-red-800 pt-3">
       {{ question.prompt }}
     </p>
     <div class="question__options md:grid md:grid-cols-2">
