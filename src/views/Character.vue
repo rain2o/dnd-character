@@ -105,7 +105,7 @@ export default Vue.extend({
         });
         this.character.class.forEach((className) => analytics({
           t: 'event',
-          ec: 'Primary Class',
+          ec: 'Class',
           el: className,
           ea: 'character',
           ni: '1',
