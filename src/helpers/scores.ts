@@ -104,6 +104,15 @@ export const extractScores = (modifiers: Modifier[]): Scores => {
     nn: lawfulnessScores.nx + goodnessScores.xn,
   };
 
+  let level = reduceScore(
+    scopedModifiers[ScoreTypes.level],
+    ScoreTypes.level,
+  );
+  // level should be 1 at a minimum
+  if (level <= 0) {
+    level = 1;
+  }
+
   const scores: Scores = {
     [ScoreTypes.abilityScores]: reduceScores(
       scopedModifiers[ScoreTypes.abilityScores],
@@ -120,10 +129,7 @@ export const extractScores = (modifiers: Modifier[]): Scores => {
       scopedModifiers[ScoreTypes.races],
       RACES,
     ) as RaceScores,
-    [ScoreTypes.level]: reduceScore(
-      scopedModifiers[ScoreTypes.level],
-      ScoreTypes.level,
-    ),
+    [ScoreTypes.level]: level,
   };
   return scores;
 };
