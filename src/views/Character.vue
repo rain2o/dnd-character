@@ -3,7 +3,7 @@
     <div class="character py-4 max-w-4xl mx-auto md:p-12 md:bg-white md:rounded-lg md:shadow-md">
       <ResetModal :show="showModal" @confirm="resetAnswers" @cancel="showModal = false" />
 
-      <div v-if="scores.length > 0" class="px-4">
+      <div v-if="scores.length > 0" class="px-2 sm:px-4">
         <h1 class="text-2xl font-bold text-red-800 text-center mb-2">
           Welcome adventurer!
         </h1>

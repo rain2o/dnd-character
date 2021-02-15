@@ -4,7 +4,7 @@
       class="border-red-700 border-2 rounded-xl text-center p-1 bg-white
             md:bg-red-50 shadow-sm"
     >
-      <p class="mb-2">{{ name }}</p>
+      <p class="mb-2 text-sm sm:text-base">{{ name }}</p>
       <p class="text-lg font-semibold relative -bottom-1">{{ score }}</p>
       <p
         class="text-sm border rounded-full border-red-700 w-10 mx-auto
