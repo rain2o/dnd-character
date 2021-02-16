@@ -21,7 +21,7 @@ import {
 } from '@/types';
 
 const baseScores: { [key in Stat]?: number } = {
-  human: 13,
+  human: 9,
   halfelf: 4,
 };
 
