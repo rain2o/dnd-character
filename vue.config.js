@@ -1,21 +1,21 @@
 module.exports = {
   devServer: {
-    proxy: {
-      '/survival.js': {
-        target: 'https://cdn.splitbee.io',
-        changeOrigin: true,
-        pathRewrite: {
-          '/survival.js': '/sb.js',
-        },
-      },
-      '^/survival/': {
-        target: 'https://hive.splitbee.io',
-        changeOrigin: true,
-        pathRewrite: {
-          '^/survival/': '/',
-        },
-      },
-    },
+    // proxy: {
+    //   '/survival.js': {
+    //     target: 'https://cdn.splitbee.io',
+    //     changeOrigin: true,
+    //     pathRewrite: {
+    //       '/survival.js': '/sb.js',
+    //     },
+    //   },
+    //   '^/survival/': {
+    //     target: 'https://hive.splitbee.io',
+    //     changeOrigin: true,
+    //     pathRewrite: {
+    //       '^/survival/': '/',
+    //     },
+    //   },
+    // },
   },
   chainWebpack: (config) => {
     const svgRule = config.module.rule('svg');
