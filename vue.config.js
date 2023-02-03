@@ -8,11 +8,11 @@ module.exports = {
           '/survival.js': '/sb.js',
         },
       },
-      '^/roll-for-survival': {
+      '^/survival/': {
         target: 'https://hive.splitbee.io',
         changeOrigin: true,
         pathRewrite: {
-          '^/hive': '/',
+          '^/survival/': '/',
         },
       },
     },

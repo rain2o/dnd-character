@@ -41,7 +41,7 @@ export default Vue.extend({
     splitbee.init({
       disableCookie: true,
       scriptUrl: '/survival.js',
-      apiUrl: '/roll-for-survival',
+      apiUrl: '/survival',
     });
   },
 });
