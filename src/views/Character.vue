@@ -35,6 +35,7 @@ import { extractScores } from '@/helpers/scores';
 import { buildCharacter } from '@/helpers/character';
 import analytics from '@/helpers/analytics';
 import { Character, Modifier, Scores } from '@/types';
+import splitbee from '@splitbee/web';
 import CharacterSheet from '../components/CharacterSheet.vue';
 import DetailedResults from '../components/DetailedResults.vue';
 import NoResults from '../components/NoResults.vue';
@@ -96,6 +97,17 @@ export default Vue.extend({
     if (this.scores) {
       const dispatched = localStorage.getItem('is-dispatched');
       if (dispatched === null) {
+        // track all in a single event
+        splitbee.track('Character', {
+          race: this.character.race,
+          class: this.character.class.join('/'),
+          alignment: this.character.alignment,
+        });
+
+        // and track in separate events
+        splitbee.track('Race', {
+          value: this.character.race,
+        });
         analytics({
           t: 'event',
           ec: 'Race',
@@ -103,13 +115,22 @@ export default Vue.extend({
           ea: 'character',
           ni: '1',
         });
-        this.character.class.forEach((className) => analytics({
-          t: 'event',
-          ec: 'Class',
-          el: className,
-          ea: 'character',
-          ni: '1',
-        }));
+        this.character.class.forEach((className) => {
+          // eslint-disable-next-line no-undef
+          splitbee.track('Class', {
+            value: className,
+          });
+          analytics({
+            t: 'event',
+            ec: 'Class',
+            el: className,
+            ea: 'character',
+            ni: '1',
+          });
+        });
+        splitbee.track('Alignment', {
+          value: this.character.alignment,
+        });
         analytics({
           t: 'event',
           ec: 'Alignment',

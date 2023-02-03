@@ -1,4 +1,5 @@
 /**
+ * @deprecated in favor of splitbee
  * Send anonymous packet to Google Analytics
  * Thanks to @DasSurma https://twitter.com/DasSurma
  * and to @timbenniks https://twitter.com/timbenniks/status/1360197460031770626

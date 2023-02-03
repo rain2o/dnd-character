@@ -1,7 +1,21 @@
 module.exports = {
   devServer: {
-    https: true,
-    host: 'dnd-character.local',
+    proxy: {
+      '/survival.js': {
+        target: 'https://cdn.splitbee.io',
+        changeOrigin: true,
+        pathRewrite: {
+          '/survival.js': '/sb.js',
+        },
+      },
+      '^/roll-for-survival': {
+        target: 'https://hive.splitbee.io',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/hive': '/',
+        },
+      },
+    },
   },
   chainWebpack: (config) => {
     const svgRule = config.module.rule('svg');

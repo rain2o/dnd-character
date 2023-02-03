@@ -7,6 +7,7 @@
 <script lang="ts">
 import Vue from 'vue';
 import { MetaInfo } from 'vue-meta';
+import splitbee from '@splitbee/web';
 
 export default Vue.extend({
   name: 'App',
@@ -35,6 +36,13 @@ export default Vue.extend({
         { property: 'twitter:url', content: `${window.location}` },
       ],
     };
+  },
+  mounted() {
+    splitbee.init({
+      disableCookie: true,
+      scriptUrl: '/survival.js',
+      apiUrl: '/roll-for-survival',
+    });
   },
 });
 </script>
