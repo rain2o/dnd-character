@@ -24,6 +24,8 @@ export default Vue.extend({
   },
   computed: {
     barStyle() {
+      // const color = `rgb(var(--color-dnd-red)) ${this.percentage}%`;
+      // return `background: linear-gradient(to right, ${color}, rgb(var(--color-dnd-lighter)) 0);`;
       const color = `var(--color-primary) ${this.percentage}%`;
       return `background: linear-gradient(to right, ${color}, var(--color-secondary) 0);`;
     },

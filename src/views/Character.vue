@@ -33,7 +33,6 @@
 import Vue from 'vue';
 import { extractScores } from '@/helpers/scores';
 import { buildCharacter } from '@/helpers/character';
-import analytics from '@/helpers/analytics';
 import { Character, Modifier, Scores } from '@/types';
 import splitbee from '@splitbee/web';
 import CharacterSheet from '../components/CharacterSheet.vue';
@@ -104,39 +103,11 @@ export default Vue.extend({
           alignment: this.character.alignment,
         });
 
-        // and track in separate events
-        splitbee.track('Race', {
-          value: this.character.race,
-        });
-        analytics({
-          t: 'event',
-          ec: 'Race',
-          el: this.character.race,
-          ea: 'character',
-          ni: '1',
-        });
+        // track each class separately too
         this.character.class.forEach((className) => {
-          // eslint-disable-next-line no-undef
           splitbee.track('Class', {
             value: className,
           });
-          analytics({
-            t: 'event',
-            ec: 'Class',
-            el: className,
-            ea: 'character',
-            ni: '1',
-          });
-        });
-        splitbee.track('Alignment', {
-          value: this.character.alignment,
-        });
-        analytics({
-          t: 'event',
-          ec: 'Alignment',
-          el: this.character.alignment,
-          ea: 'character',
-          ni: '1',
         });
         localStorage.setItem('is-dispatched', 'true');
       }

@@ -12,7 +12,7 @@
             href="http://easydamus.com/character.html"
             target="_blank"
             rel="noopener noreferrer"
-            class="text-red-800 underline hover:text-secondary"
+            class="text-red-800 underline hover:text-black"
           >easydamus's version</a>
         </p>
 

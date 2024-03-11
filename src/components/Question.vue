@@ -54,6 +54,11 @@ export default Vue.extend({
       activeClass:
         'border-red-800 text-white bg-red-600',
       inactiveClass: 'border-red-300 bg-white md:bg-red-50',
+      // activeClass:
+      //   'border-dnd-red text-white dark:text-dnd-light bg-dnd-red dark:bg-magic-brand-red
+      // dark:border-magic-brand-red',
+      // inactiveClass: 'border-dnd-red dark:border-magic-brand-red bg-dnd-black bg-dnd-lighter
+      // dark:bg-dnd-black',
     };
   },
   watch: {

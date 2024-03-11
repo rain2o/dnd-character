@@ -3,10 +3,35 @@
 @tailwind utilities;
 
 /** Fonts **/
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@layer base {
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/Inter-VariableFont_slnt,wght.ttf');
+  }
+}
 
 /** Colors **/
 :root {
-  --color-primary: rgb(153, 27, 27);
-  --color-secondary: rgb(254, 242, 242);
+  --color-primary: 153, 27, 27;
+  --color-secondary: 254, 242, 242;
+
+  /* WIP: dnd themes (with dark) */
+  /* --dnd-black: #333;
+  --color-dnd-black: 51 51 51;
+  --color-dnd-lighter: #ebebe6;
+  --color-dnd-lighter: 235 235 230;
+  --color-dnd-red: #9e0b0f;
+  --color-dnd-red: 158 11 15;
+  --color-dnd-light: #dfddd6;
+  --color-dnd-light: 223 221 214;
+  --color-dnd-blue: #4c7de3;
+  --color-dnd-blue: 76 125 227;
+  --color-magic-brand-red: #ea3601;
+  --color-magic-brand-red: 234 54 1;
+  --color-magic-brand-orange: #ff6000;
+  --color-magic-brand-orange: 255 96 0;
+  --color-4-legacy: #a98743; */
 }

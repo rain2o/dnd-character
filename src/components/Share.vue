@@ -10,11 +10,23 @@
 
     <!-- If not, use platform-specific share buttons -->
     <div v-else class="flex justify-center items-center">
-      <Button :link="facebookUrl" :external="true" class="facebook mx-4 text-center">
+      <Button
+        :link="facebookUrl"
+        :external="true"
+        class="facebook mx-4 text-center"
+        event="Share"
+        destination="Facebook"
+      >
         Share on Facebook
         <SvgIcon name="facebook" class="w-20 h-20 my-4 mx-auto" />
       </Button>
-      <Button :link="twitterUrl" :external="true" class="twitter mx-4 text-center">
+      <Button
+        :link="twitterUrl"
+        :external="true"
+        class="twitter mx-4 text-center"
+        event="Share"
+        destination="Twitter"
+      >
         Share on Twitter
         <SvgIcon name="twitter" class="w-20 h-20 my-4 mx-auto" />
       </Button>
@@ -95,13 +107,17 @@ export default Vue.extend({
 .twitter {
   background-color: rgb(29, 161, 242);
 }
+
 .twitter:hover {
   background-color: rgb(26, 145, 218);
 }
+
 .facebook {
   background-color: rgb(24, 119, 242);
 }
+
 .facebook:hover {
+  background-color: rgb(24, 119, 242);
   opacity: .85;
 }
 </style>

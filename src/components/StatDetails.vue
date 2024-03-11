@@ -1,5 +1,5 @@
 <template>
-  <div class="details text-secondary font-medium">
+  <div class="details font-medium">
     <p class="text-red-800 text-lg font-semibold mb-2">{{ name }}</p>
     <span class="font-semibold">{{ stat.name }}</span> - {{ stat.details }}
   </div>
